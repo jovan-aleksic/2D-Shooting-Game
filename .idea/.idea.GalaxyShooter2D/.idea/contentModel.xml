@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\James\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\James\.Rider2019.3\system\resharper-host\Temp\ReSharperHost\v193\SolutionCaches\_GalaxyShooter2D.-901446782.00" t="ExcludeRecursive" />
+    <e p="C:\Users\James\Documents\GameDevHQ\Unity Projects\GalaxyShooter2D" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="Player.cs" t="Include" />
+        </e>
+      </e>
+      <e p="GalaxyShooter2D.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\Bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
