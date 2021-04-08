@@ -847,6 +847,8 @@ MonoBehaviour:
   speedBoostPowerUpCollected: {fileID: 11400000, guid: abbbe5030f5ca95409469e430c84e5d6, type: 2}
   shieldPowerUpCollected: {fileID: 11400000, guid: e596806ab4d8afe49b0ed4a1ba2dd563, type: 2}
   shield: {fileID: 1470586025}
+  thrusterSpeedAmount: {x: 0, y: 0.5}
+  thrustersVisual: {fileID: 353414014}
 --- !u!114 &1348680711
 MonoBehaviour:
   m_ObjectHideFlags: 0

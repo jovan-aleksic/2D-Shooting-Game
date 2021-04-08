@@ -4,10 +4,93 @@
     <e p="C:\Users\James\.Rider2019.3\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\James\.Rider2019.3\system\resharper-host\Temp\ReSharperHost\v193\SolutionCaches\_GalaxyShooter2D.-901446782.00" t="ExcludeRecursive" />
     <e p="C:\Users\James\Documents\GameDevHQ\Unity Projects\GalaxyShooter2D" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="GameDevHQ" t="Include">
+          <e p="FileBase" t="Include">
+            <e p="Projects" t="Include">
+              <e p="Tutorials" t="Include">
+                <e p="Starter_Files" t="Include">
+                  <e p="2D_Galaxy_Assets" t="Include">
+                    <e p="Materials" t="Include">
+                      <e p="Shaders" t="Include">
+                        <e p="Galaxy.shader" t="Include" />
+                      </e>
+                    </e>
+                  </e>
+                </e>
+              </e>
+            </e>
+          </e>
+        </e>
         <e p="Scripts" t="Include">
-          <e p="Player.cs" t="Include" />
+          <e p="CoolDownTimer.cs" t="Include" />
+          <e p="Core" t="Include">
+            <e p="Events" t="Include">
+              <e p="GameEvent.cs" t="Include" />
+              <e p="GameEventListener.cs" t="Include" />
+            </e>
+            <e p="GameMoveDirectionEnum.cs" t="Include" />
+            <e p="PositionHelper.cs" t="Include" />
+            <e p="Variables" t="Include">
+              <e p="BoolVariable.cs" t="Include" />
+              <e p="BoundsVariable.cs" t="Include" />
+              <e p="FloatVariable.cs" t="Include" />
+              <e p="GameMoveDirectionVariable.cs" t="Include" />
+              <e p="IntVariable.cs" t="Include" />
+              <e p="Refrences" t="Include">
+                <e p="BoolReference.cs" t="Include" />
+                <e p="Editor" t="Include">
+                  <e p="BoolReferenceDrawer.cs" t="Include" />
+                  <e p="FloatReferenceDrawer.cs" t="Include" />
+                  <e p="GameMoveDirectionDrawer.cs" t="Include" />
+                  <e p="IntReferenceDrawer.cs" t="Include" />
+                  <e p="StringReferenceDrawer.cs" t="Include" />
+                  <e p="VariableReferencePropertyDrawer.cs" t="Include" />
+                  <e p="Vector2ReferenceDrawer.cs" t="Include" />
+                  <e p="Vector3ReferenceDrawer.cs" t="Include" />
+                </e>
+                <e p="FloatReference.cs" t="Include" />
+                <e p="GameMoveDirectionReference.cs" t="Include" />
+                <e p="IntReference.cs" t="Include" />
+                <e p="StringReference.cs" t="Include" />
+                <e p="VariableReference.cs" t="Include" />
+                <e p="Vector2Reference.cs" t="Include" />
+                <e p="Vector3Reference.cs" t="Include" />
+              </e>
+              <e p="StringVariable.cs" t="Include" />
+              <e p="VariableBase.cs" t="Include" />
+              <e p="Vector2Variable.cs" t="Include" />
+              <e p="Vector3Variable.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Damageable.cs" t="Include" />
+          <e p="DestroyNoChildren.cs" t="Include" />
+          <e p="Explosion.cs" t="Include" />
+          <e p="GameManager.cs" t="Include" />
+          <e p="Main Menu" t="Include">
+            <e p="MainMenu.cs" t="Include" />
+          </e>
+          <e p="Moveable.cs" t="Include" />
+          <e p="PowerUp.cs" t="Include" />
+          <e p="RotateGameObject.cs" t="Include" />
+          <e p="Ships" t="Include">
+            <e p="Enemy.cs" t="Include" />
+            <e p="Player.cs" t="Include" />
+            <e p="Ship.cs" t="Include" />
+          </e>
+          <e p="SoundEffect.cs" t="Include" />
+          <e p="Spawners" t="Include">
+            <e p="Spawner.cs" t="Include" />
+            <e p="SpawnManager.cs" t="Include" />
+          </e>
+          <e p="UI" t="Include">
+            <e p="CoolDownTimerDisplay.cs" t="Include" />
+            <e p="DisplayIntVariable.cs" t="Include" />
+            <e p="DisplayPlayerLives.cs" t="Include" />
+            <e p="GameOverController.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="GalaxyShooter2D.sln" t="IncludeFlat" />

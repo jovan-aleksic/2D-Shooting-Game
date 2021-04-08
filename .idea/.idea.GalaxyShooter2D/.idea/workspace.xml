@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be36d944-fe34-41b0-b054-b6cd290abc4a" name="Default Changelist" comment="" />
+    <list default="true" id="be36d944-fe34-41b0-b054-b6cd290abc4a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gloabal Data/Score.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gloabal Data/Score.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gloabal Data/Spawners/Enemy Spawner.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gloabal Data/Spawners/Enemy Spawner.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ships/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ships/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,12 +21,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ships/Player.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ships/Player.cs" />
       </list>
     </option>
   </component>
@@ -34,11 +45,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="Rider.SolutionExplorerActivator" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TWShift.3" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -69,12 +80,13 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="816477ce-7152-44de-8ab8-22c5ccb1da6d" name="Default Changelist" comment="" />
+      <changelist id="be36d944-fe34-41b0-b054-b6cd290abc4a" name="Default Changelist" comment="" />
       <created>1615933532829</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1615933532829</updated>
       <workItem from="1615933582910" duration="9380000" />
+      <workItem from="1617853082402" duration="4665000" />
     </task>
     <servers />
   </component>

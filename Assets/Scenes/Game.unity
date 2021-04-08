@@ -866,7 +866,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1357349030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1101,6 +1101,14 @@ PrefabInstance:
     - target: {fileID: 5626883672520933530, guid: bb652211173ac6741986bf940b8f6c32, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5626883672520933531, guid: bb652211173ac6741986bf940b8f6c32, type: 3}
+      propertyPath: thrusterSpeedAmount.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5626883672520933531, guid: bb652211173ac6741986bf940b8f6c32, type: 3}
+      propertyPath: thrusterSpeedAmount.y
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5626883672520933534, guid: bb652211173ac6741986bf940b8f6c32, type: 3}
       propertyPath: m_Name

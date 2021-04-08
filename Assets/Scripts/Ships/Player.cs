@@ -38,6 +38,8 @@ public class Player : Ship
     [SerializeField] private GameEvent speedBoostPowerUpCollected;
     private GameEventListener m_speedBoostEventListener;
 
+    private float m_boostSpeed;
+
     [Header("Shields")]
     [SerializeField]
     private GameEvent shieldPowerUpCollected;
@@ -47,6 +49,13 @@ public class Player : Ship
     [SerializeField] private GameObject shield;
     private bool m_hasShields;
 
+    [Header("Thrusters")]
+    [SerializeField] private Vector2 thrusterSpeedAmount = new Vector2(0, 0.5f);
+
+    private Vector2 m_thrusterSpeed = Vector2.zero;
+    [SerializeField] private GameObject thrustersVisual;
+
+    private bool m_hasThrustersVisual;
 
     #region Unity Methods
 
@@ -62,6 +71,9 @@ public class Player : Ship
             m_hasShields = true;
             shield.SetActive(false);
         }
+
+        m_hasThrustersVisual = thrustersVisual != null;
+        if (m_hasThrustersVisual) thrustersVisual.SetActive(false);
 
         m_hasTripleShotFireSoundEffect = tripleShotFireSoundEffect != null;
 
@@ -132,16 +144,29 @@ public class Player : Ship
             tripleShotFireSoundEffect.Play();
     }
 
+    #endregion
+
     /// <summary>
     /// Set the move direction so the ship moves.
     /// </summary>
     private void SetMoveDirection()
     {
-        float speed = speedBoostActiveTimer.IsActive ? boostSpeedAmount : 1;
-        movementDirection.SetValue(Input.GetAxis("Horizontal") * speed, Input.GetAxis("Vertical") * speed);
-    }
+        if (Input.GetButtonDown("Fire3"))
+        {
+            if (m_hasThrustersVisual) thrustersVisual.SetActive(true);
+            m_thrusterSpeed = thrusterSpeedAmount;
+        }
 
-    #endregion
+        if (Input.GetButtonUp("Fire3"))
+        {
+            if (m_hasThrustersVisual) thrustersVisual.SetActive(false);
+            m_thrusterSpeed = Vector2.zero;
+        }
+
+        m_boostSpeed = speedBoostActiveTimer.IsActive ? boostSpeedAmount : 1;
+        movementDirection.SetValue(Input.GetAxis("Horizontal") * (m_boostSpeed + m_thrusterSpeed.x),
+                                   Input.GetAxis("Vertical") * (m_boostSpeed + m_thrusterSpeed.y));
+    }
 
     public void OutOfBoundsAction()
     {
@@ -158,6 +183,8 @@ public class Player : Ship
         transform.position = position;
     }
 
+    #region Power Up Activation
+
     private void ActivateTripleShot()
     {
         StartCoroutine(tripleShotActiveTimer.CoolDown());
@@ -172,6 +199,10 @@ public class Player : Ship
     {
         if (m_hasShields) shield.SetActive(true);
     }
+
+    #endregion
+
+    # region Damage
 
     public void ReceivedDamage()
     {
@@ -217,4 +248,6 @@ public class Player : Ship
         rightEngine.SetActive(false);
         m_rightEngineEnabled = false;
     }
+
+    #endregion
 }
