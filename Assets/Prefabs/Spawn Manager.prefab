@@ -112,9 +112,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1e7bb7a9b0a7f8342a66fb30845b6a50, type: 2}
   - {fileID: 11400000, guid: 8e490a8ff2a3f7e4cb5bfc75314f0efa, type: 2}
   - {fileID: 11400000, guid: e88bcd370d6abd146948b6aedd07b87a, type: 2}
+  - {fileID: 11400000, guid: 85e09660114ee254c9c2714054ef4bfe, type: 2}
   gameObjectContainers:
   - {fileID: 5224385491729963068}
   - {fileID: 5224385491729963068}
+  - {fileID: 6300382374841564631}
   - {fileID: 6300382374841564631}
   - {fileID: 6300382374841564631}
   - {fileID: 6300382374841564631}

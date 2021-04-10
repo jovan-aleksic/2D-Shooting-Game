@@ -3,13 +3,19 @@ using UnityEngine.Events;
 
 public class Player : Ship
 {
+    [Header("Ammo")]
+    [SerializeField] private StatVariable ammoCount;
+
+    [SerializeField] private GameEvent ammoCollectedPowerUpCollected;
+    private GameEventListener m_ammoEventListener;
+
     [Header("Player")]
     [Space(10)]
     [SerializeField]
     private Vector3Variable movementDirection;
 
     [Header("Receive Damage")]
-    [SerializeField] private StatReference lives;
+    [SerializeField] private StatVariable lives;
 
     private int m_lives;
 
@@ -48,9 +54,7 @@ public class Player : Ship
 
     private GameEventListener m_shieldEventListener;
 
-    //[SerializeField] private GameObject shield;
-    [SerializeField] private StatReference shield;
-    //private bool m_hasShields;
+    [SerializeField] private StatVariable shield;
 
     [Header("Thrusters")]
     [SerializeField] private Vector2 thrusterSpeedAmount = new Vector2(0, 0.5f);
@@ -69,11 +73,8 @@ public class Player : Ship
     {
         transform.position = new Vector3(bounds.Value.center.x, bounds.Min.y + 0.1f);
 
-        // if (shield != null)
-        // {
-        //     m_hasShields = true;
-        //     shield.SetActive(false);
-        // }
+        ammoCount.ResetStat();
+
         shield.Remove(shield.Max);
 
         m_hasThrustersVisual = thrustersVisual != null;
@@ -115,6 +116,12 @@ public class Player : Ship
         m_shieldEventListener.response.AddListener(ActivateShields);
         m_shieldEventListener.@event = shieldPowerUpCollected;
         m_shieldEventListener.@event.RegisterListener(m_shieldEventListener);
+
+        m_ammoEventListener = gameObject.AddComponent<GameEventListener>();
+        m_ammoEventListener.response = new UnityEvent();
+        m_ammoEventListener.response.AddListener(AmmoCollected);
+        m_ammoEventListener.@event = ammoCollectedPowerUpCollected;
+        m_ammoEventListener.@event.RegisterListener(m_ammoEventListener);
     }
 
     /// <inheritdoc />
@@ -127,13 +134,16 @@ public class Player : Ship
     /// <inheritdoc />
     protected override bool ShouldFireLaser()
     {
-        return Input.GetButton("Fire1");
+        // The Player Can only fire if they are pressing the Fire 1 Button and They have Ammo to Fire.
+        return Input.GetButton("Fire1") && ammoCount.Value > 0;
     }
 
     /// <inheritdoc />
     protected override void FireLaser()
     {
         if (fireDelayTimer.IsActive) return;
+
+        ammoCount.Remove(1);
 
         if (!tripleShotActiveTimer.IsActive || tripleShotPrefab == null)
         {
@@ -201,8 +211,12 @@ public class Player : Ship
 
     private void ActivateShields()
     {
-        //if (m_hasShields) shield.SetActive(true);
         shield.ResetStat();
+    }
+
+    private void AmmoCollected()
+    {
+        ammoCount.ResetStat();
     }
 
     #endregion

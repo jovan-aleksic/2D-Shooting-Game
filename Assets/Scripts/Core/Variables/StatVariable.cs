@@ -20,7 +20,7 @@ public class StatVariable : VariableBase<Stat>
 
     public float Max => variableValue.Max;
 
-    #region Overrides of VariableBase<TYPE>
+    #region Overrides of VariableBase<Stat>
 
     /// <inheritdoc />
     public override void Add(Stat amount)

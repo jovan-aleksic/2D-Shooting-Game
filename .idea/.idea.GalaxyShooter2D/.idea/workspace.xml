@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be36d944-fe34-41b0-b054-b6cd290abc4a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/StatReferenceDrawer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gloabal Data/Player/PlayerLives.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player Shield.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player Shield.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Enemy.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Damageable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Damageable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/StatVariable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/StatVariable.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ships/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ships/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/DisplayIntVariable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/DisplayPlayerLives.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/DisplayPlayerLives.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +53,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Events/Editor/GameEventEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Stat.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/StatReferenceDrawer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Variables/StatVariable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Stat.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Shield Health Display.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/DisplayPlayerLives.cs" />
@@ -69,6 +61,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ShieldsSpriteColorChanger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/StatReference.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Damageable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/Spawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ships/Ship.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Variables/StatVariable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/VariableReferencePropertyDrawer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ships/Player.cs" />
       </list>
     </option>
@@ -129,7 +125,7 @@
       <updated>1615933532829</updated>
       <workItem from="1615933582910" duration="9380000" />
       <workItem from="1617853082402" duration="19753000" />
-      <workItem from="1618034569210" duration="5108000" />
+      <workItem from="1618034569210" duration="10334000" />
     </task>
     <servers />
   </component>
