@@ -827,10 +827,12 @@ MonoBehaviour:
       variable: {fileID: 0}
   laserSoundEffect: {fileID: 8499039124094971228}
   ammoCount: {fileID: 11400000, guid: 6b8bfe7f20b227c47b4995531730a5cd, type: 2}
+  ammoCollectedPowerUpCollected: {fileID: 11400000, guid: d55c1b23e811a4e4a8a22cd5065a02db, type: 2}
   movementDirection: {fileID: 11400000, guid: 13213989cec2f98429f933024749a1a0, type: 2}
   lives: {fileID: 11400000, guid: f8423857274f8d24285c0d0191d78996, type: 2}
   rightEngine: {fileID: 956923323}
   leftEngine: {fileID: 1331602752}
+  lifePowerUpCollected: {fileID: 11400000, guid: d575cf9496d1700439fb931115a85462, type: 2}
   tripleShotPrefab: {fileID: 258579702850520766, guid: 67088ed32846fea4c8e208ff2e689e8f, type: 3}
   tripleShotActiveTimer:
     minCoolDownTime: 5

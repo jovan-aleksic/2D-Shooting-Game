@@ -24,6 +24,11 @@ public class Player : Ship
 
     private bool m_rightEngineEnabled, m_leftEngineEnabled, m_hasEngines;
 
+    [Header("Heal Power Up")] [SerializeField]
+    private GameEvent lifePowerUpCollected;
+
+    private GameEventListener m_lifeEventListener;
+
     [Header("Triple Shot")]
     [SerializeField]
     private GameObject tripleShotPrefab;
@@ -122,6 +127,12 @@ public class Player : Ship
         m_ammoEventListener.response.AddListener(AmmoCollected);
         m_ammoEventListener.@event = ammoCollectedPowerUpCollected;
         m_ammoEventListener.@event.RegisterListener(m_ammoEventListener);
+
+        m_lifeEventListener = gameObject.AddComponent<GameEventListener>();
+        m_lifeEventListener.response = new UnityEvent();
+        m_lifeEventListener.response.AddListener(LifeCollected);
+        m_lifeEventListener.@event = lifePowerUpCollected;
+        m_lifeEventListener.@event.RegisterListener(m_lifeEventListener);
     }
 
     /// <inheritdoc />
@@ -219,6 +230,32 @@ public class Player : Ship
         ammoCount.ResetStat();
     }
 
+    private void LifeCollected()
+    {
+        lives.Add(1);
+
+        if (!m_hasEngines) return;
+
+        m_lives = (int) lives.Value;
+
+        switch (m_lives)
+        {
+            case 2:
+                int selectedEngine = Random.Range(0, 100);
+                if (selectedEngine < 50)
+                    DisableLeftEngine();
+                else
+                    DisableRightEngine();
+                break;
+            case 3 when m_leftEngineEnabled:
+                DisableLeftEngine();
+                break;
+            case 3:
+                DisableRightEngine();
+                break;
+        }
+    }
+
     #endregion
 
     # region Damage
@@ -233,9 +270,9 @@ public class Player : Ship
             case 2:
                 int selectedEngine = Random.Range(0, 100);
                 if (selectedEngine < 50)
-                    EnableRightEngine();
-                else
                     EnableLeftEngine();
+                else
+                    EnableRightEngine();
                 break;
             case 1 when m_rightEngineEnabled:
                 EnableLeftEngine();
