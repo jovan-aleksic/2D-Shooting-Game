@@ -24,7 +24,7 @@ public class Spawner : ScriptableObject
     /// <summary>
     /// The Player Lives Variable.
     /// </summary>
-    [SerializeField] private IntReference playerLives;
+    [SerializeField] private StatReference playerLives;
 
     private WaitForSeconds m_spawnWaitTime;
 
@@ -34,13 +34,13 @@ public class Spawner : ScriptableObject
 
     [HideInInspector] public Coroutine spawnRoutine;
 
-    private bool m_hasBeenInit = false;
+    private bool m_hasBeenInit;
 
     [SerializeField] protected BoundsVariable screenBounds;
 
     [SerializeField] private GameMoveDirectionVariable gameMoveDirectionVariable;
 
-    private Vector3 m_postionToSpawnAt;
+    private Vector3 m_positionToSpawnAt;
 
     public void InitSpawner()
     {
@@ -62,8 +62,8 @@ public class Spawner : ScriptableObject
 
         while (playerLives.Value > 0)
         {
-            m_postionToSpawnAt = PositionHelper.GetRandomPosition(gameMoveDirectionVariable.Value, screenBounds.Value);
-            m_spawnedObjects.Add(Instantiate(prefabToSpawn, m_postionToSpawnAt, Quaternion.identity, container));
+            m_positionToSpawnAt = PositionHelper.GetRandomPosition(gameMoveDirectionVariable.Value, screenBounds.Value);
+            m_spawnedObjects.Add(Instantiate(prefabToSpawn, m_positionToSpawnAt, Quaternion.identity, container));
             yield return m_spawnWaitTime;
         }
     }

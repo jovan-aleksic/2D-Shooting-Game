@@ -17,7 +17,10 @@ MonoBehaviour:
   prefabToSpawn: {fileID: 7017033740898244962, guid: 313e82be39be92540b5099d61023b551, type: 3}
   playerLives:
     useConstant: 0
-    constantValue: 0
-    variable: {fileID: 11400000, guid: 045210488e2681549a0aaadd69b8903b, type: 2}
+    constantValue:
+      currentValue: 0
+      maxValue: 0
+      valueChanged: {fileID: 0}
+    variable: {fileID: 11400000, guid: f8423857274f8d24285c0d0191d78996, type: 2}
   screenBounds: {fileID: 11400000, guid: 0ce5d6c5dc2700a4ca5913afe4ee2c11, type: 2}
   gameMoveDirectionVariable: {fileID: 11400000, guid: 516083d7ea62c974a88ba28da36e6310, type: 2}

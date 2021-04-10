@@ -28,11 +28,19 @@
           <e p="CoolDownTimer.cs" t="Include" />
           <e p="Core" t="Include">
             <e p="Events" t="Include">
+              <e p="Editor" t="Include">
+                <e p="GameEventEditor.cs" t="Include" />
+              </e>
               <e p="GameEvent.cs" t="Include" />
               <e p="GameEventListener.cs" t="Include" />
             </e>
             <e p="GameMoveDirectionEnum.cs" t="Include" />
             <e p="PositionHelper.cs" t="Include" />
+            <e p="Stat.cs" t="Include" />
+            <e p="UI" t="Include">
+              <e p="DisplayIntVariable.cs" t="Include" />
+              <e p="StatSliderDisplay.cs" t="Include" />
+            </e>
             <e p="Variables" t="Include">
               <e p="BoolVariable.cs" t="Include" />
               <e p="BoundsVariable.cs" t="Include" />
@@ -46,6 +54,7 @@
                   <e p="FloatReferenceDrawer.cs" t="Include" />
                   <e p="GameMoveDirectionDrawer.cs" t="Include" />
                   <e p="IntReferenceDrawer.cs" t="Include" />
+                  <e p="StatReferenceDrawer.cs" t="Include" />
                   <e p="StringReferenceDrawer.cs" t="Include" />
                   <e p="VariableReferencePropertyDrawer.cs" t="Include" />
                   <e p="Vector2ReferenceDrawer.cs" t="Include" />
@@ -54,11 +63,13 @@
                 <e p="FloatReference.cs" t="Include" />
                 <e p="GameMoveDirectionReference.cs" t="Include" />
                 <e p="IntReference.cs" t="Include" />
+                <e p="StatReference.cs" t="Include" />
                 <e p="StringReference.cs" t="Include" />
                 <e p="VariableReference.cs" t="Include" />
                 <e p="Vector2Reference.cs" t="Include" />
                 <e p="Vector3Reference.cs" t="Include" />
               </e>
+              <e p="StatVariable.cs" t="Include" />
               <e p="StringVariable.cs" t="Include" />
               <e p="VariableBase.cs" t="Include" />
               <e p="Vector2Variable.cs" t="Include" />
@@ -87,9 +98,9 @@
           </e>
           <e p="UI" t="Include">
             <e p="CoolDownTimerDisplay.cs" t="Include" />
-            <e p="DisplayIntVariable.cs" t="Include" />
             <e p="DisplayPlayerLives.cs" t="Include" />
             <e p="GameOverController.cs" t="Include" />
+            <e p="ShieldsSpriteColorChanger.cs" t="Include" />
           </e>
         </e>
       </e>

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5532102979947235761}
   - component: {fileID: 5532102979947235762}
   - component: {fileID: 5532102979947235766}
+  - component: {fileID: 8305535831623169457}
   m_Layer: 0
   m_Name: Player Shield
   m_TagString: Player
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 5532102979947235763}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -72,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 333b0196b7a764df5a7768ead9b69dbc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -119,3 +120,23 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.5
+--- !u!114 &8305535831623169457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5532102979947235763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da1eeaedbae83a64e838310a6a5a46e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shieldHealth:
+    useConstant: 0
+    constantValue:
+      currentValue: 0
+      maxValue: 0
+      valueChanged: {fileID: 0}
+    variable: {fileID: 11400000, guid: 52118a3b354a45f4eace3c6a4f25029b, type: 2}
+  statUpdateEvent: {fileID: 11400000, guid: 63b42c489b3461448852729ae3ef03aa, type: 2}

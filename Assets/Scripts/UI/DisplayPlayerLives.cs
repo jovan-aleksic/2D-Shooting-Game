@@ -7,7 +7,7 @@ public class DisplayPlayerLives : MonoBehaviour
     private Image m_image;
 
     [SerializeField] private Sprite[] sprites;
-    [SerializeField] private IntReference playerLives;
+    [SerializeField] private StatReference playerLives;
 
     /// <summary>
     /// Start is called before the first frame update
@@ -27,7 +27,7 @@ public class DisplayPlayerLives : MonoBehaviour
 
     public void UpdatePlayerLivesDisplay()
     {
-        int livesToDisplay = playerLives.Value;
+        int livesToDisplay = (int) playerLives.Value;
 
         if (livesToDisplay >= sprites.Length)
             livesToDisplay = sprites.Length - 1;

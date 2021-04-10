@@ -329,14 +329,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lives:
     useConstant: 1
-    constantValue: 0
+    constantValue:
+      currentValue: 0
+      maxValue: 0
+      valueChanged: {fileID: 0}
     variable: {fileID: 0}
-  maxLives: 1
-  shield: {fileID: 0}
+  shieldHealth:
+    useConstant: 1
+    constantValue:
+      currentValue: 0
+      maxValue: 0
+      valueChanged: {fileID: 0}
+    variable: {fileID: 0}
   receivesDamageFromTags:
   - Player
   - Player Laser
-  damageReceived: {fileID: 0}
   damagedSoundEffect: {fileID: 0}
   gameObjectDestroyed: {fileID: 11400000, guid: a7ae85abac0bb5a40b3ef90034cab0b2, type: 2}
   explosionVFX: {fileID: 7578308582667034835, guid: a12b6868e604b8f47aeafbf0af8f2007, type: 3}

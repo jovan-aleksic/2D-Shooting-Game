@@ -5,22 +5,14 @@ public class Damageable : MonoBehaviour
 {
     [Header("Lives")]
     [SerializeField]
-    private IntReference lives;
+    private StatReference lives;
 
-    [SerializeField] private int maxLives = 1;
-
-    [Header("Shields")]
-    [SerializeField] private GameObject shield;
-
-    private bool m_hasShields;
-    private bool ShieldActive => m_hasShields && shield.activeInHierarchy;
+    [SerializeField] private StatReference shieldHealth;
 
     [Header("Tags And Events")]
     [Tooltip("The Tags of the game objects that can do damage to this game object.")]
     [SerializeField]
     private string[] receivesDamageFromTags;
-
-    [SerializeField] private GameEvent damageReceived;
 
     [SerializeField] private SoundEffect damagedSoundEffect;
     private bool m_hasDamagedSoundEffect;
@@ -36,9 +28,9 @@ public class Damageable : MonoBehaviour
 
     private void Awake()
     {
-        lives.Value = maxLives;
-
-        m_hasShields = shield != null;
+        //lives.Value = maxLives;
+        lives.ResetStat();
+        shieldHealth.ResetStat();
 
         m_hasDamagedSoundEffect = damagedSoundEffect != null;
 
@@ -61,17 +53,20 @@ public class Damageable : MonoBehaviour
     /// </summary>
     private void Damage()
     {
-        if (ShieldActive)
+        //if (ShieldActive)
+        if (shieldHealth.Value > 0)
         {
-            shield.SetActive(false);
+            //shield.SetActive(false);
+            shieldHealth.Remove(1);
             return;
         }
 
-        lives.Value--;
-        if (damageReceived != null) damageReceived.Raise();
+        //lives.Value--;
+        //if (damageReceived != null) damageReceived.Raise();
+        lives.Remove(1);
         if (m_hasDamagedSoundEffect) damagedSoundEffect.Play();
         if (lives.Value > 0) return;
-        lives.Value = 0;
+        //lives.Value = 0;
 
         if (gameObjectDestroyed != null)
             gameObjectDestroyed.Raise();

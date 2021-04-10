@@ -624,7 +624,7 @@ Transform:
   m_LocalPosition: {x: 0.46, y: -1.76, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
-  - {fileID: 1470586026}
+  - {fileID: 8218337777623333539}
   - {fileID: 353414015}
   - {fileID: 956923324}
   - {fileID: 1331602753}
@@ -783,14 +783,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lives:
     useConstant: 0
-    constantValue: 0
-    variable: {fileID: 11400000, guid: 045210488e2681549a0aaadd69b8903b, type: 2}
-  maxLives: 3
-  shield: {fileID: 1470586025}
+    constantValue:
+      currentValue: 0
+      maxValue: 0
+      valueChanged: {fileID: 0}
+    variable: {fileID: 11400000, guid: f8423857274f8d24285c0d0191d78996, type: 2}
+  shieldHealth:
+    useConstant: 0
+    constantValue:
+      currentValue: 0
+      maxValue: 0
+      valueChanged: {fileID: 0}
+    variable: {fileID: 11400000, guid: 52118a3b354a45f4eace3c6a4f25029b, type: 2}
   receivesDamageFromTags:
   - Enemy
   - Enemy Laser
-  damageReceived: {fileID: 11400000, guid: 39122fe0aa945824d91878fe8a374569, type: 2}
   damagedSoundEffect: {fileID: 1276666983}
   gameObjectDestroyed: {fileID: 11400000, guid: f5458e33557b9bf44bde763793bf952f, type: 2}
   explosionVFX: {fileID: 9147861024262124636, guid: 62c770ca0e9239142a3223671593aa44, type: 3}
@@ -822,8 +829,11 @@ MonoBehaviour:
   movementDirection: {fileID: 11400000, guid: 13213989cec2f98429f933024749a1a0, type: 2}
   lives:
     useConstant: 0
-    constantValue: 0
-    variable: {fileID: 11400000, guid: 045210488e2681549a0aaadd69b8903b, type: 2}
+    constantValue:
+      currentValue: 0
+      maxValue: 0
+      valueChanged: {fileID: 0}
+    variable: {fileID: 11400000, guid: f8423857274f8d24285c0d0191d78996, type: 2}
   rightEngine: {fileID: 956923323}
   leftEngine: {fileID: 1331602752}
   tripleShotPrefab: {fileID: 258579702850520766, guid: 67088ed32846fea4c8e208ff2e689e8f, type: 3}
@@ -846,7 +856,13 @@ MonoBehaviour:
       variable: {fileID: 11400000, guid: 61b4e43e72a8e0b41991e905c7a8830d, type: 2}
   speedBoostPowerUpCollected: {fileID: 11400000, guid: abbbe5030f5ca95409469e430c84e5d6, type: 2}
   shieldPowerUpCollected: {fileID: 11400000, guid: e596806ab4d8afe49b0ed4a1ba2dd563, type: 2}
-  shield: {fileID: 1470586025}
+  shield:
+    useConstant: 0
+    constantValue:
+      currentValue: 0
+      maxValue: 0
+      valueChanged: {fileID: 0}
+    variable: {fileID: 11400000, guid: 52118a3b354a45f4eace3c6a4f25029b, type: 2}
   thrusterSpeedAmount: {x: 0, y: 0.5}
   thrustersVisual: {fileID: 353414014}
 --- !u!114 &1348680711
@@ -1019,7 +1035,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1058948213794313754}
   audioClip: {fileID: 8300000, guid: 75676f361bdfeaf41a46623e95df3dbc, type: 3}
---- !u!1001 &5532102980725495066
+--- !u!1001 &4524038393516782355
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1029,18 +1045,6 @@ PrefabInstance:
     - target: {fileID: 5532102979947235760, guid: a140134777a710b43a9eb23708c81632, type: 3}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5532102979947235760, guid: a140134777a710b43a9eb23708c81632, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5532102979947235760, guid: a140134777a710b43a9eb23708c81632, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5532102979947235760, guid: a140134777a710b43a9eb23708c81632, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5532102979947235760, guid: a140134777a710b43a9eb23708c81632, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1060,15 +1064,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5532102979947235760, guid: a140134777a710b43a9eb23708c81632, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5532102979947235760, guid: a140134777a710b43a9eb23708c81632, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5532102979947235760, guid: a140134777a710b43a9eb23708c81632, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5532102979947235760, guid: a140134777a710b43a9eb23708c81632, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1088,13 +1092,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a140134777a710b43a9eb23708c81632, type: 3}
---- !u!4 &1470586026 stripped
+--- !u!4 &8218337777623333539 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5532102979947235760, guid: a140134777a710b43a9eb23708c81632, type: 3}
-  m_PrefabInstance: {fileID: 5532102980725495066}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1470586025 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5532102979947235763, guid: a140134777a710b43a9eb23708c81632, type: 3}
-  m_PrefabInstance: {fileID: 5532102980725495066}
+  m_PrefabInstance: {fileID: 4524038393516782355}
   m_PrefabAsset: {fileID: 0}

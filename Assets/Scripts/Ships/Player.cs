@@ -9,7 +9,9 @@ public class Player : Ship
     private Vector3Variable movementDirection;
 
     [Header("Receive Damage")]
-    [SerializeField] private IntReference lives;
+    [SerializeField] private StatReference lives;
+
+    private int m_lives;
 
     [SerializeField] private GameObject rightEngine;
     [SerializeField] private GameObject leftEngine;
@@ -46,8 +48,9 @@ public class Player : Ship
 
     private GameEventListener m_shieldEventListener;
 
-    [SerializeField] private GameObject shield;
-    private bool m_hasShields;
+    //[SerializeField] private GameObject shield;
+    [SerializeField] private StatReference shield;
+    //private bool m_hasShields;
 
     [Header("Thrusters")]
     [SerializeField] private Vector2 thrusterSpeedAmount = new Vector2(0, 0.5f);
@@ -66,11 +69,12 @@ public class Player : Ship
     {
         transform.position = new Vector3(bounds.Value.center.x, bounds.Min.y + 0.1f);
 
-        if (shield != null)
-        {
-            m_hasShields = true;
-            shield.SetActive(false);
-        }
+        // if (shield != null)
+        // {
+        //     m_hasShields = true;
+        //     shield.SetActive(false);
+        // }
+        shield.Remove(shield.Max);
 
         m_hasThrustersVisual = thrustersVisual != null;
         if (m_hasThrustersVisual) thrustersVisual.SetActive(false);
@@ -197,7 +201,8 @@ public class Player : Ship
 
     private void ActivateShields()
     {
-        if (m_hasShields) shield.SetActive(true);
+        //if (m_hasShields) shield.SetActive(true);
+        shield.ResetStat();
     }
 
     #endregion
@@ -207,21 +212,23 @@ public class Player : Ship
     public void ReceivedDamage()
     {
         if (!m_hasEngines) return;
+        m_lives = (int) lives.Value;
 
-        if (lives.Value == 2)
+        switch (m_lives)
         {
-            int selectedEngine = Random.Range(0, 100);
-            if (selectedEngine < 50)
-                EnableRightEngine();
-            else
+            case 2:
+                int selectedEngine = Random.Range(0, 100);
+                if (selectedEngine < 50)
+                    EnableRightEngine();
+                else
+                    EnableLeftEngine();
+                break;
+            case 1 when m_rightEngineEnabled:
                 EnableLeftEngine();
-        }
-        else if (lives == 1)
-        {
-            if (m_rightEngineEnabled)
-                EnableLeftEngine();
-            else
+                break;
+            case 1:
                 EnableRightEngine();
+                break;
         }
     }
 
