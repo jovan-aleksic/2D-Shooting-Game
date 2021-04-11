@@ -29,12 +29,16 @@ public class Damageable : MonoBehaviour
     private void Awake()
     {
         //lives.Value = maxLives;
-        lives.ResetStat();
-        shieldHealth.ResetStat();
 
         m_hasDamagedSoundEffect = damagedSoundEffect != null;
 
         m_hasDestroyedSoundEffect = destroyedSoundEffect != null;
+    }
+
+    private void Start()
+    {
+        lives.ResetStat();
+        shieldHealth.ResetStat();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
