@@ -3,11 +3,8 @@ using UnityEngine.Events;
 
 public class Player : Ship
 {
-    [Header("Ammo")]
-    [SerializeField] private StatVariable ammoCount;
-
-    [SerializeField] private GameEvent ammoCollectedPowerUpCollected;
-    private GameEventListener m_ammoEventListener;
+    [Header("Ammo")] [SerializeField] private StatVariable ammoCount;
+    [SerializeField] PowerUp ammoPowerUp;
 
     [Header("Player")]
     [Space(10)]
@@ -25,18 +22,14 @@ public class Player : Ship
     private bool m_rightEngineEnabled, m_leftEngineEnabled, m_hasEngines;
 
     [Header("Heal Power Up")] [SerializeField]
-    private GameEvent lifePowerUpCollected;
-
-    private GameEventListener m_lifeEventListener;
+    private PowerUp lifePowerUp;
 
     [Header("Triple Shot")]
     [SerializeField]
     private GameObject tripleShotPrefab;
 
     [SerializeField] private CoolDownTimer tripleShotActiveTimer;
-
-    [SerializeField] GameEvent tripleShotPowerUpCollected;
-    private GameEventListener m_tripleShotEventListener;
+    [SerializeField] private PowerUp tripleShotPowerUp;
 
     [SerializeField] private SoundEffect tripleShotFireSoundEffect;
     private bool m_hasTripleShotFireSoundEffect;
@@ -48,16 +41,11 @@ public class Player : Ship
 
     [SerializeField] private CoolDownTimer speedBoostActiveTimer;
 
-    [SerializeField] private GameEvent speedBoostPowerUpCollected;
-    private GameEventListener m_speedBoostEventListener;
+    [SerializeField] private PowerUp speedBoostPowerUp;
 
     private float m_boostSpeed;
 
-    [Header("Shields")]
-    [SerializeField]
-    private GameEvent shieldPowerUpCollected;
-
-    private GameEventListener m_shieldEventListener;
+    [Header("Shields")] [SerializeField] private PowerUp shieldPowerUp;
 
     [SerializeField] private StatVariable shield;
 
@@ -104,35 +92,11 @@ public class Player : Ship
     {
         base.Awake();
 
-        m_tripleShotEventListener = gameObject.AddComponent<GameEventListener>();
-        m_tripleShotEventListener.response = new UnityEvent();
-        m_tripleShotEventListener.response.AddListener(ActivateTripleShot);
-        m_tripleShotEventListener.@event = tripleShotPowerUpCollected;
-        m_tripleShotEventListener.@event.RegisterListener(m_tripleShotEventListener);
-
-        m_speedBoostEventListener = gameObject.AddComponent<GameEventListener>();
-        m_speedBoostEventListener.response = new UnityEvent();
-        m_speedBoostEventListener.response.AddListener(ActivateSpeedBoost);
-        m_speedBoostEventListener.@event = speedBoostPowerUpCollected;
-        m_speedBoostEventListener.@event.RegisterListener(m_speedBoostEventListener);
-
-        m_shieldEventListener = gameObject.AddComponent<GameEventListener>();
-        m_shieldEventListener.response = new UnityEvent();
-        m_shieldEventListener.response.AddListener(ActivateShields);
-        m_shieldEventListener.@event = shieldPowerUpCollected;
-        m_shieldEventListener.@event.RegisterListener(m_shieldEventListener);
-
-        m_ammoEventListener = gameObject.AddComponent<GameEventListener>();
-        m_ammoEventListener.response = new UnityEvent();
-        m_ammoEventListener.response.AddListener(AmmoCollected);
-        m_ammoEventListener.@event = ammoCollectedPowerUpCollected;
-        m_ammoEventListener.@event.RegisterListener(m_ammoEventListener);
-
-        m_lifeEventListener = gameObject.AddComponent<GameEventListener>();
-        m_lifeEventListener.response = new UnityEvent();
-        m_lifeEventListener.response.AddListener(LifeCollected);
-        m_lifeEventListener.@event = lifePowerUpCollected;
-        m_lifeEventListener.@event.RegisterListener(m_lifeEventListener);
+        tripleShotPowerUp.Init(gameObject, ActivateTripleShot);
+        speedBoostPowerUp.Init(gameObject, ActivateSpeedBoost);
+        shieldPowerUp.Init(gameObject, ActivateShields);
+        ammoPowerUp.Init(gameObject, AmmoCollected);
+        lifePowerUp.Init(gameObject, LifeCollected);
     }
 
     /// <inheritdoc />

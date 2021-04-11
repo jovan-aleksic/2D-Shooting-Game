@@ -827,12 +827,14 @@ MonoBehaviour:
       variable: {fileID: 0}
   laserSoundEffect: {fileID: 8499039124094971228}
   ammoCount: {fileID: 11400000, guid: 6b8bfe7f20b227c47b4995531730a5cd, type: 2}
-  ammoCollectedPowerUpCollected: {fileID: 11400000, guid: d55c1b23e811a4e4a8a22cd5065a02db, type: 2}
+  ammoPowerUp:
+    powerUpCollectedEvent: {fileID: 11400000, guid: d55c1b23e811a4e4a8a22cd5065a02db, type: 2}
   movementDirection: {fileID: 11400000, guid: 13213989cec2f98429f933024749a1a0, type: 2}
   lives: {fileID: 11400000, guid: f8423857274f8d24285c0d0191d78996, type: 2}
   rightEngine: {fileID: 956923323}
   leftEngine: {fileID: 1331602752}
-  lifePowerUpCollected: {fileID: 11400000, guid: d575cf9496d1700439fb931115a85462, type: 2}
+  lifePowerUp:
+    powerUpCollectedEvent: {fileID: 11400000, guid: d575cf9496d1700439fb931115a85462, type: 2}
   tripleShotPrefab: {fileID: 258579702850520766, guid: 67088ed32846fea4c8e208ff2e689e8f, type: 3}
   tripleShotActiveTimer:
     minCoolDownTime: 5
@@ -841,7 +843,8 @@ MonoBehaviour:
       useConstant: 0
       constantValue: 0
       variable: {fileID: 11400000, guid: 58cca5a0bb177404794937301b3f1f9a, type: 2}
-  tripleShotPowerUpCollected: {fileID: 11400000, guid: c615448c406a27640b86f2357bd5fc99, type: 2}
+  tripleShotPowerUp:
+    powerUpCollectedEvent: {fileID: 11400000, guid: c615448c406a27640b86f2357bd5fc99, type: 2}
   tripleShotFireSoundEffect: {fileID: 6791659384128617021}
   boostSpeedAmount: 5
   speedBoostActiveTimer:
@@ -851,8 +854,10 @@ MonoBehaviour:
       useConstant: 0
       constantValue: 0
       variable: {fileID: 11400000, guid: 61b4e43e72a8e0b41991e905c7a8830d, type: 2}
-  speedBoostPowerUpCollected: {fileID: 11400000, guid: abbbe5030f5ca95409469e430c84e5d6, type: 2}
-  shieldPowerUpCollected: {fileID: 11400000, guid: e596806ab4d8afe49b0ed4a1ba2dd563, type: 2}
+  speedBoostPowerUp:
+    powerUpCollectedEvent: {fileID: 11400000, guid: abbbe5030f5ca95409469e430c84e5d6, type: 2}
+  shieldPowerUp:
+    powerUpCollectedEvent: {fileID: 11400000, guid: e596806ab4d8afe49b0ed4a1ba2dd563, type: 2}
   shield: {fileID: 11400000, guid: 52118a3b354a45f4eace3c6a4f25029b, type: 2}
   thrusterSpeedAmount: {x: 0, y: 0.5}
   thrustersVisual: {fileID: 353414014}

@@ -25,8 +25,8 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="CoolDownTimer.cs" t="Include" />
           <e p="Core" t="Include">
+            <e p="CoolDownTimer.cs" t="Include" />
             <e p="Events" t="Include">
               <e p="Editor" t="Include">
                 <e p="GameEventEditor.cs" t="Include" />

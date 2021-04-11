@@ -9,7 +9,6 @@ using Random = UnityEngine.Random;
 [System.Serializable]
 public class CoolDownTimer
 {
-    //public float coolDownTime = 0.5f;
     private float m_coolDownTime;
 
     public float minCoolDownTime = 0.5f;
