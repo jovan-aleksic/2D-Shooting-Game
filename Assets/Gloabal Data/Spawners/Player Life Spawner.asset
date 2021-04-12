@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a035949cacdc94e4eada800369d38197, type: 3}
   m_Name: Player Life Spawner
   m_EditorClassIdentifier: 
-  timeToWaitBeforeStarting: 2
-  spawnTime: 3
+  timeToWaitBeforeStarting: 30
+  spawnTime: 30
   prefabToSpawn: {fileID: 5134466739339906033, guid: 56a8f167faac0be40a64c9bbc5ae6336, type: 3}
   playerLives:
     useConstant: 0

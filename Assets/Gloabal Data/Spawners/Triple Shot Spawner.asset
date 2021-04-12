@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a035949cacdc94e4eada800369d38197, type: 3}
   m_Name: Triple Shot Spawner
   m_EditorClassIdentifier: 
-  timeToWaitBeforeStarting: 4
-  spawnTime: 4
+  timeToWaitBeforeStarting: 5
+  spawnTime: 5
   prefabToSpawn: {fileID: 6498381912734358968, guid: 95d36931695de9b4fa1a16c30f1eedb3, type: 3}
   playerLives:
     useConstant: 0

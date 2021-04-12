@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a035949cacdc94e4eada800369d38197, type: 3}
   m_Name: Ammo Power Up Spawner
   m_EditorClassIdentifier: 
-  timeToWaitBeforeStarting: 2
-  spawnTime: 3
+  timeToWaitBeforeStarting: 6
+  spawnTime: 10
   prefabToSpawn: {fileID: 960376801043413193, guid: 78222119364a17f499eeadde7bab9467, type: 3}
   playerLives:
     useConstant: 0
