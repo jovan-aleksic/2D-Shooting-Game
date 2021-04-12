@@ -87,5 +87,9 @@ PrefabInstance:
       propertyPath: receivesDamageFromTags.Array.data[0]
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8746462477404352253, guid: 34090716b58dc8247bc008f88e0cea05, type: 3}
+      propertyPath: gameMoveDirection.variable
+      value: 
+      objectReference: {fileID: 11400000, guid: 516083d7ea62c974a88ba28da36e6310, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34090716b58dc8247bc008f88e0cea05, type: 3}
