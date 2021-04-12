@@ -86,6 +86,7 @@
           <e p="Moveable.cs" t="Include" />
           <e p="PowerUp.cs" t="Include" />
           <e p="RotateGameObject.cs" t="Include" />
+          <e p="SeekTarget.cs" t="Include" />
           <e p="Ships" t="Include">
             <e p="Enemy.cs" t="Include" />
             <e p="Player.cs" t="Include" />

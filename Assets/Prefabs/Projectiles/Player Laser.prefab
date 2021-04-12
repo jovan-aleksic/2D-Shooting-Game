@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 5584364510603567425}
   - component: {fileID: 4804011192232508695}
   - component: {fileID: 5328251300871117545}
-  - component: {fileID: 4982759971759795760}
   - component: {fileID: 6974911498107431617}
+  - component: {fileID: 8746462477404352253}
   m_Layer: 0
   m_Name: Player Laser
   m_TagString: Player Laser
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 5998387708844339617}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b030d335857201646be69703e678d6e5, type: 3}
-  m_Color: {r: 0, g: 1, b: 0.6697538, a: 1}
+  m_Color: {r: 0.35217452, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -101,31 +101,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.5, y: 3}
   m_Direction: 0
---- !u!114 &4982759971759795760
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5998387708844339617}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d71e7d99072b9a48a6995ddf927567c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementSpeed: 8
-  gameMoveDirection:
-    useConstant: 0
-    constantValue: 1
-    variable: {fileID: 11400000, guid: 8f6290431b4c99e4a823ad688e91837c, type: 2}
-  moveDirection:
-    useConstant: 1
-    constantValue: {x: 0, y: 0, z: 0}
-    variable: {fileID: 0}
-  bounds: {fileID: 11400000, guid: 0ce5d6c5dc2700a4ca5913afe4ee2c11, type: 2}
-  outOfBoundsEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &6974911498107431617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140,12 +115,46 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lives:
     useConstant: 1
-    constantValue: 0
+    constantValue:
+      currentValue: 0
+      maxValue: 0
+      valueChanged: {fileID: 0}
     variable: {fileID: 0}
-  maxLives: 1
-  shield: {fileID: 0}
+  shieldHealth:
+    useConstant: 1
+    constantValue:
+      currentValue: 0
+      maxValue: 0
+      valueChanged: {fileID: 0}
+    variable: {fileID: 0}
   receivesDamageFromTags:
   - Enemy
-  damageReceived: {fileID: 0}
+  damagedSoundEffect: {fileID: 0}
   gameObjectDestroyed: {fileID: 0}
-  deathTime: 0
+  explosionVFX: {fileID: 0}
+  destroyedSoundEffect: {fileID: 0}
+--- !u!114 &8746462477404352253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5998387708844339617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d71e7d99072b9a48a6995ddf927567c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 4
+  gameMoveDirection:
+    useConstant: 0
+    constantValue: 0
+    variable: {fileID: 11400000, guid: 8f6290431b4c99e4a823ad688e91837c, type: 2}
+  moveDirection:
+    useConstant: 1
+    constantValue: {x: 0, y: 0, z: 0}
+    variable: {fileID: 0}
+  bounds: {fileID: 11400000, guid: 0ce5d6c5dc2700a4ca5913afe4ee2c11, type: 2}
+  outOfBoundsEvent:
+    m_PersistentCalls:
+      m_Calls: []

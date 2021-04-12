@@ -234,7 +234,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5626883672520933530}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1276666984
 AudioSource:
@@ -448,6 +448,148 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &1669871543242056599
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3479679503184654841}
+  - component: {fileID: 2036411365225395228}
+  - component: {fileID: 723687327940459979}
+  m_Layer: 0
+  m_Name: Homming Laser Sound Effect
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3479679503184654841
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669871543242056599}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5626883672520933530}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &2036411365225395228
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669871543242056599}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 3
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &723687327940459979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669871543242056599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8a4423b654c5b443b5b8ff5fc663b16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 2036411365225395228}
+  audioClip: {fileID: 8300000, guid: 75676f361bdfeaf41a46623e95df3dbc, type: 3}
 --- !u!1 &5027588676223678251
 GameObject:
   m_ObjectHideFlags: 0
@@ -630,6 +772,7 @@ Transform:
   - {fileID: 1331602753}
   - {fileID: 2327367566533186524}
   - {fileID: 8906518940605382700}
+  - {fileID: 3479679503184654841}
   - {fileID: 1276666985}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -822,9 +965,9 @@ MonoBehaviour:
     minCoolDownTime: 0.5
     maxCoolDownTime: 0.5
     percentageCompleted:
-      useConstant: 1
+      useConstant: 0
       constantValue: 0
-      variable: {fileID: 0}
+      variable: {fileID: 11400000, guid: 351635030ca14cf4d8b81a14e6c66451, type: 2}
   laserSoundEffect: {fileID: 8499039124094971228}
   ammoCount: {fileID: 11400000, guid: 6b8bfe7f20b227c47b4995531730a5cd, type: 2}
   ammoPowerUp:
@@ -835,10 +978,13 @@ MonoBehaviour:
   leftEngine: {fileID: 1331602752}
   lifePowerUp:
     powerUpCollectedEvent: {fileID: 11400000, guid: d575cf9496d1700439fb931115a85462, type: 2}
+  shieldPowerUp:
+    powerUpCollectedEvent: {fileID: 11400000, guid: e596806ab4d8afe49b0ed4a1ba2dd563, type: 2}
+  shield: {fileID: 11400000, guid: 52118a3b354a45f4eace3c6a4f25029b, type: 2}
   tripleShotPrefab: {fileID: 258579702850520766, guid: 67088ed32846fea4c8e208ff2e689e8f, type: 3}
   tripleShotActiveTimer:
     minCoolDownTime: 5
-    maxCoolDownTime: 5.1
+    maxCoolDownTime: 5
     percentageCompleted:
       useConstant: 0
       constantValue: 0
@@ -846,6 +992,17 @@ MonoBehaviour:
   tripleShotPowerUp:
     powerUpCollectedEvent: {fileID: 11400000, guid: c615448c406a27640b86f2357bd5fc99, type: 2}
   tripleShotFireSoundEffect: {fileID: 6791659384128617021}
+  homingLaserPrefab: {fileID: 8677763669795193147, guid: cb5bce7468ac90e4aa86f464449e1d20, type: 3}
+  homingLaserActiveTimer:
+    minCoolDownTime: 5
+    maxCoolDownTime: 5
+    percentageCompleted:
+      useConstant: 0
+      constantValue: 0
+      variable: {fileID: 11400000, guid: bf141a996ee1e1a4f9b350cbfd5eca49, type: 2}
+  homingLaserPowerUp:
+    powerUpCollectedEvent: {fileID: 11400000, guid: 411b2f2cf93f3b742a515ae5ea6d17d2, type: 2}
+  homingLaserFireSoundEffect: {fileID: 723687327940459979}
   boostSpeedAmount: 5
   speedBoostActiveTimer:
     minCoolDownTime: 5
@@ -856,9 +1013,6 @@ MonoBehaviour:
       variable: {fileID: 11400000, guid: 61b4e43e72a8e0b41991e905c7a8830d, type: 2}
   speedBoostPowerUp:
     powerUpCollectedEvent: {fileID: 11400000, guid: abbbe5030f5ca95409469e430c84e5d6, type: 2}
-  shieldPowerUp:
-    powerUpCollectedEvent: {fileID: 11400000, guid: e596806ab4d8afe49b0ed4a1ba2dd563, type: 2}
-  shield: {fileID: 11400000, guid: 52118a3b354a45f4eace3c6a4f25029b, type: 2}
   thrusterSpeedAmount: {x: 0, y: 0.5}
   thrustersVisual: {fileID: 353414014}
 --- !u!114 &1348680711

@@ -9,10 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af75e17988e478345bc8a3d632e130dc, type: 3}
-  m_Name: Player Ammo
+  m_Script: {fileID: 11500000, guid: fd179c199d8751d46b9d1c814999fb12, type: 3}
+  m_Name: Homing Laser Collected
   m_EditorClassIdentifier: 
-  variableValue:
-    currentValue: 15
-    maxValue: 15
-    valueChanged: {fileID: 11400000, guid: 55ecb146cc0aec14998799bd3893e5ef, type: 2}

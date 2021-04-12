@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -14,5 +15,8 @@ public class GameManager : MonoBehaviour
                 Application.Quit();
             #endif
         }
+        
+        if (Input.GetKeyDown(KeyCode.R))
+            SceneManager.LoadScene(1);
     }
 }

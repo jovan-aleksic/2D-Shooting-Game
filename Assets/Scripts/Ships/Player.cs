@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.Events;
 
 public class Player : Ship
 {
@@ -24,15 +23,32 @@ public class Player : Ship
     [Header("Heal Power Up")] [SerializeField]
     private PowerUp lifePowerUp;
 
+    [Header("Shields")] [SerializeField] private PowerUp shieldPowerUp;
+
+    [SerializeField] private StatVariable shield;
+
     [Header("Triple Shot")]
     [SerializeField]
     private GameObject tripleShotPrefab;
+
+    private bool m_hasTripleShotPrefab;
 
     [SerializeField] private CoolDownTimer tripleShotActiveTimer;
     [SerializeField] private PowerUp tripleShotPowerUp;
 
     [SerializeField] private SoundEffect tripleShotFireSoundEffect;
     private bool m_hasTripleShotFireSoundEffect;
+
+    [Header("Homing Laser")] [SerializeField]
+    private GameObject homingLaserPrefab;
+
+    [SerializeField] private CoolDownTimer homingLaserActiveTimer;
+
+    private bool m_hasHomingLaserPrefab;
+    [SerializeField] private PowerUp homingLaserPowerUp;
+
+    [SerializeField] private SoundEffect homingLaserFireSoundEffect;
+    private bool m_hasHomingLaserFireSoundEffect;
 
     [Header("Speed Boost")]
     [SerializeField]
@@ -45,12 +61,9 @@ public class Player : Ship
 
     private float m_boostSpeed;
 
-    [Header("Shields")] [SerializeField] private PowerUp shieldPowerUp;
-
-    [SerializeField] private StatVariable shield;
-
     [Header("Thrusters")]
-    [SerializeField] private Vector2 thrusterSpeedAmount = new Vector2(0, 0.5f);
+    [SerializeField]
+    private Vector2 thrusterSpeedAmount = new Vector2(0, 0.5f);
 
     private Vector2 m_thrusterSpeed = Vector2.zero;
     [SerializeField] private GameObject thrustersVisual;
@@ -74,6 +87,9 @@ public class Player : Ship
         if (m_hasThrustersVisual) thrustersVisual.SetActive(false);
 
         m_hasTripleShotFireSoundEffect = tripleShotFireSoundEffect != null;
+        m_hasTripleShotPrefab = tripleShotPrefab != null;
+        m_hasHomingLaserFireSoundEffect = homingLaserFireSoundEffect != null;
+        m_hasHomingLaserPrefab = homingLaserPrefab != null;
 
         if (rightEngine == null || leftEngine == null)
             return;
@@ -93,6 +109,7 @@ public class Player : Ship
         base.Awake();
 
         tripleShotPowerUp.Init(gameObject, ActivateTripleShot);
+        homingLaserPowerUp.Init(gameObject, ActivateHomingLaser);
         speedBoostPowerUp.Init(gameObject, ActivateSpeedBoost);
         shieldPowerUp.Init(gameObject, ActivateShields);
         ammoPowerUp.Init(gameObject, AmmoCollected);
@@ -120,17 +137,46 @@ public class Player : Ship
 
         ammoCount.Remove(1);
 
-        if (!tripleShotActiveTimer.IsActive || tripleShotPrefab == null)
+        if (!tripleShotActiveTimer.IsActive && !homingLaserActiveTimer.IsActive ||
+            !m_hasTripleShotPrefab && !m_hasHomingLaserPrefab)
         {
             base.FireLaser();
             return;
         }
 
-        StartCoroutine(fireDelayTimer.CoolDown());
-        Instantiate(tripleShotPrefab, transform.position + laserOffset, Quaternion.identity, projectileContainer);
+        if (tripleShotActiveTimer.IsActive)
+        {
+            if (m_hasTripleShotPrefab)
+            {
+                StartCoroutine(fireDelayTimer.CoolDown());
+                Instantiate(tripleShotPrefab, transform.position + laserOffset, Quaternion.identity,
+                            projectileContainer);
+                if (m_hasTripleShotFireSoundEffect)
+                    tripleShotFireSoundEffect.Play();
+            }
+            else if (!homingLaserActiveTimer.IsActive)
+            {
+                base.FireLaser();
+                return;
+            }
+        }
 
-        if (m_hasTripleShotFireSoundEffect)
-            tripleShotFireSoundEffect.Play();
+        if (homingLaserActiveTimer.IsActive)
+        {
+            if (m_hasHomingLaserPrefab)
+            {
+                StartCoroutine(fireDelayTimer.CoolDown());
+                Instantiate(homingLaserPrefab, transform.position + laserOffset, Quaternion.identity,
+                            projectileContainer);
+                if (m_hasHomingLaserFireSoundEffect)
+                    homingLaserFireSoundEffect.Play();
+            }
+            else if (!tripleShotActiveTimer.IsActive)
+            {
+                base.FireLaser();
+                return;
+            }
+        }
     }
 
     #endregion
@@ -177,6 +223,11 @@ public class Player : Ship
     private void ActivateTripleShot()
     {
         StartCoroutine(tripleShotActiveTimer.CoolDown());
+    }
+
+    private void ActivateHomingLaser()
+    {
+        StartCoroutine(homingLaserActiveTimer.CoolDown());
     }
 
     private void ActivateSpeedBoost()
