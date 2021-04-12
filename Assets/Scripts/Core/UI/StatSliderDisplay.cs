@@ -13,6 +13,9 @@ public class StatSliderDisplay : MonoBehaviour
 
     GameEventListener m_statUpdateGameEventListener;
 
+    public Gradient gradient;
+    public Image fill;
+
     private void Start()
     {
         m_slider = GetComponent<Slider>();
@@ -29,5 +32,6 @@ public class StatSliderDisplay : MonoBehaviour
     {
         m_slider.maxValue = stat.Max;
         m_slider.value = stat.Value;
+        fill.color = gradient.Evaluate(m_slider.normalizedValue);
     }
 }

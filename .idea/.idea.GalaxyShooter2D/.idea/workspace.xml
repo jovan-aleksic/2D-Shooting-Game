@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be36d944-fe34-41b0-b054-b6cd290abc4a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Spawn Manager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Spawn Manager.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/UI/StatSliderDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/UI/StatSliderDisplay.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +40,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/CoolDownTimerDisplay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Explosion.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Gloabal Data/Spawners/Enemy Astroid Spawner.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Scripts/MeterScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/BoundsVariable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawners/Spawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/GameMoveDirectionEnum.cs" root0="FORCE_HIGHLIGHTING" />
@@ -79,6 +78,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/SeekTarget.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/DisplayPlayerLives.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Scripts/MeterScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/UI/StatSliderDisplay.cs" />
       </list>
     </option>
   </component>
@@ -139,7 +140,7 @@
       <workItem from="1615933582910" duration="9380000" />
       <workItem from="1617853082402" duration="19753000" />
       <workItem from="1618034569210" duration="16494000" />
-      <workItem from="1618109714293" duration="34876000" />
+      <workItem from="1618109714293" duration="35634000" />
     </task>
     <servers />
   </component>

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Player Ammo
   m_EditorClassIdentifier: 
   variableValue:
-    currentValue: 15
+    currentValue: 4
     maxValue: 15
     valueChanged: {fileID: 11400000, guid: 55ecb146cc0aec14998799bd3893e5ef, type: 2}

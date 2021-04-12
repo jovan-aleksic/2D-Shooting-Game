@@ -104,6 +104,15 @@
             <e p="ShieldsSpriteColorChanger.cs" t="Include" />
           </e>
         </e>
+        <e p="UI Meters" t="Include">
+          <e p="ElementalMeters" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="MeterButtons.cs" t="Include" />
+              <e p="MeterScript.cs" t="Include" />
+              <e p="PlayerController.cs" t="Include" />
+            </e>
+          </e>
+        </e>
       </e>
       <e p="GalaxyShooter2D.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
