@@ -3,31 +3,46 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
-    public List<Spawner> spawners = new List<Spawner>();
+    public List<Spawner> enemySpawners = new List<Spawner>();
 
-    public List<Transform> gameObjectContainers = new List<Transform>();
+    public List<Spawner> powerUpSpawners = new List<Spawner>();
+
+    public Transform enemyContainer;
+    public Transform powerUpContainer;
 
     private void Start()
     {
-        if (gameObjectContainers.Count < spawners.Count)
+        if (enemyContainer == null && enemySpawners.Count > 0)
         {
-            Debug.LogError("There are more spawners then there are containers." +
-                           "Please ensure that the is a container for each spawner");
+            Debug.LogError("There is no container to spawn Enemies in. Please Add one in the Inspector!", this);
         }
 
-        foreach (Spawner spawner in spawners)
+        foreach (Spawner enemySpawner in enemySpawners)
         {
-            spawner.InitSpawner();
+            enemySpawner.InitSpawner();
+        }
+
+        if (powerUpContainer == null && powerUpSpawners.Count > 0)
+        {
+            Debug.LogError("There is no container to spawn Power Ups in. Please Add one in the Inspector!", this);
+        }
+
+        foreach (Spawner powerUpSpawner in powerUpSpawners)
+        {
+            powerUpSpawner.InitSpawner();
         }
     }
 
     public void StartSpawning()
     {
-        int i = 0;
-        foreach (Spawner spawner in spawners)
+        foreach (Spawner enemySpawner in enemySpawners)
         {
-            spawner.spawnRoutine = StartCoroutine(spawner.SpawnRoutine(gameObjectContainers[i]));
-            i++;
+            enemySpawner.spawnRoutine = StartCoroutine(enemySpawner.SpawnRoutine(enemyContainer));
+        }
+
+        foreach (Spawner powerUpSpawner in powerUpSpawners)
+        {
+            powerUpSpawner.spawnRoutine = StartCoroutine(powerUpSpawner.SpawnRoutine(powerUpContainer));
         }
     }
 }
