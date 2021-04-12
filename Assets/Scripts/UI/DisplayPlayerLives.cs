@@ -9,13 +9,13 @@ public class DisplayPlayerLives : MonoBehaviour
     [SerializeField] private Sprite[] sprites;
     [SerializeField] private StatReference playerLives;
 
-    /// <summary>
-    /// Start is called before the first frame update
-    /// </summary>
-    private void Start()
+    private void Awake()
     {
         m_image = GetComponent<Image>();
+    }
 
+    private void Start()
+    {
         if (sprites == null || sprites.Length < 1)
         {
             gameObject.SetActive(false);
