@@ -70,6 +70,8 @@ public class Player : Ship
 
     private bool m_hasThrustersVisual;
 
+    [SerializeField] private DischargeRechargeTimer thrusterUsageTimer;
+
     #region Unity Methods
 
     /// <summary>
@@ -78,6 +80,8 @@ public class Player : Ship
     private void Start()
     {
         transform.position = new Vector3(bounds.Value.center.x, bounds.Min.y + 0.1f);
+
+        thrusterUsageTimer.InitTimer(this);
 
         ammoCount.ResetStat();
 
@@ -186,14 +190,29 @@ public class Player : Ship
     /// </summary>
     private void SetMoveDirection()
     {
-        if (Input.GetButtonDown("Fire3"))
+        // If the Fire 3 button was pressed this frame
+        if (Input.GetButtonDown("Fire3") && thrusterUsageTimer.CanDischarge)
         {
+            thrusterUsageTimer.StartDischarging();
             if (m_hasThrustersVisual) thrustersVisual.SetActive(true);
             m_thrusterSpeed = thrusterSpeedAmount;
         }
 
+        // If the Fire 3 Button is being held down this frame
+        if (Input.GetButton("Fire3"))
+        {
+            if (!thrusterUsageTimer.CanDischarge)
+            {
+                if (m_hasThrustersVisual) thrustersVisual.SetActive(false);
+                m_thrusterSpeed = Vector2.zero;
+                thrusterUsageTimer.StartRecharging();
+            }
+        }
+
+        // If the Fire 3 Button was released this frame
         if (Input.GetButtonUp("Fire3"))
         {
+            thrusterUsageTimer.StartRecharging();
             if (m_hasThrustersVisual) thrustersVisual.SetActive(false);
             m_thrusterSpeed = Vector2.zero;
         }
