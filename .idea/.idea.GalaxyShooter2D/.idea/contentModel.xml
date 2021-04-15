@@ -25,6 +25,9 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="Camera" t="Include">
+            <e p="CameraScreenBounds.cs" t="Include" />
+          </e>
           <e p="Core" t="Include">
             <e p="CoolDownTimer.cs" t="Include" />
             <e p="Events" t="Include">

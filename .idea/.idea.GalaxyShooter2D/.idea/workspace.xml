@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="be36d944-fe34-41b0-b054-b6cd290abc4a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ships/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ships/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/CoolDownTimerDisplay.cs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +50,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/GameMoveDirectionEnum.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/StatVariable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/StatReferenceDrawer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Camera/CameraScreenBounds.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Moveable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/UI/StatSliderDisplay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -90,6 +89,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UsageTimer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ships/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DischargeRechargeTimer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Camera/SetScreenBounds.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Moveable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraScreenBounds.cs" />
       </list>
     </option>
   </component>
@@ -151,6 +153,7 @@
       <workItem from="1617853082402" duration="19753000" />
       <workItem from="1618034569210" duration="16494000" />
       <workItem from="1618109714293" duration="59075000" />
+      <workItem from="1618453659014" duration="5427000" />
     </task>
     <servers />
   </component>
