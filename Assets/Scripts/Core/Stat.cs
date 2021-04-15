@@ -9,6 +9,8 @@ public class Stat
     [SerializeField] private float maxValue;
 
     [SerializeField] private GameEvent valueChanged;
+    [SerializeField] private GameEvent valueIncreased; // Added
+    [SerializeField] private GameEvent valueDecreased; // Added
 
     public float Value => currentValue;
 
@@ -17,19 +19,25 @@ public class Stat
     public void Add(float amount)
     {
         currentValue = Math.Min(currentValue + amount, maxValue);
-        RaiseEvent();
+        //RaiseEvent();
+        RaiseChangeEvent(); // Changed
+        RaiseIncreaseEvent(); // Added
     }
 
     public void Remove(float amount)
     {
         currentValue = Math.Max(currentValue - amount, 0);
-        RaiseEvent();
+        //RaiseEvent();
+        RaiseChangeEvent();   // Changed
+        RaiseDecreaseEvent(); // Added
     }
 
     public void ResetStat()
     {
         currentValue = maxValue;
-        RaiseEvent();
+        //RaiseEvent();
+        RaiseChangeEvent();   // Changed
+        RaiseIncreaseEvent(); // Added
     }
 
     public void ChangeMax(float amount)
@@ -37,11 +45,27 @@ public class Stat
         float amountToAdd = amount - maxValue;
         maxValue = amount;
         currentValue = Math.Min(currentValue + amountToAdd, maxValue);
-        RaiseEvent();
+        //RaiseEvent();
+        RaiseChangeEvent();   // Changed
+        if (amountToAdd > 0) // Added
+            RaiseIncreaseEvent(); // Added
+        else if (amountToAdd < 0) // Added
+            RaiseDecreaseEvent(); // Added
     }
 
-    private void RaiseEvent()
+    //private void RaiseEvent()
+    private void RaiseChangeEvent()
     {
         if (valueChanged != null) valueChanged.Raise();
+    }
+
+    private void RaiseIncreaseEvent() // Added
+    {
+        if (valueIncreased != null) valueIncreased.Raise();
+    }
+
+    private void RaiseDecreaseEvent() // Added
+    {
+        if (valueDecreased != null) valueDecreased.Raise();
     }
 }

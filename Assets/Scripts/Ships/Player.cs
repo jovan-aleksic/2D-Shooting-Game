@@ -1,9 +1,10 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Player : Ship
 {
     [Header("Ammo")] [SerializeField] private StatVariable ammoCount;
-    [SerializeField] PowerUp ammoPowerUp;
+    [SerializeField] CodedGameEventListener ammoPowerUp;
 
     [Header("Player")]
     [Space(10)]
@@ -21,9 +22,9 @@ public class Player : Ship
     private bool m_rightEngineEnabled, m_leftEngineEnabled, m_hasEngines;
 
     [Header("Heal Power Up")] [SerializeField]
-    private PowerUp lifePowerUp;
+    private CodedGameEventListener lifePowerUp;
 
-    [Header("Shields")] [SerializeField] private PowerUp shieldPowerUp;
+    [Header("Shields")] [SerializeField] private CodedGameEventListener shieldPowerUp;
 
     [SerializeField] private StatVariable shield;
 
@@ -34,7 +35,7 @@ public class Player : Ship
     private bool m_hasTripleShotPrefab;
 
     [SerializeField] private CoolDownTimer tripleShotActiveTimer;
-    [SerializeField] private PowerUp tripleShotPowerUp;
+    [SerializeField] private CodedGameEventListener tripleShotPowerUp;
 
     [SerializeField] private SoundEffect tripleShotFireSoundEffect;
     private bool m_hasTripleShotFireSoundEffect;
@@ -45,7 +46,7 @@ public class Player : Ship
     [SerializeField] private CoolDownTimer homingLaserActiveTimer;
 
     private bool m_hasHomingLaserPrefab;
-    [SerializeField] private PowerUp homingLaserPowerUp;
+    [SerializeField] private CodedGameEventListener homingLaserPowerUp;
 
     [SerializeField] private SoundEffect homingLaserFireSoundEffect;
     private bool m_hasHomingLaserFireSoundEffect;
@@ -57,7 +58,7 @@ public class Player : Ship
 
     [SerializeField] private CoolDownTimer speedBoostActiveTimer;
 
-    [SerializeField] private PowerUp speedBoostPowerUp;
+    [SerializeField] private CodedGameEventListener speedBoostPowerUp;
 
     private float m_boostSpeed;
 

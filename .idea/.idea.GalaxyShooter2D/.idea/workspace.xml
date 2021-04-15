@@ -3,9 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="be36d944-fe34-41b0-b054-b6cd290abc4a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gloabal Data/Player/Player Lives.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gloabal Data/Player/Player Lives.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Stat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Stat.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PowerUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Events/CodedGameEventListener.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ships/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ships/Player.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +23,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ships/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/VariableReference.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/PositionHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Camera/CameraShake.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ships/Ship.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/UI/FloatSliderDisplay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/VariableReferencePropertyDrawer.cs" root0="FORCE_HIGHLIGHTING" />
@@ -27,14 +32,16 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Events/Editor/GameEventEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/CoolDownTimer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/GameMoveDirectionReference.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Game.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Ships/Player.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DestroyNoChildren.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/VariableBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///C# Console" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/IntVariable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SoundEffect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SeekTarget.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PowerUp.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Events/CodedGameEventListener.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Prefabs/UI/Tripple Shot Slider.prefab" root0="FORCE_HIGHLIGHTING" />
@@ -56,6 +63,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Events/GameEventListener.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ShieldsSpriteColorChanger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///C# Console" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DischargeRechargeTimer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/IntReferenceDrawer.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -66,7 +74,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Events/Editor/GameEventEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Stat.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/StatReferenceDrawer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Stat.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Shield Health Display.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/StatSliderDisplay.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ShieldsDisplay.cs" />
@@ -77,7 +84,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Variables/StatVariable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/VariableReferencePropertyDrawer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Damageable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PowerUp.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/CoolDownTimer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SeekTarget.cs" />
@@ -87,11 +93,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/UI/StatSliderDisplay.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/UI/FloatSliderDisplay.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UsageTimer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Ships/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DischargeRechargeTimer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera/SetScreenBounds.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Moveable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraScreenBounds.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PowerUp.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Events/CodedGameEventListener.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ships/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Stat.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraShake.cs" />
       </list>
     </option>
   </component>
@@ -153,7 +163,7 @@
       <workItem from="1617853082402" duration="19753000" />
       <workItem from="1618034569210" duration="16494000" />
       <workItem from="1618109714293" duration="59075000" />
-      <workItem from="1618453659014" duration="5427000" />
+      <workItem from="1618453659014" duration="21848000" />
     </task>
     <servers />
   </component>
