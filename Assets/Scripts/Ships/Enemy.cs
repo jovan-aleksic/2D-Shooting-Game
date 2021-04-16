@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class Enemy : Ship
@@ -11,13 +10,8 @@ public class Enemy : Ship
 
     private Vector3Reference m_moveDirection;
 
-    [Range(0, 1)]
-    [SerializeField]
-    private float moveDirectionAmplitude = 1f;
-
-    [Range(0, 1)]
-    [SerializeField]
-    private float moveDirectionFrequency = 1f;
+    private float m_amplitude = 1f;
+    private float m_frequency = 1f;
 
     #region Overrides of Ship
 
@@ -47,6 +41,18 @@ public class Enemy : Ship
     }
 
     #endregion
+
+    private void Start()
+    {
+        RandomizeMoveDirection();
+    }
+
+    private void RandomizeMoveDirection()
+    {
+        Vector2 randomValue = Random.insideUnitCircle;
+        m_amplitude = Mathf.Abs(randomValue.x);
+        m_frequency = Mathf.Abs(randomValue.y);
+    }
 
     public void OutOfBoundsAction()
     {
@@ -83,6 +89,8 @@ public class Enemy : Ship
                 break;
             }
         }
+
+        RandomizeMoveDirection();
     }
 
     /// <summary>
@@ -93,17 +101,17 @@ public class Enemy : Ship
         float x = m_moveDirection.Value.x;
         float y = m_moveDirection.Value.y;
         float z = m_moveDirection.Value.z;
-        float t = Time.time * moveDirectionFrequency;
+        float t = Time.time * m_frequency;
 
         switch (gameMoveDirectionVariable.Value)
         {
             case GameMoveDirectionEnum.TopToBottom:
             case GameMoveDirectionEnum.BottomToTop:
-                x = Mathf.Cos(t) * moveDirectionAmplitude;
+                x = Mathf.Cos(t) * m_amplitude;
                 break;
             case GameMoveDirectionEnum.LeftToRight:
             case GameMoveDirectionEnum.RightToLeft:
-                y = Mathf.Sin(t) * moveDirectionAmplitude;
+                y = Mathf.Sin(t) * m_amplitude;
                 break;
         }
 
