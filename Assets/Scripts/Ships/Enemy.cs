@@ -11,6 +11,8 @@ public class Enemy : Ship
 
     private Vector3Reference m_moveDirection;
 
+    [SerializeField] private float moveDirectionAmplitude = 1f;
+
     #region Overrides of Ship
 
     /// <inheritdoc />
@@ -92,11 +94,11 @@ public class Enemy : Ship
         {
             case GameMoveDirectionEnum.TopToBottom:
             case GameMoveDirectionEnum.BottomToTop:
-                x = Mathf.Cos(Time.time);
+                x = Mathf.Cos(Time.time) * moveDirectionAmplitude;
                 break;
             case GameMoveDirectionEnum.LeftToRight:
             case GameMoveDirectionEnum.RightToLeft:
-                y = Mathf.Sin(Time.time);
+                y = Mathf.Sin(Time.time) * moveDirectionAmplitude;
                 break;
         }
 
