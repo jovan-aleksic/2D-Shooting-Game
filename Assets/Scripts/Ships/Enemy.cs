@@ -11,7 +11,13 @@ public class Enemy : Ship
 
     private Vector3Reference m_moveDirection;
 
-    [SerializeField] private float moveDirectionAmplitude = 1f;
+    [Range(0, 1)]
+    [SerializeField]
+    private float moveDirectionAmplitude = 1f;
+
+    [Range(0, 1)]
+    [SerializeField]
+    private float moveDirectionFrequency = 1f;
 
     #region Overrides of Ship
 
@@ -87,18 +93,17 @@ public class Enemy : Ship
         float x = m_moveDirection.Value.x;
         float y = m_moveDirection.Value.y;
         float z = m_moveDirection.Value.z;
-
-        //x = Mathf.Cos(Time.time);
+        float t = Time.time * moveDirectionFrequency;
 
         switch (gameMoveDirectionVariable.Value)
         {
             case GameMoveDirectionEnum.TopToBottom:
             case GameMoveDirectionEnum.BottomToTop:
-                x = Mathf.Cos(Time.time) * moveDirectionAmplitude;
+                x = Mathf.Cos(t) * moveDirectionAmplitude;
                 break;
             case GameMoveDirectionEnum.LeftToRight:
             case GameMoveDirectionEnum.RightToLeft:
-                y = Mathf.Sin(Time.time) * moveDirectionAmplitude;
+                y = Mathf.Sin(t) * moveDirectionAmplitude;
                 break;
         }
 
