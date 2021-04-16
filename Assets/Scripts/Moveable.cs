@@ -16,7 +16,7 @@ public class Moveable : MonoBehaviour
     /// The direction to move the game object.
     /// </summary>
     [Tooltip("The direction the Game Object Should move. This value gets set by the game move direction value. If you are using a component that will change the move direction of this object then set this to the same variable.")] [SerializeField]
-    private Vector3Reference moveDirection;
+    public Vector3Reference moveDirection;
 
     [SerializeField] private BoundsVariable bounds;
 

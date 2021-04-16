@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Enemy : Ship
@@ -29,6 +30,30 @@ public class Enemy : Ship
 
     public void OutOfBoundsAction()
     {
-        transform.position = PositionHelper.GetRandomPosition(gameMoveDirectionVariable.Value, bounds.Value);
+        Vector3 position = transform.position;
+
+        switch (gameMoveDirectionVariable.Value)
+        {
+            case GameMoveDirectionEnum.TopToBottom:
+                if (position.y < bounds.Min.y)
+                    transform.position =
+                        PositionHelper.GetRandomPosition(gameMoveDirectionVariable.Value, bounds.Value);
+                break;
+            case GameMoveDirectionEnum.BottomToTop:
+                if (position.y > bounds.Max.y)
+                    transform.position =
+                        PositionHelper.GetRandomPosition(gameMoveDirectionVariable.Value, bounds.Value);
+                break;
+            case GameMoveDirectionEnum.LeftToRight:
+                if (position.x > bounds.Max.x)
+                    transform.position =
+                        PositionHelper.GetRandomPosition(gameMoveDirectionVariable.Value, bounds.Value);
+                break;
+            case GameMoveDirectionEnum.RightToLeft:
+                if (position.x < bounds.Min.x)
+                    transform.position =
+                        PositionHelper.GetRandomPosition(gameMoveDirectionVariable.Value, bounds.Value);
+                break;
+        }
     }
 }
