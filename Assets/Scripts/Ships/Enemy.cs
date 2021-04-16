@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class Enemy : Ship
@@ -9,6 +8,8 @@ public class Enemy : Ship
     [SerializeField]
     protected GameMoveDirectionVariable gameMoveDirectionVariable;
 
+    private Vector3Reference m_moveDirection;
+
     #region Overrides of Ship
 
     /// <inheritdoc />
@@ -17,6 +18,16 @@ public class Enemy : Ship
         base.Awake();
 
         StartCoroutine(fireDelayTimer.CoolDown());
+
+        m_moveDirection = GetComponent<Moveable>().moveDirection;
+    }
+
+    /// <inheritdoc />
+    protected override void Update()
+    {
+        base.Update();
+
+        SetMoveDirection();
     }
 
     /// <inheritdoc />
@@ -55,5 +66,17 @@ public class Enemy : Ship
                         PositionHelper.GetRandomPosition(gameMoveDirectionVariable.Value, bounds.Value);
                 break;
         }
+    }
+
+    /// <summary>
+    /// Set the move direction so the ship moves.
+    /// </summary>
+    private void SetMoveDirection()
+    {
+        float x = m_moveDirection.Value.x;
+        float y = m_moveDirection.Value.y;
+        float z = m_moveDirection.Value.z;
+
+        m_moveDirection.Value = new Vector3(x, y, z);
     }
 }
