@@ -28,6 +28,7 @@
           <e p="Camera" t="Include">
             <e p="CameraScreenBounds.cs" t="Include" />
             <e p="CameraShake.cs" t="Include" />
+            <e p="CineMachineGameEventImpulseSource.cs" t="Include" />
           </e>
           <e p="Core" t="Include">
             <e p="CoolDownTimer.cs" t="Include" />
