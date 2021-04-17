@@ -41,4 +41,14 @@ public class StatVariable : VariableBase<Stat>
     public void Remove(float amount) => variableValue.Remove(amount);
 
     public void ResetStat() => variableValue.ResetStat();
+
+    #region Overrides of VariableBase<Stat>
+
+    /// <inheritdoc />
+    public override string ToString()
+    {
+        return variableValue.ToString();
+    }
+
+    #endregion
 }

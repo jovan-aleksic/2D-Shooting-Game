@@ -58,4 +58,11 @@ public class StatReference : VariableReference<StatVariable, Stat>
         else
             variable.ResetStat();
     }
+
+    #region Overrides of Object
+
+    /// <inheritdoc />
+    public override string ToString() => useConstant ? constantValue.ToString() : variable.ToString();
+
+    #endregion
 }

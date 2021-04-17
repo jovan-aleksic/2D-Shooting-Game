@@ -3,6 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="be36d944-fe34-41b0-b054-b6cd290abc4a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Stat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Stat.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/UI/StatSliderDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/UI/StatSliderDisplay.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/StatReference.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/StatReference.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/StatVariable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/StatVariable.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,10 +80,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/StatSliderDisplay.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ShieldsDisplay.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ShieldsSpriteColorChanger.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/StatReference.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/Spawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ships/Ship.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Variables/StatVariable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/VariableReferencePropertyDrawer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Damageable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/CoolDownTimer.cs" />
@@ -87,7 +90,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/DisplayPlayerLives.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnManager.cs" />
         <option value="$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Scripts/MeterScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/UI/StatSliderDisplay.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/UI/FloatSliderDisplay.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UsageTimer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DischargeRechargeTimer.cs" />
@@ -96,7 +98,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PowerUp.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Events/CodedGameEventListener.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ships/Player.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Stat.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraShake.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CineaMachineImpulseSource.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CineMachineImpulseSource.cs" />
@@ -104,6 +105,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CinemachineGameEventImpulseSource.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Moveable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ships/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Stat.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Variables/StatVariable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/StatReference.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/UI/StatSliderDisplay.cs" />
       </list>
     </option>
   </component>
@@ -165,7 +170,7 @@
       <workItem from="1617853082402" duration="19753000" />
       <workItem from="1618034569210" duration="16494000" />
       <workItem from="1618109714293" duration="59075000" />
-      <workItem from="1618453659014" duration="32555000" />
+      <workItem from="1618453659014" duration="34135000" />
     </task>
     <servers />
   </component>

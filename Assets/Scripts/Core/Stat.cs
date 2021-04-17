@@ -9,8 +9,8 @@ public class Stat
     [SerializeField] private float maxValue;
 
     [SerializeField] private GameEvent valueChanged;
-    [SerializeField] private GameEvent valueIncreased; // Added
-    [SerializeField] private GameEvent valueDecreased; // Added
+    [SerializeField] private GameEvent valueIncreased;
+    [SerializeField] private GameEvent valueDecreased;
 
     public float Value => currentValue;
 
@@ -19,25 +19,22 @@ public class Stat
     public void Add(float amount)
     {
         currentValue = Math.Min(currentValue + amount, maxValue);
-        //RaiseEvent();
-        RaiseChangeEvent(); // Changed
-        RaiseIncreaseEvent(); // Added
+        RaiseChangeEvent();
+        RaiseIncreaseEvent();
     }
 
     public void Remove(float amount)
     {
         currentValue = Math.Max(currentValue - amount, 0);
-        //RaiseEvent();
-        RaiseChangeEvent();   // Changed
-        RaiseDecreaseEvent(); // Added
+        RaiseChangeEvent();
+        RaiseDecreaseEvent();
     }
 
     public void ResetStat()
     {
         currentValue = maxValue;
-        //RaiseEvent();
-        RaiseChangeEvent();   // Changed
-        RaiseIncreaseEvent(); // Added
+        RaiseChangeEvent();
+        RaiseIncreaseEvent();
     }
 
     public void ChangeMax(float amount)
@@ -45,27 +42,35 @@ public class Stat
         float amountToAdd = amount - maxValue;
         maxValue = amount;
         currentValue = Math.Min(currentValue + amountToAdd, maxValue);
-        //RaiseEvent();
-        RaiseChangeEvent();   // Changed
-        if (amountToAdd > 0) // Added
-            RaiseIncreaseEvent(); // Added
-        else if (amountToAdd < 0) // Added
-            RaiseDecreaseEvent(); // Added
+        RaiseChangeEvent();
+        if (amountToAdd > 0)
+            RaiseIncreaseEvent();
+        else if (amountToAdd < 0)
+            RaiseDecreaseEvent();
     }
 
-    //private void RaiseEvent()
     private void RaiseChangeEvent()
     {
         if (valueChanged != null) valueChanged.Raise();
     }
 
-    private void RaiseIncreaseEvent() // Added
+    private void RaiseIncreaseEvent()
     {
         if (valueIncreased != null) valueIncreased.Raise();
     }
 
-    private void RaiseDecreaseEvent() // Added
+    private void RaiseDecreaseEvent()
     {
         if (valueDecreased != null) valueDecreased.Raise();
     }
+
+    #region Overrides of Object
+
+    /// <inheritdoc />
+    public override string ToString()
+    {
+        return currentValue + "/" + maxValue;
+    }
+
+    #endregion
 }
