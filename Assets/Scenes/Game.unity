@@ -533,7 +533,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1048113663}
-  - component: {fileID: 1048113666}
   - component: {fileID: 1048113662}
   - component: {fileID: 1048113664}
   - component: {fileID: 1048113661}
@@ -701,14 +700,6 @@ MonoBehaviour:
       variable: {fileID: 0}
   amplitude: 0.15
   frequency: 20
---- !u!81 &1048113666
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1048113660}
-  m_Enabled: 1
 --- !u!114 &1048113667
 MonoBehaviour:
   m_ObjectHideFlags: 0

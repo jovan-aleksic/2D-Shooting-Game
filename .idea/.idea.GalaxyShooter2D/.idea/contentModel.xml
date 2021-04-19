@@ -102,6 +102,7 @@
           </e>
           <e p="SoundEffect.cs" t="Include" />
           <e p="Spawners" t="Include">
+            <e p="ISpawner.cs" t="Include" />
             <e p="Spawner.cs" t="Include" />
             <e p="SpawnManager.cs" t="Include" />
           </e>

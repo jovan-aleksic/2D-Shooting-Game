@@ -1,14 +1,41 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
-    public List<Spawner> enemySpawners = new List<Spawner>();
+    [SerializeField] private List<ScriptableObject> enemySpawners = new List<ScriptableObject>();
+    [SerializeField] private List<ScriptableObject> powerUpSpawners = new List<ScriptableObject>();
 
-    public List<Spawner> powerUpSpawners = new List<Spawner>();
+    [SerializeField] private Transform enemyContainer;
+    [SerializeField] private Transform powerUpContainer;
 
-    public Transform enemyContainer;
-    public Transform powerUpContainer;
+    private void OnValidate()
+    {
+        for (int i = 0; i < enemySpawners.Count; i++)
+        {
+            if (enemySpawners[i] == null) continue;
+            if (!(enemySpawners[i] is ISpawner))
+            {
+                enemySpawners[i] = null;
+            }
+        }
+
+        for (int i = 0; i < powerUpSpawners.Count; i++)
+        {
+            if (powerUpSpawners[i] == null) continue;
+            if (!(powerUpSpawners[i] is ISpawner))
+            {
+                powerUpSpawners[i] = null;
+            }
+        }
+    }
+
+    private void Awake()
+    {
+        enemySpawners.RemoveAll(item => !(item is ISpawner));
+        powerUpSpawners.RemoveAll(item => !(item is ISpawner));
+    }
 
     private void Start()
     {
@@ -17,9 +44,9 @@ public class SpawnManager : MonoBehaviour
             Debug.LogError("There is no container to spawn Enemies in. Please Add one in the Inspector!", this);
         }
 
-        foreach (Spawner enemySpawner in enemySpawners)
+        foreach (ISpawner enemySpawner in enemySpawners.Cast<ISpawner>())
         {
-            enemySpawner.InitSpawner();
+            enemySpawner.Init(enemyContainer, this);
         }
 
         if (powerUpContainer == null && powerUpSpawners.Count > 0)
@@ -27,22 +54,22 @@ public class SpawnManager : MonoBehaviour
             Debug.LogError("There is no container to spawn Power Ups in. Please Add one in the Inspector!", this);
         }
 
-        foreach (Spawner powerUpSpawner in powerUpSpawners)
+        foreach (ISpawner powerUpSpawner in powerUpSpawners.Cast<ISpawner>())
         {
-            powerUpSpawner.InitSpawner();
+            powerUpSpawner.Init(powerUpContainer, this);
         }
     }
 
     public void StartSpawning()
     {
-        foreach (Spawner enemySpawner in enemySpawners)
+        foreach (ISpawner enemySpawner in enemySpawners.Cast<ISpawner>())
         {
-            enemySpawner.spawnRoutine = StartCoroutine(enemySpawner.SpawnRoutine(enemyContainer));
+            enemySpawner.Start();
         }
 
-        foreach (Spawner powerUpSpawner in powerUpSpawners)
+        foreach (ISpawner powerUpSpawner in powerUpSpawners.Cast<ISpawner>())
         {
-            powerUpSpawner.spawnRoutine = StartCoroutine(powerUpSpawner.SpawnRoutine(powerUpContainer));
+            powerUpSpawner.Start();
         }
     }
 }

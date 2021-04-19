@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be36d944-fe34-41b0-b054-b6cd290abc4a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Spawn Manager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Spawn Manager.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Stat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Stat.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/UI/StatSliderDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/UI/StatSliderDisplay.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/StatReference.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/StatReference.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/StatVariable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/StatVariable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawners/Spawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/Spawner.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +26,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ships/Ship.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/UI/FloatSliderDisplay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/VariableReferencePropertyDrawer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Scripts/WaveSpawner.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/StatReference.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Events/Editor/GameEventEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/manifest.json" root0="FORCE_HIGHLIGHTING" />
@@ -42,9 +44,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Events/GameEventListener.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ShieldsSpriteColorChanger.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///C# Console" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DischargeRechargeTimer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/VariableReference.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawners/ISpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Camera/CinemachineGameEventImpulseSource.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/GameOverController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/CoolDownTimer.cs" root0="FORCE_HIGHLIGHTING" />
@@ -53,7 +55,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Ships/Player.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DestroyNoChildren.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/VariableBase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///C# Console" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/IntVariable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SeekTarget.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -80,7 +81,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/StatSliderDisplay.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ShieldsDisplay.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ShieldsSpriteColorChanger.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/Spawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ships/Ship.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/VariableReferencePropertyDrawer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Damageable.cs" />
@@ -88,7 +88,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SeekTarget.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/DisplayPlayerLives.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnManager.cs" />
         <option value="$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Scripts/MeterScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/UI/FloatSliderDisplay.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UsageTimer.cs" />
@@ -109,6 +108,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Variables/StatVariable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/StatReference.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/UI/StatSliderDisplay.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/WaveSpawnManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/Wave.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/WaveSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/ISpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/Editor/SpawnManagerEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/Spawner.cs" />
       </list>
     </option>
   </component>
@@ -170,7 +176,8 @@
       <workItem from="1617853082402" duration="19753000" />
       <workItem from="1618034569210" duration="16494000" />
       <workItem from="1618109714293" duration="59075000" />
-      <workItem from="1618453659014" duration="34135000" />
+      <workItem from="1618453659014" duration="61543000" />
+      <workItem from="1618793939038" duration="3702000" />
     </task>
     <servers />
   </component>
@@ -193,9 +200,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="691" y="243" key="RiderGenerateDialog" timestamp="1615949554005">
+    <state x="691" y="243" key="RiderGenerateDialog" timestamp="1618714444236">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="691" y="243" key="RiderGenerateDialog/0.0.1920.1040/522.-1080.1280.680@0.0.1920.1040" timestamp="1615949554005" />
+    <state x="691" y="243" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1618714444236" />
   </component>
 </project>
