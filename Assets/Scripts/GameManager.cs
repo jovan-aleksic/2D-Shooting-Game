@@ -28,9 +28,6 @@ public class GameManager : MonoBehaviour
                 Application.Quit();
             #endif
         }
-
-        // if (Input.GetKeyDown(KeyCode.R))
-        //     SceneManager.LoadScene(1);
     }
 
     private void WaveSpawnerCompleted()

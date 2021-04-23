@@ -86,7 +86,6 @@ public class WaveSpawner : ScriptableObject, ISpawner
             Stop();
         SetCurrentWave();
         StartTimer();
-        //Debug.Log("Start: " + name + " current wave number = " + m_currentWaveNumber);
         if (m_currentWaveNumber < waves.Length)
             m_updateRoutine = m_monoBehaviour.StartCoroutine(UpdateSpawner());
         else if (m_hasNextWaveSpawner)
@@ -143,7 +142,6 @@ public class WaveSpawner : ScriptableObject, ISpawner
 
     private void StartTimer()
     {
-        //if (timerStarted != null) timerStarted.Raise();
         m_monoBehaviour.StartCoroutine(timeBetweenWaves.CoolDown());
         if (timerStarted != null) timerStarted.Raise();
     }
@@ -154,8 +152,6 @@ public class WaveSpawner : ScriptableObject, ISpawner
             m_currentWave = waves[m_currentWaveNumber];
 
         currentWaveName.Value = m_currentWave.WaveName;
-
-        //Debug.Log("Wave Spawner Set Current Wave: " + m_currentWave.IsActive);
     }
 
     private IEnumerator UpdateSpawner()
@@ -164,15 +160,12 @@ public class WaveSpawner : ScriptableObject, ISpawner
 
         while (m_currentWaveNumber < waves.Length)
         {
-            // if  waitAllObjectsDestroyed = false or useWaitTimeWithDestroyAllObjects
             if (!waitAllObjectsDestroyed || useWaitTimeWithDestroyAllObjects)
                 while (timeBetweenWaves.IsActive)
                     yield return null;
 
-            // Start the current wave
             m_currentWave.StartWave();
 
-            // while current wave is active
             while (m_currentWave.IsActive && m_currentWaveNumber < waves.Length)
             {
                 // Debug.Log("Wave Spawner Update: " + name + " m_currentWave.IsActive = " + m_currentWave.IsActive +
