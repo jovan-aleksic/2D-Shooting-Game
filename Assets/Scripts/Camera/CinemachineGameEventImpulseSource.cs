@@ -9,4 +9,7 @@ public class CinemachineGameEventImpulseSource : CinemachineImpulseSource
     {
         cameraShakeEvent.Init(gameObject, GenerateImpulse);
     }
+
+    private void OnDisable() => cameraShakeEvent.OnDisable();
+    private void OnEnable() => cameraShakeEvent.OnEnable();
 }

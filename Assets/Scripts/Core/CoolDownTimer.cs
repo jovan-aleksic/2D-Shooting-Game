@@ -1,5 +1,5 @@
-using System;
 using System.Collections;
+using Unity.Mathematics;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -19,6 +19,8 @@ public class CoolDownTimer
 
     public FloatReference percentageCompleted;
 
+    public FloatReference coolDownTimeLeft;
+
     private float m_completeTime;
 
     private float m_startTime;
@@ -33,7 +35,8 @@ public class CoolDownTimer
         while (Time.time < m_completeTime)
         {
             // percentage completed 0 - 1 = current / maximum
-            percentageCompleted.Value = Math.Min((Time.time - m_startTime) / m_coolDownTime, 1f);
+            percentageCompleted.Value = math.min((Time.time - m_startTime) / m_coolDownTime, 1f);
+            coolDownTimeLeft.Value = math.max(m_completeTime - Time.time, 0f);
             yield return null;
         }
 

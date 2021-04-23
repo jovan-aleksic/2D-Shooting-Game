@@ -22,9 +22,12 @@ public class CameraShake : MonoBehaviour
     /// </summary>
     [SerializeField] private float frequency;
 
-    float m_tick = 0;
+    private float m_tick = 0;
 
-    Vector3 amt;
+    private Vector3 m_amt;
+
+    private void OnDisable() => cameraShakeEvent.OnDisable();
+    private void OnEnable() => cameraShakeEvent.OnEnable();
 
     private void Awake()
     {
@@ -55,16 +58,16 @@ public class CameraShake : MonoBehaviour
 
         while (shakeTimer.IsActive)
         {
-            amt.x = Mathf.PerlinNoise(m_tick, 0) - 0.5f;
-            amt.y = Mathf.PerlinNoise(0, m_tick) - 0.5f;
-            amt.z = Mathf.PerlinNoise(m_tick, m_tick) - 0.5f;
+            m_amt.x = Mathf.PerlinNoise(m_tick, 0) - 0.5f;
+            m_amt.y = Mathf.PerlinNoise(0, m_tick) - 0.5f;
+            m_amt.z = Mathf.PerlinNoise(m_tick, m_tick) - 0.5f;
 
             m_tick += Time.deltaTime * frequency;
 
-            amt = amt * amplitude;
+            m_amt = m_amt * amplitude;
 
             //transform.localPosition = m_originalPosition + Random.insideUnitSphere * amplitude;
-            transform.localPosition = m_originalPosition + amt;
+            transform.localPosition = m_originalPosition + m_amt;
 
             yield return null;
         }

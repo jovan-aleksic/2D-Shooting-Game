@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
+    [SerializeField] private CodedGameEventListener waveSpawnerCompetedEvent;
+    [SerializeField] private CodedGameEventListener playerDestroyedEvent;
+    [SerializeField] private bool usePlayerDestroyedEvent;
     [SerializeField] private List<ScriptableObject> enemySpawners = new List<ScriptableObject>();
     [SerializeField] private List<ScriptableObject> powerUpSpawners = new List<ScriptableObject>();
 
@@ -35,6 +38,20 @@ public class SpawnManager : MonoBehaviour
     {
         enemySpawners.RemoveAll(item => !(item is ISpawner));
         powerUpSpawners.RemoveAll(item => !(item is ISpawner));
+        waveSpawnerCompetedEvent?.Init(gameObject, StopSpawning);
+        if (usePlayerDestroyedEvent) playerDestroyedEvent?.Init(gameObject, StopSpawning);
+    }
+
+    private void OnDisable()
+    {
+        waveSpawnerCompetedEvent?.OnDisable();
+        playerDestroyedEvent?.OnDisable();
+    }
+
+    private void OnEnable()
+    {
+        waveSpawnerCompetedEvent?.OnEnable();
+        playerDestroyedEvent?.OnDisable();
     }
 
     private void Start()
@@ -70,6 +87,19 @@ public class SpawnManager : MonoBehaviour
         foreach (ISpawner powerUpSpawner in powerUpSpawners.Cast<ISpawner>())
         {
             powerUpSpawner.Start();
+        }
+    }
+
+    private void StopSpawning()
+    {
+        foreach (ISpawner enemySpawner in enemySpawners.Cast<ISpawner>())
+        {
+            enemySpawner.Stop();
+        }
+
+        foreach (ISpawner powerUpSpawner in powerUpSpawners.Cast<ISpawner>())
+        {
+            powerUpSpawner.Stop();
         }
     }
 }

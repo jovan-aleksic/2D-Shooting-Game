@@ -104,6 +104,26 @@ public class Player : Ship
         DisableRightEngine();
     }
 
+    private void OnDisable()
+    {
+        ammoPowerUp.OnDisable();
+        lifePowerUp.OnDisable();
+        shieldPowerUp.OnDisable();
+        tripleShotPowerUp.OnDisable();
+        homingLaserPowerUp.OnDisable();
+        speedBoostPowerUp.OnDisable();
+    }
+
+    private void OnEnable()
+    {
+        ammoPowerUp.OnEnable();
+        lifePowerUp.OnEnable();
+        shieldPowerUp.OnEnable();
+        tripleShotPowerUp.OnEnable();
+        homingLaserPowerUp.OnEnable();
+        speedBoostPowerUp.OnEnable();
+    }
+
     #endregion
 
     #region Overrides of Ship

@@ -73,8 +73,10 @@ public class Spawner : ScriptableObject, ISpawner
 
     public void DestroyAllSpawnedObjects()
     {
-        foreach (GameObject spawnedObject in m_spawnedObjects)
+        for (int i = m_spawnedObjects.Count - 1; i > -1; i--)
         {
+            GameObject spawnedObject = m_spawnedObjects[i];
+            m_spawnedObjects.Remove(spawnedObject);
             Destroy(spawnedObject);
         }
     }
@@ -93,6 +95,13 @@ public class Spawner : ScriptableObject, ISpawner
         {
             m_positionToSpawnAt = PositionHelper.GetRandomPosition(gameMoveDirectionVariable.Value, screenBounds.Value);
             m_spawnedObjects.Add(Instantiate(prefabToSpawn, m_positionToSpawnAt, Quaternion.identity, m_container));
+
+            for (int i = m_spawnedObjects.Count - 1; i > -1; i--)
+            {
+                if (m_spawnedObjects[i] == null)
+                    m_spawnedObjects.Remove(m_spawnedObjects[i]);
+            }
+
             yield return m_spawnWaitTime;
         }
     }

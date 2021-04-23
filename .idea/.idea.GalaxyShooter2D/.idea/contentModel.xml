@@ -47,6 +47,7 @@
               <e p="CoolDownTimerDisplay.cs" t="Include" />
               <e p="DisplayIntVariable.cs" t="Include" />
               <e p="FloatSliderDisplay.cs" t="Include" />
+              <e p="FloatTextDisplay.cs" t="Include" />
               <e p="StatSliderDisplay.cs" t="Include" />
             </e>
             <e p="Variables" t="Include">
@@ -105,11 +106,14 @@
             <e p="ISpawner.cs" t="Include" />
             <e p="Spawner.cs" t="Include" />
             <e p="SpawnManager.cs" t="Include" />
+            <e p="Wave.cs" t="Include" />
+            <e p="WaveSpawner.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
             <e p="DisplayPlayerLives.cs" t="Include" />
             <e p="GameOverController.cs" t="Include" />
             <e p="ShieldsSpriteColorChanger.cs" t="Include" />
+            <e p="WaveTimerDisplay.cs" t="Include" />
           </e>
         </e>
         <e p="UI Meters" t="Include">
