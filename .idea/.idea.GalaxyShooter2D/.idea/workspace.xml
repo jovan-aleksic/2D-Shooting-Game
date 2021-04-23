@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be36d944-fe34-41b0-b054-b6cd290abc4a" name="Default Changelist" comment="" />
+    <list default="true" id="be36d944-fe34-41b0-b054-b6cd290abc4a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Gloabal Data/Player/Shield Health.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gloabal Data/Player/Shield Health.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Power Ups/Homing Laser Power Up.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Power Ups/Homing Laser Power Up.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,14 +113,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/Wave.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/Spawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/CoolDownTimer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/WaveSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Events/CodedGameEventListener.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ships/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraShake.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CinemachineGameEventImpulseSource.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/WaveTimerDisplay.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/WaveSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnManager.cs" />
       </list>
     </option>
   </component>
@@ -181,7 +185,7 @@
       <workItem from="1618453659014" duration="61543000" />
       <workItem from="1618793939038" duration="6092000" />
       <workItem from="1618942683371" duration="19818000" />
-      <workItem from="1619022897773" duration="24534000" />
+      <workItem from="1619022897773" duration="25321000" />
     </task>
     <servers />
   </component>

@@ -16,3 +16,5 @@ MonoBehaviour:
     currentValue: 3
     maxValue: 3
     valueChanged: {fileID: 11400000, guid: 63b42c489b3461448852729ae3ef03aa, type: 2}
+    valueIncreased: {fileID: 0}
+    valueDecreased: {fileID: 0}

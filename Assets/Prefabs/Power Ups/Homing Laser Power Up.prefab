@@ -74,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 7482667652216324306, guid: db750325989564987a34393247d883b4, type: 3}
   m_Color: {r: 0, g: 1, b: 0.55618596, a: 1}
   m_FlipX: 0
@@ -155,6 +155,8 @@ MonoBehaviour:
       currentValue: 0
       maxValue: 0
       valueChanged: {fileID: 0}
+      valueIncreased: {fileID: 0}
+      valueDecreased: {fileID: 0}
     variable: {fileID: 0}
   shieldHealth:
     useConstant: 1
@@ -162,6 +164,8 @@ MonoBehaviour:
       currentValue: 0
       maxValue: 0
       valueChanged: {fileID: 0}
+      valueIncreased: {fileID: 0}
+      valueDecreased: {fileID: 0}
     variable: {fileID: 0}
   receivesDamageFromTags:
   - Player
