@@ -21,24 +21,24 @@ public class GameEvent : ScriptableObject
     /// <summary>
     /// The list of listeners that this event will notify if it is raised.
     /// </summary>
-    private readonly List<GameEventListener> eventListeners =
-        new List<GameEventListener>();
+    private readonly List<IGameEventListener> m_eventListeners =
+        new List<IGameEventListener>();
 
     public void Raise()
     {
-        for (int i = eventListeners.Count - 1; i >= 0; i--)
-            eventListeners[i].OnEventRaised();
+        for (int i = m_eventListeners.Count - 1; i >= 0; i--)
+            m_eventListeners[i].OnEventRaised();
     }
 
-    public void RegisterListener(GameEventListener listener)
+    public void RegisterListener(IGameEventListener listener)
     {
-        if (!eventListeners.Contains(listener))
-            eventListeners.Add(listener);
+        if (!m_eventListeners.Contains(listener))
+            m_eventListeners.Add(listener);
     }
 
-    public void UnregisterListener(GameEventListener listener)
+    public void UnregisterListener(IGameEventListener listener)
     {
-        if (eventListeners.Contains(listener))
-            eventListeners.Remove(listener);
+        if (m_eventListeners.Contains(listener))
+            m_eventListeners.Remove(listener);
     }
 }

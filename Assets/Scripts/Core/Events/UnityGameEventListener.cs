@@ -15,19 +15,21 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class GameEventListener : MonoBehaviour
+public class UnityGameEventListener : MonoBehaviour, IGameEventListener
 {
-    [Tooltip("Event to register with.")] public GameEvent @event;
+    [Tooltip("Event to register with.")] [SerializeField]
+    GameEvent @event;
 
     [Tooltip("Response to invoke when Event is raised.")]
-    public UnityEvent response;
+    [SerializeField]
+    private UnityEvent response;
 
-    private void OnEnable()
+    public void OnEnable()
     {
         if (@event != null) @event.RegisterListener(this);
     }
 
-    private void OnDisable()
+    public void OnDisable()
     {
         @event.UnregisterListener(this);
     }

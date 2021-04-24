@@ -1,40 +1,28 @@
+using System;
 using UnityEngine;
-using UnityEngine.Events;
-using UnityEngine.Serialization;
 
 [System.Serializable]
-public class CodedGameEventListener
+public class CodedGameEventListener : IGameEventListener
 {
    [SerializeField] private GameEvent @event;
 
-   private GameEventListener m_gameEventListener;
+   private Action m_onResponse;
 
-   private bool m_isEnabled;
-
-
-   public void Init(GameObject gameObject, UnityAction call)
+   /// <inheritdoc />
+   public void OnEventRaised()
    {
-      m_gameEventListener = gameObject.AddComponent<GameEventListener>();
-      m_gameEventListener.response = new UnityEvent();
-      m_gameEventListener.response.AddListener(call);
+      m_onResponse?.Invoke();
+   }
 
-      if (@event == null) return;
-      m_gameEventListener.@event = @event;
-      m_gameEventListener.@event.RegisterListener(m_gameEventListener);
-      m_isEnabled = true;
+   public void OnEnable(Action response)
+   {
+      if (@event != null) @event.RegisterListener(this);
+      m_onResponse = response;
    }
 
    public void OnDisable()
    {
-      if(!m_isEnabled) return;
-      if (@event != null && m_gameEventListener != null) @event.UnregisterListener(m_gameEventListener);
-      m_isEnabled = false;
-   }
-
-   public void OnEnable()
-   {
-      if (m_isEnabled) return;
-      if (@event != null && m_gameEventListener != null) @event.RegisterListener(m_gameEventListener);
-      m_isEnabled = true;
+      @event.UnregisterListener(this);
+      m_onResponse = null;
    }
 }

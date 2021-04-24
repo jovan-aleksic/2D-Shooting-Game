@@ -5,11 +5,6 @@ public class CinemachineGameEventImpulseSource : CinemachineImpulseSource
 {
     [SerializeField] private CodedGameEventListener cameraShakeEvent;
 
-    private void Awake()
-    {
-        cameraShakeEvent.Init(gameObject, GenerateImpulse);
-    }
-
     private void OnDisable() => cameraShakeEvent.OnDisable();
-    private void OnEnable() => cameraShakeEvent.OnEnable();
+    private void OnEnable() => cameraShakeEvent.OnEnable(GenerateImpulse);
 }

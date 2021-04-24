@@ -13,12 +13,10 @@ public class StatSliderDisplay : MonoBehaviour
 
     [SerializeField] private StatReference stat;
 
-    [SerializeField] private GameEvent statUpdateEvent;
+    [SerializeField] private CodedGameEventListener statUpdateGameEventListener;
 
-    GameEventListener m_statUpdateGameEventListener;
-
-    public Gradient gradient;
-    public Image fill;
+    [SerializeField] private Gradient gradient;
+    [SerializeField] private Image fill;
 
     private void Start()
     {
@@ -27,12 +25,16 @@ public class StatSliderDisplay : MonoBehaviour
         m_hasText = m_statText != null;
 
         UpdateDisplay();
+    }
 
-        m_statUpdateGameEventListener = gameObject.AddComponent<GameEventListener>();
-        m_statUpdateGameEventListener.response = new UnityEvent();
-        m_statUpdateGameEventListener.response.AddListener(UpdateDisplay);
-        m_statUpdateGameEventListener.@event = statUpdateEvent;
-        statUpdateEvent.RegisterListener(m_statUpdateGameEventListener);
+    private void OnDisable()
+    {
+        statUpdateGameEventListener.OnDisable();
+    }
+
+    private void OnEnable()
+    {
+        statUpdateGameEventListener.OnEnable(UpdateDisplay);
     }
 
     private void UpdateDisplay()

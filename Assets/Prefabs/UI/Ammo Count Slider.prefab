@@ -266,7 +266,8 @@ MonoBehaviour:
       valueIncreased: {fileID: 0}
       valueDecreased: {fileID: 0}
     variable: {fileID: 11400000, guid: 6b8bfe7f20b227c47b4995531730a5cd, type: 2}
-  statUpdateEvent: {fileID: 11400000, guid: 55ecb146cc0aec14998799bd3893e5ef, type: 2}
+  statUpdateGameEventListener:
+    event: {fileID: 11400000, guid: 55ecb146cc0aec14998799bd3893e5ef, type: 2}
   gradient:
     serializedVersion: 2
     key0: {r: 1, g: 1, b: 1, a: 1}

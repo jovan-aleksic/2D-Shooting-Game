@@ -7,13 +7,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private CodedGameEventListener waveSpawnerComplete;
     [SerializeField] private int spawnerCompleteSceneToLoad;
 
-    private void Awake()
-    {
-        waveSpawnerComplete?.Init(gameObject, WaveSpawnerCompleted);
-    }
-
     private void OnDisable() => waveSpawnerComplete?.OnDisable();
-    private void OnEnable() => waveSpawnerComplete?.OnEnable();
+    private void OnEnable() => waveSpawnerComplete?.OnEnable(WaveSpawnerCompleted);
 
 
     void Update()

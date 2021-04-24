@@ -1,10 +1,9 @@
 using UnityEngine;
-using UnityEngine.Events;
 
 public class Player : Ship
 {
     [Header("Ammo")] [SerializeField] private StatVariable ammoCount;
-    [SerializeField] CodedGameEventListener ammoPowerUp;
+    [SerializeField] private CodedGameEventListener ammoPowerUp;
 
     [Header("Player")]
     [Space(10)]
@@ -116,30 +115,17 @@ public class Player : Ship
 
     private void OnEnable()
     {
-        ammoPowerUp.OnEnable();
-        lifePowerUp.OnEnable();
-        shieldPowerUp.OnEnable();
-        tripleShotPowerUp.OnEnable();
-        homingLaserPowerUp.OnEnable();
-        speedBoostPowerUp.OnEnable();
+        ammoPowerUp.OnEnable(AmmoCollected);
+        lifePowerUp.OnEnable(LifeCollected);
+        shieldPowerUp.OnEnable(ActivateShields);
+        tripleShotPowerUp.OnEnable(ActivateTripleShot);
+        homingLaserPowerUp.OnEnable(ActivateHomingLaser);
+        speedBoostPowerUp.OnEnable(ActivateSpeedBoost);
     }
 
     #endregion
 
     #region Overrides of Ship
-
-    /// <inheritdoc />
-    protected override void Awake()
-    {
-        base.Awake();
-
-        tripleShotPowerUp.Init(gameObject, ActivateTripleShot);
-        homingLaserPowerUp.Init(gameObject, ActivateHomingLaser);
-        speedBoostPowerUp.Init(gameObject, ActivateSpeedBoost);
-        shieldPowerUp.Init(gameObject, ActivateShields);
-        ammoPowerUp.Init(gameObject, AmmoCollected);
-        lifePowerUp.Init(gameObject, LifeCollected);
-    }
 
     /// <inheritdoc />
     protected override void Update()

@@ -1,5 +1,4 @@
 using System.Collections;
-using System.ComponentModel;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "WaveSpawner", menuName = "Spawners/Wave Spawner", order = 0)]
@@ -13,7 +12,7 @@ public class WaveSpawner : ScriptableObject, ISpawner
 
     [SerializeField] private bool waitAllObjectsDestroyed = true;
 
-    [SerializeField] private bool useWaitTimeWithDestroyAllObjects = false;
+    [SerializeField] private bool useWaitTimeWithDestroyAllObjects;
 
     [SerializeField] private BoundsVariable screenBounds;
 
@@ -24,7 +23,7 @@ public class WaveSpawner : ScriptableObject, ISpawner
     private Wave m_currentWave;
     [SerializeField] private StringReference currentWaveName;
 
-    private int m_currentWaveNumber = 0;
+    private int m_currentWaveNumber;
 
     private MonoBehaviour m_monoBehaviour;
 

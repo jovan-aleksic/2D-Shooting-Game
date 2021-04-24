@@ -346,6 +346,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d24c756b0ea7749468ada0ec290a87ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  statName: Stat
   stat:
     useConstant: 0
     constantValue:
@@ -355,7 +356,8 @@ MonoBehaviour:
       valueIncreased: {fileID: 0}
       valueDecreased: {fileID: 0}
     variable: {fileID: 11400000, guid: 52118a3b354a45f4eace3c6a4f25029b, type: 2}
-  statUpdateEvent: {fileID: 11400000, guid: 63b42c489b3461448852729ae3ef03aa, type: 2}
+  statUpdateGameEventListener:
+    event: {fileID: 11400000, guid: 63b42c489b3461448852729ae3ef03aa, type: 2}
   gradient:
     serializedVersion: 2
     key0: {r: 1, g: 1, b: 1, a: 1}
@@ -385,4 +387,4 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
-  fill: {fileID: 0}
+  fill: {fileID: 3218767102654253570}

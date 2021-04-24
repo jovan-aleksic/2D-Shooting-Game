@@ -1049,6 +1049,10 @@ MonoBehaviour:
       useConstant: 0
       constantValue: 0
       variable: {fileID: 11400000, guid: 351635030ca14cf4d8b81a14e6c66451, type: 2}
+    coolDownTimeLeft:
+      useConstant: 1
+      constantValue: 0
+      variable: {fileID: 0}
   laserSoundEffect: {fileID: 8499039124094971228}
   ammoCount: {fileID: 11400000, guid: 6b8bfe7f20b227c47b4995531730a5cd, type: 2}
   ammoPowerUp:
@@ -1070,6 +1074,10 @@ MonoBehaviour:
       useConstant: 0
       constantValue: 0
       variable: {fileID: 11400000, guid: 58cca5a0bb177404794937301b3f1f9a, type: 2}
+    coolDownTimeLeft:
+      useConstant: 1
+      constantValue: 0
+      variable: {fileID: 0}
   tripleShotPowerUp:
     event: {fileID: 11400000, guid: c615448c406a27640b86f2357bd5fc99, type: 2}
   tripleShotFireSoundEffect: {fileID: 6791659384128617021}
@@ -1081,6 +1089,10 @@ MonoBehaviour:
       useConstant: 0
       constantValue: 0
       variable: {fileID: 11400000, guid: bf141a996ee1e1a4f9b350cbfd5eca49, type: 2}
+    coolDownTimeLeft:
+      useConstant: 1
+      constantValue: 0
+      variable: {fileID: 0}
   homingLaserPowerUp:
     event: {fileID: 11400000, guid: 411b2f2cf93f3b742a515ae5ea6d17d2, type: 2}
   homingLaserFireSoundEffect: {fileID: 723687327940459979}
@@ -1092,6 +1104,10 @@ MonoBehaviour:
       useConstant: 0
       constantValue: 0
       variable: {fileID: 11400000, guid: 61b4e43e72a8e0b41991e905c7a8830d, type: 2}
+    coolDownTimeLeft:
+      useConstant: 1
+      constantValue: 0
+      variable: {fileID: 0}
   speedBoostPowerUp:
     event: {fileID: 11400000, guid: abbbe5030f5ca95409469e430c84e5d6, type: 2}
   thrusterSpeedAmount: {x: 1, y: 1}
@@ -1173,7 +1189,7 @@ MonoBehaviour:
     m_DissipationDistance: 1000
     m_PropagationSpeed: 343
   cameraShakeEvent:
-    event: {fileID: 0}
+    event: {fileID: 11400000, guid: 39122fe0aa945824d91878fe8a374569, type: 2}
 --- !u!1 &7416307246515138694
 GameObject:
   m_ObjectHideFlags: 0

@@ -38,20 +38,18 @@ public class SpawnManager : MonoBehaviour
     {
         enemySpawners.RemoveAll(item => !(item is ISpawner));
         powerUpSpawners.RemoveAll(item => !(item is ISpawner));
-        waveSpawnerCompetedEvent?.Init(gameObject, StopSpawning);
-        if (usePlayerDestroyedEvent) playerDestroyedEvent?.Init(gameObject, StopSpawning);
     }
 
     private void OnDisable()
     {
-        waveSpawnerCompetedEvent?.OnDisable();
-        playerDestroyedEvent?.OnDisable();
+        waveSpawnerCompetedEvent.OnDisable();
+        playerDestroyedEvent.OnDisable();
     }
 
     private void OnEnable()
     {
-        waveSpawnerCompetedEvent?.OnEnable();
-        playerDestroyedEvent?.OnDisable();
+        waveSpawnerCompetedEvent.OnEnable(StopSpawning);
+        if (usePlayerDestroyedEvent) playerDestroyedEvent?.OnEnable(StopSpawning);
     }
 
     private void Start()

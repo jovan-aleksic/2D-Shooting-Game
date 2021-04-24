@@ -38,7 +38,8 @@
                 <e p="GameEventEditor.cs" t="Include" />
               </e>
               <e p="GameEvent.cs" t="Include" />
-              <e p="GameEventListener.cs" t="Include" />
+              <e p="IGameEventListener.cs" t="Include" />
+              <e p="UnityGameEventListener.cs" t="Include" />
             </e>
             <e p="GameMoveDirectionEnum.cs" t="Include" />
             <e p="PositionHelper.cs" t="Include" />

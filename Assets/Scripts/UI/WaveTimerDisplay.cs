@@ -20,11 +20,10 @@ public class WaveTimerDisplay : MonoBehaviour
     {
         m_text = GetComponent<Text>();
         m_animator = GetComponent<Animator>();
-        gameEventListener.Init(gameObject, EnableDisplay);
     }
 
     private void OnDisable() => gameEventListener.OnDisable();
-    private void OnEnable() => gameEventListener.OnEnable();
+    private void OnEnable() => gameEventListener.OnEnable(EnableDisplay);
 
     private void EnableDisplay()
     {

@@ -27,12 +27,7 @@ public class CameraShake : MonoBehaviour
     private Vector3 m_amt;
 
     private void OnDisable() => cameraShakeEvent.OnDisable();
-    private void OnEnable() => cameraShakeEvent.OnEnable();
-
-    private void Awake()
-    {
-        cameraShakeEvent.Init(gameObject, Response);
-    }
+    private void OnEnable() => cameraShakeEvent.OnEnable(Response);
 
     private void Start()
     {

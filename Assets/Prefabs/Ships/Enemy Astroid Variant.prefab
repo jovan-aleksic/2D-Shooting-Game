@@ -53,11 +53,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7017033740898244963, guid: 313e82be39be92540b5099d61023b551, type: 3}
       propertyPath: fireDelayTimer.maxCoolDownTime
-      value: 0.2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7017033740898244963, guid: 313e82be39be92540b5099d61023b551, type: 3}
       propertyPath: fireDelayTimer.minCoolDownTime
-      value: 0.2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7017033740898244967, guid: 313e82be39be92540b5099d61023b551, type: 3}
       propertyPath: m_RootOrder
