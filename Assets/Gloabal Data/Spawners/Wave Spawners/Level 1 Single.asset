@@ -26,6 +26,12 @@ MonoBehaviour:
     timeBetweenSpawning: 0
     prefabsToSpawn:
     - {fileID: 7017033740898244962, guid: 313e82be39be92540b5099d61023b551, type: 3}
+  - name: Ship Homing Laser
+    numberObjectsInWave: 1
+    numberObjectsToSpawnAtATime: 1
+    timeBetweenSpawning: 0
+    prefabsToSpawn:
+    - {fileID: 7114326097833735192, guid: 5f7f3846dc954e946999ee4204f65b5a, type: 3}
   timeBetweenWaves:
     minCoolDownTime: 2
     maxCoolDownTime: 2
