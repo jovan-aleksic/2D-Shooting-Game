@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a035949cacdc94e4eada800369d38197, type: 3}
-  m_Name: Shield Power Up Spawner
+  m_Name: Shield Power Down
   m_EditorClassIdentifier: 
-  timeToWaitBeforeStarting: 0.1
-  spawnTime: 2
-  prefabToSpawn: {fileID: 2328456288792078752, guid: 84d73eda8b3ab534b87b7d47eb1decf4, type: 3}
+  timeToWaitBeforeStarting: 0.2
+  spawnTime: 4
+  prefabToSpawn: {fileID: 444741686107317182, guid: 1907bdda51cfe634889d4c2a4a12d921, type: 3}
   playerLives:
     useConstant: 0
     constantValue:
