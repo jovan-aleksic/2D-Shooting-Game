@@ -339,20 +339,40 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5224385492386346864, guid: 55d421d3a641d544a8fa7b6e3cc1d0a8, type: 3}
       propertyPath: enemySpawners.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5224385492386346864, guid: 55d421d3a641d544a8fa7b6e3cc1d0a8, type: 3}
       propertyPath: powerUpSpawners.Array.size
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5224385492386346864, guid: 55d421d3a641d544a8fa7b6e3cc1d0a8, type: 3}
       propertyPath: enemySpawners.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 933f5e542914c6141b3a1e825e25428f, type: 2}
+      objectReference: {fileID: 11400000, guid: aceb60bce1f721f4ebabf11ee6623537, type: 2}
     - target: {fileID: 5224385492386346864, guid: 55d421d3a641d544a8fa7b6e3cc1d0a8, type: 3}
       propertyPath: enemySpawners.Array.data[1]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: 933f5e542914c6141b3a1e825e25428f, type: 2}
+    - target: {fileID: 5224385492386346864, guid: 55d421d3a641d544a8fa7b6e3cc1d0a8, type: 3}
+      propertyPath: powerUpSpawners.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 85e09660114ee254c9c2714054ef4bfe, type: 2}
+    - target: {fileID: 5224385492386346864, guid: 55d421d3a641d544a8fa7b6e3cc1d0a8, type: 3}
+      propertyPath: powerUpSpawners.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 8e490a8ff2a3f7e4cb5bfc75314f0efa, type: 2}
+    - target: {fileID: 5224385492386346864, guid: 55d421d3a641d544a8fa7b6e3cc1d0a8, type: 3}
+      propertyPath: powerUpSpawners.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: b5d271dfea1d4404e8ae25362da705bd, type: 2}
+    - target: {fileID: 5224385492386346864, guid: 55d421d3a641d544a8fa7b6e3cc1d0a8, type: 3}
+      propertyPath: powerUpSpawners.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 5d5ebcf86ab3a554a86808c95497c442, type: 2}
+    - target: {fileID: 5224385492386346864, guid: 55d421d3a641d544a8fa7b6e3cc1d0a8, type: 3}
+      propertyPath: powerUpSpawners.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: 3b38e75d2a46d574abd9447a66c64e8c, type: 2}
     - target: {fileID: 5224385492386346864, guid: 55d421d3a641d544a8fa7b6e3cc1d0a8, type: 3}
       propertyPath: powerUpSpawners.Array.data[6]
       value: 
