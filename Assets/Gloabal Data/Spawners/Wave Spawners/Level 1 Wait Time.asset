@@ -28,11 +28,11 @@ MonoBehaviour:
     - {fileID: 8677763669795193147, guid: cb5bce7468ac90e4aa86f464449e1d20, type: 3}
     - {fileID: 7017033740898244962, guid: 313e82be39be92540b5099d61023b551, type: 3}
   - name: Wave 6
-    numberObjectsInWave: 5
+    numberObjectsInWave: 6
     numberObjectsToSpawnAtATime: 2
     timeBetweenSpawning: 2
     prefabsToSpawn:
-    - {fileID: 100947975949838633, guid: 162220e4136bfa6418b6246295acf56b, type: 3}
+    - {fileID: 7017033740898244962, guid: 313e82be39be92540b5099d61023b551, type: 3}
     - {fileID: 7017033740898244962, guid: 313e82be39be92540b5099d61023b551, type: 3}
     - {fileID: 3383844200832018908, guid: a2f1818e63f4c804d9f8b1c5999f350e, type: 3}
   timeBetweenWaves:
