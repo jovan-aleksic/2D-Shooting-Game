@@ -93,8 +93,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44d51306bb8f411bac5d3fb1506ea981, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_message: 'Score: '
-  m_intReference:
+  message: 'Score: '
+  intReference:
     useConstant: 0
     constantValue: 0
     variable: {fileID: 11400000, guid: cbe5a35adf0d95c48a49d785ce33bade, type: 2}

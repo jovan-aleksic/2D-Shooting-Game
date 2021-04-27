@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     private void OnEnable() => waveSpawnerComplete?.OnEnable(WaveSpawnerCompleted);
 
 
-    void Update()
+    private void Update()
     {
         if (Input.GetButtonDown("Exit Game"))
         {

@@ -19,7 +19,7 @@ public class GameOverController : MonoBehaviour
         StartCoroutine(CheckInput());
     }
 
-    private IEnumerator CheckInput()
+    private static IEnumerator CheckInput()
     {
         while (true)
         {
@@ -33,7 +33,7 @@ public class GameOverController : MonoBehaviour
         }
     }
 
-    private void RestartGame()
+    private static void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }

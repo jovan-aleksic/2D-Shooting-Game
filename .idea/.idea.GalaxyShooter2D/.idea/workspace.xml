@@ -3,16 +3,37 @@
   <component name="ChangeListManager">
     <list default="true" id="be36d944-fe34-41b0-b054-b6cd290abc4a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Level Start Asteroid.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Level Start Asteroid.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Power Ups/Ammo Power Up.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Power Ups/Ammo Power Up.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Enemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Ammo Count Slider.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Ammo Count Slider.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/StatReferenceDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/StatReferenceDrawer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/VariableReferencePropertyDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/VariableReferencePropertyDrawer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player Shield.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player Shield.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Score Text.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Score Text.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraShake.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraShake.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Editor/StatPropertyDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Events/CodedGameEventListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Events/CodedGameEventListener.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Events/Editor/GameEventEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Events/Editor/GameEventEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Events/UnityGameEventListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Events/UnityGameEventListener.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/UI/CoolDownTimerDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/UI/CoolDownTimerDisplay.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/UI/DisplayIntVariable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/UI/DisplayIntVariable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/UI/StatSliderDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/UI/StatSliderDisplay.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/BoolVariable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/BoolVariable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/BoundsVariable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/BoundsVariable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/FloatVariable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/FloatVariable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/GameMoveDirectionVariable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/GameMoveDirectionVariable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/IntVariable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/IntVariable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/StringReferenceDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/StringReferenceDrawer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/StatVariable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/StatVariable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/StringVariable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/StringVariable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/VariableBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/VariableBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Vector2Variable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Vector2Variable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Vector3Variable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Vector3Variable.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Damageable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Damageable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Main Menu/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Main Menu/MainMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SeekTarget.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SeekTarget.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ships/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ships/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawners/Wave.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/Wave.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawners/WaveSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/WaveSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/GameOverController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/GameOverController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ShieldsSpriteColorChanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ShieldsSpriteColorChanger.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +50,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Camera/CameraShake.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ships/Ship.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/UI/FloatSliderDisplay.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/Vector2ReferenceDrawer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/VariableReferencePropertyDrawer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Power Ups/Homing Laser Power Up.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Scripts/WaveSpawner.cs" root0="SKIP_HIGHLIGHTING" />
@@ -36,12 +58,14 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Events/Editor/GameEventEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/manifest.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/WaveTimerDisplay.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Main Menu/MainMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SoundEffect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Events/CodedGameEventListener.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Stat.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/Vector3ReferenceDrawer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/UI/CoolDownTimerDisplay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Damageable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Scripts/MeterScript.cs" root0="FORCE_HIGHLIGHTING" />
@@ -56,20 +80,30 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ShieldsSpriteColorChanger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DischargeRechargeTimer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/UI/FloatTextDisplay.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Vector2Reference.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawners/WaveSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/VariableReference.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawners/ISpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Events/GameEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/IntReference.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/BoolReference.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/StringReference.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/FloatReference.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawners/Wave.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Camera/CinemachineGameEventImpulseSource.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/GameMoveDirectionDrawer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/GameOverController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/CoolDownTimer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/FloatVariable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/GameMoveDirectionReference.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/BoolVariable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Game.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Ships/Player.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DestroyNoChildren.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Vector2Variable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/VariableBase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Editor/StatPropertyDrawer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/GameMoveDirectionVariable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/StringVariable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/IntVariable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SeekTarget.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -78,32 +112,23 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/DisplayPlayerLives.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Explosion.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Gloabal Data/Spawners/Enemy Astroid Spawner.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RotateGameObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/BoundsVariable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawners/Spawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/GameMoveDirectionEnum.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Camera/CameraScreenBounds.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Moveable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/StringReferenceDrawer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Vector3Reference.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Vector3Variable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/IntReferenceDrawer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/FloatReferenceDrawer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Unity/Game Clones/Metroid/Assets/MetroidvaniaController/Scripts/Player/CharacterController2D.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/BoolReferenceDrawer.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Events/Editor/GameEventEditor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Stat.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Shield Health Display.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/StatSliderDisplay.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/ShieldsDisplay.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Ships/Ship.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SeekTarget.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/DisplayPlayerLives.cs" />
-        <option value="$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Scripts/MeterScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/UI/FloatSliderDisplay.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UsageTimer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/DischargeRechargeTimer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Camera/SetScreenBounds.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraScreenBounds.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PowerUp.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CineaMachineImpulseSource.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CineMachineImpulseSource.cs" />
@@ -117,28 +142,44 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/Editor/SpawnManagerEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Wave Timer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/UI/FloatTextDisplay.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/Wave.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/Spawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/CoolDownTimer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Events/GameEventListener.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Events/GameEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Events/IGameEventListener.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Events/CodedGameEventListener.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Ships/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/WaveSpawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/ShieldsSpriteColorChanger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/WaveTimerDisplay.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraShake.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CinemachineGameEventImpulseSource.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Events/UnityGameEventListener.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/UI/StatSliderDisplay.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Damageable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Editor/StatPropertyDrawer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Variables/StatVariable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/VariableReferencePropertyDrawer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/StatReferenceDrawer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraShake.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Events/Editor/GameEventEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Events/CodedGameEventListener.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Events/UnityGameEventListener.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/UI/CoolDownTimerDisplay.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/UI/DisplayIntVariable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/UI/StatSliderDisplay.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/StringReferenceDrawer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Variables/VariableBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Variables/BoolVariable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Variables/BoundsVariable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Variables/FloatVariable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Variables/GameMoveDirectionVariable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Variables/IntVariable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Variables/StatVariable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Variables/StringVariable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Vector2Variable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Vector3Variable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Main Menu/MainMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ships/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/Wave.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/WaveSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/ShieldsSpriteColorChanger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/GameOverController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SeekTarget.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Damageable.cs" />
       </list>
     </option>
   </component>
@@ -205,7 +246,7 @@
       <workItem from="1618942683371" duration="19818000" />
       <workItem from="1619022897773" duration="35576000" />
       <workItem from="1619313314398" duration="13471000" />
-      <workItem from="1619481648860" duration="14303000" />
+      <workItem from="1619481648860" duration="17019000" />
     </task>
     <servers />
   </component>

@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-[System.Serializable]
+[Serializable]
 public class CodedGameEventListener : IGameEventListener
 {
    [SerializeField] private GameEvent @event;

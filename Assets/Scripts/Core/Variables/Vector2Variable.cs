@@ -11,14 +11,4 @@ public class Vector2Variable : VariableBase<Vector2>
         variableValue.x = x;
         variableValue.y = y;
     }
-
-    #region Overrides of VariableBase<Vector2>
-
-    /// <inheritdoc />
-    public override void Add(Vector2 amount) => variableValue += amount;
-
-    /// <inheritdoc />
-    public override void Add(VariableBase<Vector2> amount) => variableValue += amount.Value;
-
-    #endregion
 }

@@ -142,7 +142,7 @@ MonoBehaviour:
       valueIncreased: {fileID: 0}
       valueDecreased: {fileID: 0}
     variable: {fileID: 11400000, guid: 52118a3b354a45f4eace3c6a4f25029b, type: 2}
-  m_statUpdateGameEventListener:
+  statUpdateGameEventListener:
     event: {fileID: 11400000, guid: 63b42c489b3461448852729ae3ef03aa, type: 2}
 --- !u!114 &5519714403105657585
 MonoBehaviour:

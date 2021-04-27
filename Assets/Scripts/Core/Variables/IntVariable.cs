@@ -17,15 +17,4 @@ using UnityEngine;
 
 
 [CreateAssetMenu(fileName = "IntVariable", menuName = "Variable/Int")]
-public class IntVariable : VariableBase<int>
-{
-    #region Overrides of VariableBase<int>
-
-    /// <inheritdoc />
-    public override void Add(int amount) => variableValue += amount;
-
-    /// <inheritdoc />
-    public override void Add(VariableBase<int> amount) => variableValue += amount.Value;
-
-    #endregion
-}
+public class IntVariable : VariableBase<int> { }

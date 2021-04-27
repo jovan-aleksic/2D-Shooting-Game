@@ -18,7 +18,7 @@ using UnityEngine.Events;
 public class UnityGameEventListener : MonoBehaviour, IGameEventListener
 {
     [Tooltip("Event to register with.")] [SerializeField]
-    GameEvent @event;
+    private GameEvent @event;
 
     [Tooltip("Response to invoke when Event is raised.")]
     [SerializeField]

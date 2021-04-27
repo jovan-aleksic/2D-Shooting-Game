@@ -11,7 +11,8 @@ public class Player : Ship
     private Vector3Variable movementDirection;
 
     [Header("Receive Damage")]
-    [SerializeField] private StatVariable lives;
+    [SerializeField]
+    private StatVariable lives;
 
     private int m_lives;
 
@@ -185,7 +186,6 @@ public class Player : Ship
             else if (!tripleShotActiveTimer.IsActive)
             {
                 base.FireLaser();
-                return;
             }
         }
     }

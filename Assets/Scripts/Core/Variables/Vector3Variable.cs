@@ -18,14 +18,4 @@ public class Vector3Variable : VariableBase<Vector3>
     {
         SetValue(x, y, Z);
     }
-
-    #region Overrides of VariableBase<Vector2>
-
-    /// <inheritdoc />
-    public override void Add(Vector3 amount) => variableValue += amount;
-
-    /// <inheritdoc />
-    public override void Add(VariableBase<Vector3> amount) => variableValue += amount.Value;
-
-    #endregion
 }

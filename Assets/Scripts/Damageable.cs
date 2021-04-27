@@ -21,7 +21,8 @@ public class Damageable : MonoBehaviour
     private GameEvent gameObjectDestroyed;
 
     [Header("Explosion VFX")]
-    [SerializeField] private GameObject explosionVFX;
+    [SerializeField]
+    private GameObject explosionVFX;
 
     [SerializeField] private AudioClip destroyedSoundEffect;
     private bool m_hasDestroyedSoundEffect;
@@ -55,26 +56,25 @@ public class Damageable : MonoBehaviour
     /// </summary>
     private void Damage()
     {
-        //if (ShieldActive)
         if (shieldHealth.Value > 0)
         {
-            //shield.SetActive(false);
             shieldHealth.Remove(1);
             return;
         }
 
-        //lives.Value--;
-        //if (damageReceived != null) damageReceived.Raise();
         lives.Remove(1);
         if (m_hasDamagedSoundEffect) damagedSoundEffect.Play();
         if (lives.Value > 0) return;
-        //lives.Value = 0;
 
         if (gameObjectDestroyed != null)
             gameObjectDestroyed.Raise();
 
         if (explosionVFX != null)
-            Instantiate(explosionVFX, transform.position, transform.rotation);
+        {
+            Transform transform1 = transform;
+            Instantiate(explosionVFX, transform1.position, transform1.rotation);
+        }
+
         if (m_hasDestroyedSoundEffect)
             AudioSource.PlayClipAtPoint(destroyedSoundEffect, transform.position);
         Destroy(gameObject);

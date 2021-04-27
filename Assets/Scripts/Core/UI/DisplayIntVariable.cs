@@ -6,10 +6,10 @@ public class DisplayIntVariable : MonoBehaviour
 {
     private Text m_text;
 
-    [SerializeField] private string m_message = "Score: ";
-    [SerializeField] private IntReference m_intReference;
+    [SerializeField] private string message = "Score: ";
+    [SerializeField] private IntReference intReference;
 
     private void Start() => m_text = GetComponent<Text>();
 
-    private void Update() => m_text.text = m_message + m_intReference.Value;
+    private void Update() => m_text.text = message + intReference.Value;
 }

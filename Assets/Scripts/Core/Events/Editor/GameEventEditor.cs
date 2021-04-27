@@ -18,7 +18,7 @@ public class GameEventEditor : Editor
         GUI.enabled = Application.isPlaying;
 
         GameEvent e = target as GameEvent;
-        if (GUILayout.Button("Raise"))
+        if (GUILayout.Button("Raise") && e != null)
             e.Raise();
     }
 }

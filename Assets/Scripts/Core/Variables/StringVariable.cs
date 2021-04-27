@@ -17,16 +17,4 @@ using UnityEngine;
 
 
 [CreateAssetMenu(fileName = "StringVariable", menuName = "Variable/String")]
-public class StringVariable : VariableBase<string>
-{
-    #region Overrides of VariableBase<string>
-
-    /// <inheritdoc />
-    public override void Add(string amount) => variableValue += amount;
-
-    /// <inheritdoc />
-    public override void Add(VariableBase<string> amount) => variableValue += amount.Value;
-
-    #endregion
-
-}
+public class StringVariable : VariableBase<string> { }
