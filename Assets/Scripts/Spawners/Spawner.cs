@@ -20,11 +20,6 @@ public class Spawner : ScriptableObject, ISpawner
     /// </summary>
     [SerializeField] private GameObject prefabToSpawn;
 
-    /// <summary>
-    /// The Player Lives Variable.
-    /// </summary>
-    [SerializeField] private StatReference playerLives;
-
     private WaitForSeconds m_spawnWaitTime;
 
     private WaitForSeconds m_spawnStartTime;
@@ -40,6 +35,8 @@ public class Spawner : ScriptableObject, ISpawner
     private Vector3 m_positionToSpawnAt;
 
     private Coroutine m_spawnRoutine;
+
+    private bool m_shouldSpawn;
 
     private MonoBehaviour m_monoBehaviour;
 
@@ -61,14 +58,17 @@ public class Spawner : ScriptableObject, ISpawner
     {
         if (!m_hasBeenInit) return;
         Stop();
+        m_shouldSpawn = true;
         m_spawnRoutine = m_monoBehaviour.StartCoroutine(SpawnRoutine());
     }
 
     public void Stop()
     {
         if (!m_hasBeenInit) return;
+        Debug.Log("Stopping " + name);
         if (m_spawnRoutine != null)
             m_monoBehaviour.StopCoroutine(SpawnRoutine());
+        m_shouldSpawn = false;
     }
 
     public void DestroyAllSpawnedObjects()
@@ -91,10 +91,11 @@ public class Spawner : ScriptableObject, ISpawner
 
         yield return m_spawnStartTime;
 
-        while (playerLives.Value > 0)
+        while (m_shouldSpawn)
         {
             m_positionToSpawnAt = PositionHelper.GetRandomPosition(gameMoveDirectionVariable.Value, screenBounds.Value);
             m_spawnedObjects.Add(Instantiate(prefabToSpawn, m_positionToSpawnAt, Quaternion.identity, m_container));
+            Debug.Log("Spawning from: " + name);
 
             for (int i = m_spawnedObjects.Count - 1; i > -1; i--)
             {

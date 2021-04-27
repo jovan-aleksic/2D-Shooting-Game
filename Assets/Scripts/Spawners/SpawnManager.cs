@@ -43,7 +43,7 @@ public class SpawnManager : MonoBehaviour
     private void OnDisable()
     {
         waveSpawnerCompetedEvent.OnDisable();
-        playerDestroyedEvent.OnDisable();
+        if (usePlayerDestroyedEvent) playerDestroyedEvent.OnDisable();
     }
 
     private void OnEnable()
@@ -90,6 +90,7 @@ public class SpawnManager : MonoBehaviour
 
     private void StopSpawning()
     {
+        Debug.Log("Stopping all Spawning");
         foreach (ISpawner enemySpawner in enemySpawners.Cast<ISpawner>())
         {
             enemySpawner.Stop();

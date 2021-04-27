@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="be36d944-fe34-41b0-b054-b6cd290abc4a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Main Menu/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Main Menu/MainMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawners/Spawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/Spawner.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,12 +113,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/Editor/SpawnManagerEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Wave Timer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/UI/FloatTextDisplay.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/Spawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/CoolDownTimer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Events/GameEventListener.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Events/GameEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Events/IGameEventListener.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/WaveTimerDisplay.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CinemachineGameEventImpulseSource.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Editor/StatPropertyDrawer.cs" />
@@ -153,6 +150,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/GameOverController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Main Menu/MainMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/Spawner.cs" />
       </list>
     </option>
   </component>
@@ -219,7 +218,7 @@
       <workItem from="1618942683371" duration="19818000" />
       <workItem from="1619022897773" duration="35576000" />
       <workItem from="1619313314398" duration="13471000" />
-      <workItem from="1619481648860" duration="22148000" />
+      <workItem from="1619481648860" duration="23189000" />
     </task>
     <servers />
   </component>
