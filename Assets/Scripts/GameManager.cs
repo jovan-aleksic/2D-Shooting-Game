@@ -38,13 +38,7 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetButtonDown("Exit Game"))
         {
-            #if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
-            #elif UNITY_WEBGL
-                Application.OpenURL("https://jameslafritz.com/");
-            #else
-                Application.Quit();
-            #endif
+            SceneManager.LoadScene(0);
         }
 
         if (m_gameOver && Input.GetButtonDown("Restart Level"))
