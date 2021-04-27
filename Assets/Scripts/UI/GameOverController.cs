@@ -16,25 +16,5 @@ public class GameOverController : MonoBehaviour
     public void DisplayGameOver()
     {
         m_animator.SetBool(GameOver, true);
-        StartCoroutine(CheckInput());
-    }
-
-    private static IEnumerator CheckInput()
-    {
-        while (true)
-        {
-            if (Input.GetKeyDown(KeyCode.R))
-            {
-                RestartGame();
-                yield break;
-            }
-
-            yield return null;
-        }
-    }
-
-    private static void RestartGame()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

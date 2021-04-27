@@ -925,6 +925,24 @@ MonoBehaviour:
   waveSpawnerComplete:
     event: {fileID: 11400000, guid: 56c5d0c131d11db40b98467117142767, type: 2}
   spawnerCompleteSceneToLoad: 0
+  score:
+    useConstant: 0
+    constantValue: 0
+    variable: {fileID: 11400000, guid: cbe5a35adf0d95c48a49d785ce33bade, type: 2}
+  playerDestroyed:
+    event: {fileID: 11400000, guid: f5458e33557b9bf44bde763793bf952f, type: 2}
+  gameOverController: {fileID: 1464449824}
+--- !u!114 &1464449824 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7423652146728040099, guid: d24b57b4ebb96bf4ba876178ebde8dd9, type: 3}
+  m_PrefabInstance: {fileID: 7423652148215678259}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4600c34bf5645a24ca51380d40016ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1504629025
 PrefabInstance:
   m_ObjectHideFlags: 0
