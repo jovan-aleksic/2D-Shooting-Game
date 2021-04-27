@@ -3,7 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(Collider2D))]
 public class Damageable : MonoBehaviour
 {
-    [Header("Lives")]
+    [Header("Health")]
     [SerializeField]
     private StatReference lives;
 
@@ -28,8 +28,6 @@ public class Damageable : MonoBehaviour
 
     private void Awake()
     {
-        //lives.Value = maxLives;
-
         m_hasDamagedSoundEffect = damagedSoundEffect != null;
 
         m_hasDestroyedSoundEffect = destroyedSoundEffect != null;

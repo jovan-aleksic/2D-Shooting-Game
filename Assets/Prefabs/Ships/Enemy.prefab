@@ -331,15 +331,19 @@ MonoBehaviour:
     useConstant: 1
     constantValue:
       currentValue: 0
-      maxValue: 0
+      maxValue: 1
       valueChanged: {fileID: 0}
+      valueIncreased: {fileID: 0}
+      valueDecreased: {fileID: 0}
     variable: {fileID: 0}
   shieldHealth:
     useConstant: 1
     constantValue:
       currentValue: 0
-      maxValue: 0
+      maxValue: 1
       valueChanged: {fileID: 0}
+      valueIncreased: {fileID: 0}
+      valueDecreased: {fileID: 0}
     variable: {fileID: 0}
   receivesDamageFromTags:
   - Player
@@ -368,6 +372,10 @@ MonoBehaviour:
     minCoolDownTime: 0.5
     maxCoolDownTime: 4
     percentageCompleted:
+      useConstant: 1
+      constantValue: 0
+      variable: {fileID: 0}
+    coolDownTimeLeft:
       useConstant: 1
       constantValue: 0
       variable: {fileID: 0}
