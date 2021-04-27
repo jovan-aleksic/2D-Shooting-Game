@@ -158,6 +158,7 @@ GameObject:
   - component: {fileID: 6001576803891449032}
   - component: {fileID: 7017033740898244963}
   - component: {fileID: 3375779739693696444}
+  - component: {fileID: -3352234410330103883}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -340,7 +341,7 @@ MonoBehaviour:
     useConstant: 1
     constantValue:
       currentValue: 0
-      maxValue: 1
+      maxValue: 0
       valueChanged: {fileID: 0}
       valueIncreased: {fileID: 0}
       valueDecreased: {fileID: 0}
@@ -400,3 +401,31 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-3352234410330103883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7017033740898244962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0ecfa326719ac04ea9e5dd7abb53c8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  event: {fileID: 11400000, guid: a7ae85abac0bb5a40b3ef90034cab0b2, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: cbe5a35adf0d95c48a49d785ce33bade, type: 2}
+        m_TargetAssemblyTypeName: IntVariable, Assembly-CSharp
+        m_MethodName: Add
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

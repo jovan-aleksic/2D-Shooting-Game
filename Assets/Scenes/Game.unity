@@ -425,6 +425,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawn Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 5224385492386346871, guid: 55d421d3a641d544a8fa7b6e3cc1d0a8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55d421d3a641d544a8fa7b6e3cc1d0a8, type: 3}
 --- !u!114 &289293678 stripped
@@ -928,14 +932,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 265802006211009226, guid: bb652211173ac6741986bf940b8f6c32, type: 3}
-      propertyPath: m_ImpulseDefinition.m_AmplitudeGain
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 265802006211009226, guid: bb652211173ac6741986bf940b8f6c32, type: 3}
-      propertyPath: m_ImpulseDefinition.m_FrequencyGain
-      value: 100
-      objectReference: {fileID: 0}
     - target: {fileID: 5626883672520933530, guid: bb652211173ac6741986bf940b8f6c32, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -984,12 +980,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 5626883672520933534, guid: bb652211173ac6741986bf940b8f6c32, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4786210042829318683, guid: bb652211173ac6741986bf940b8f6c32, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb652211173ac6741986bf940b8f6c32, type: 3}
 --- !u!1 &1893876596
 GameObject:

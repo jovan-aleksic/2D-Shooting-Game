@@ -17,4 +17,10 @@ using UnityEngine;
 
 
 [CreateAssetMenu(fileName = "IntVariable", menuName = "Variable/Int")]
-public class IntVariable : VariableBase<int> { }
+public class IntVariable : VariableBase<int>
+{
+    public void Add(int amount)
+    {
+        variableValue += amount;
+    }
+}

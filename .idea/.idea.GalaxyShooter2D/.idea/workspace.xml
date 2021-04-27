@@ -2,38 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be36d944-fe34-41b0-b054-b6cd290abc4a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player Shield.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player Shield.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Enemy Astroid Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Enemy Astroid Variant.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Enemy Player Homing Laser Variant.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Enemy.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Score Text.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Score Text.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraShake.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraShake.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Editor/StatPropertyDrawer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Events/CodedGameEventListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Events/CodedGameEventListener.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Events/Editor/GameEventEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Events/Editor/GameEventEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Events/UnityGameEventListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Events/UnityGameEventListener.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/UI/CoolDownTimerDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/UI/CoolDownTimerDisplay.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/UI/DisplayIntVariable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/UI/DisplayIntVariable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/UI/StatSliderDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/UI/StatSliderDisplay.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/BoolVariable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/BoolVariable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/BoundsVariable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/BoundsVariable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/FloatVariable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/FloatVariable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/GameMoveDirectionVariable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/GameMoveDirectionVariable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/IntVariable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/IntVariable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/StringReferenceDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/StringReferenceDrawer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/StatVariable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/StatVariable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/StringVariable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/StringVariable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/VariableBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/VariableBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Vector2Variable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Vector2Variable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Vector3Variable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Vector3Variable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Damageable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Damageable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Main Menu/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Main Menu/MainMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SeekTarget.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SeekTarget.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ships/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ships/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawners/Wave.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/Wave.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawners/WaveSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/WaveSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/GameOverController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/GameOverController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ShieldsSpriteColorChanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ShieldsSpriteColorChanger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/StatReference.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/StatReference.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +112,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Moveable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ships/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Stat.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/StatReference.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/WaveSpawnManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/ISpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/Editor/SpawnManagerEditor.cs" />
@@ -166,7 +141,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Variables/BoundsVariable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Variables/FloatVariable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Variables/GameMoveDirectionVariable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Variables/IntVariable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Variables/StatVariable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Variables/StringVariable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Vector2Variable.cs" />
@@ -179,7 +153,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/GameOverController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SeekTarget.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/StatReference.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Damageable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Variables/IntVariable.cs" />
       </list>
     </option>
   </component>
@@ -246,7 +222,7 @@
       <workItem from="1618942683371" duration="19818000" />
       <workItem from="1619022897773" duration="35576000" />
       <workItem from="1619313314398" duration="13471000" />
-      <workItem from="1619481648860" duration="17019000" />
+      <workItem from="1619481648860" duration="19152000" />
     </task>
     <servers />
   </component>
