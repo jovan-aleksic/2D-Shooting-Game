@@ -8,14 +8,14 @@ public class ToDo
 {
     /*
      * ToDo: Attributes for inspector
-     *          ToDo: ● Header with Separator, Color, Size
+     *          ● Header with Separator, Color
      *          ToDo: ● Scene Selection Attribute
      *          ToDo: ● Tag Selection Attribute
      *          ToDo: ● Input Selection Attribute "For the Player"
      *          ToDo: ● Info Box Attribute
      * 
      * ToDo: Remove the Laser Firing from Ship, Create a new Gun Prefab that can be added that controls the laser.
-     * ToDo: Add Total retrys for a level before having to start over at the beginig.
+     * ToDo: Add Total retries for a level before having to start over at the beginning.
      * ToDo: Add Destroy All Objects Pick Up.
      * ToDo: New Enemy Movement
      *          ToDo: ● Enable the Enemies to move in a new way,either from side to side, circling, or coming into the play field at an angle.

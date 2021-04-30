@@ -2,11 +2,10 @@ using UnityEngine;
 
 public class Player : Ship
 {
-    [Header("Ammo")] [SerializeField] private StatVariable ammoCount;
+    [Header("")] [SerializeField] private StatVariable ammoCount;
     [SerializeField] private CodedGameEventListener ammoPowerUp;
 
-    [Header("Player")]
-    [Space(10)]
+    [Header("Player", 3f)]
     [SerializeField]
     private Vector3Variable movementDirection;
 

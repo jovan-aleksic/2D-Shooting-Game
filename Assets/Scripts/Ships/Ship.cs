@@ -6,12 +6,11 @@ using UnityEngine;
 [RequireComponent(typeof(Damageable), typeof(Moveable), typeof(Rigidbody2D))]
 public abstract class Ship : MonoBehaviour
 {
-    [Space]
-    [Header("Ship")]
+    [Header("Ship", 3f)]
     [SerializeField]
     protected BoundsVariable bounds;
 
-    [Header("Laser")]
+    [Header("Laser", 2f)]
     [SerializeField]
     private GameObject laserProjectilePrefab;
 
