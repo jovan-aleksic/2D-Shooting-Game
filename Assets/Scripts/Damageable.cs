@@ -12,6 +12,7 @@ public class Damageable : MonoBehaviour
     [Header("Tags And Events")]
     [Tooltip("The Tags of the game objects that can do damage to this game object.")]
     [SerializeField]
+    [Tag]
     private string[] receivesDamageFromTags;
 
     [SerializeField] private SoundEffect damagedSoundEffect;
