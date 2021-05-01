@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="be36d944-fe34-41b0-b054-b6cd290abc4a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Attributes/TagAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Attributes/TagAttribute.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/ToDo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/ToDo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Main Menu/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Main Menu/MainMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawners/Spawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/Spawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ships/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ships/Player.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +109,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Attributes/Header.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Moveable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Ships/Ship.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Ships/Player.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Attributes/HeaderAttribute.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Attributes/Editor/HeaderDrawer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Attributes/Editor/TagAttributePropertyDrawer.cs" />
@@ -127,6 +120,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Attributes/Editor/SceneAttributePropertyDrawer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Main Menu/MainMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Editor/ToDo.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Attributes/InputAxisAttribute.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Attributes/Editor/InputAxisPropertyDrawer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Ships/Player.cs" />
     </changedPaths>
   </component>
   <component name="IgnoredFileRootStore">
@@ -205,7 +201,7 @@
       <workItem from="1619022897773" duration="35576000" />
       <workItem from="1619313314398" duration="13471000" />
       <workItem from="1619481648860" duration="24529000" />
-      <workItem from="1619687489946" duration="52305000" />
+      <workItem from="1619687489946" duration="54703000" />
     </task>
     <servers />
   </component>

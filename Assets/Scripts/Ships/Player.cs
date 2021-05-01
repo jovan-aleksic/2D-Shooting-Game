@@ -9,6 +9,11 @@ public class Player : Ship
     [SerializeField]
     private Vector3Variable movementDirection;
 
+    [InputAxis] [SerializeField] private string horizontalInput = "Horizontal";
+    [InputAxis] [SerializeField] private string verticalInput = "Vertical";
+    [InputAxis] [SerializeField] private string fireLaserInput = "Fire1";
+    [InputAxis] [SerializeField] private string thrusterInput = "Fire3";
+
     [Header("Receive Damage")]
     [SerializeField]
     private StatVariable lives;
@@ -138,7 +143,7 @@ public class Player : Ship
     protected override bool ShouldFireLaser()
     {
         // The Player Can only fire if they are pressing the Fire 1 Button and They have Ammo to Fire.
-        return Input.GetButton("Fire1") && ammoCount.Value > 0;
+        return Input.GetButton(fireLaserInput) && ammoCount.Value > 0;
     }
 
     /// <inheritdoc />
@@ -197,7 +202,7 @@ public class Player : Ship
     private void SetMoveDirection()
     {
         // If the Fire 3 button was pressed this frame
-        if (Input.GetButtonDown("Fire3") && thrusterUsageTimer.CanDischarge)
+        if (Input.GetButtonDown(thrusterInput) && thrusterUsageTimer.CanDischarge)
         {
             thrusterUsageTimer.StartDischarging();
             if (m_hasThrustersVisual) thrustersVisual.SetActive(true);
@@ -205,7 +210,7 @@ public class Player : Ship
         }
 
         // If the Fire 3 Button is being held down this frame
-        if (Input.GetButton("Fire3"))
+        if (Input.GetButton(thrusterInput))
         {
             if (!thrusterUsageTimer.CanDischarge)
             {
@@ -216,7 +221,7 @@ public class Player : Ship
         }
 
         // If the Fire 3 Button was released this frame
-        if (Input.GetButtonUp("Fire3"))
+        if (Input.GetButtonUp(thrusterInput))
         {
             thrusterUsageTimer.StartRecharging();
             if (m_hasThrustersVisual) thrustersVisual.SetActive(false);
@@ -224,8 +229,8 @@ public class Player : Ship
         }
 
         m_boostSpeed = speedBoostActiveTimer.IsActive ? boostSpeedAmount : 1;
-        movementDirection.SetValue(Input.GetAxis("Horizontal") * (m_boostSpeed + m_thrusterSpeed.x),
-                                   Input.GetAxis("Vertical") * (m_boostSpeed + m_thrusterSpeed.y));
+        movementDirection.SetValue(Input.GetAxis(horizontalInput) * (m_boostSpeed + m_thrusterSpeed.x),
+                                   Input.GetAxis(verticalInput) * (m_boostSpeed + m_thrusterSpeed.y));
     }
 
     public void OutOfBoundsAction()
