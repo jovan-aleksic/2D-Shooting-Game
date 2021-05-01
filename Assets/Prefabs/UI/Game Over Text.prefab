@@ -92,7 +92,6 @@ GameObject:
   - component: {fileID: 7423652146728040097}
   - component: {fileID: 7423652146728040098}
   - component: {fileID: 7423652146728040099}
-  - component: {fileID: 7423652146728040124}
   m_Layer: 5
   m_Name: Game Over Text
   m_TagString: Untagged
@@ -193,31 +192,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4600c34bf5645a24ca51380d40016ee5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7423652146728040124
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7423652146728040126}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0ecfa326719ac04ea9e5dd7abb53c8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  event: {fileID: 11400000, guid: f5458e33557b9bf44bde763793bf952f, type: 2}
-  response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7423652146728040099}
-        m_TargetAssemblyTypeName: GameOverController, Assembly-CSharp
-        m_MethodName: DisplayGameOver
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2

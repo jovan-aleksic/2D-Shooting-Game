@@ -23,4 +23,14 @@ public class StatReferenceDrawer : PropertyDrawer
     {
         VariableReferencePropertyDrawer.OnGUI(position, property, label);
     }
+
+    #region Overrides of PropertyDrawer
+
+    /// <inheritdoc />
+    public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
+    {
+        return VariableReferencePropertyDrawer.GetPropertyHeight(property, label);
+    }
+
+    #endregion
 }

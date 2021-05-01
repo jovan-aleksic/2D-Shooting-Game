@@ -25,11 +25,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3426865355696568074}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 7017033740898244967}
+  m_Father: {fileID: 1934456247340470898}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &4871070591500597285
@@ -142,6 +142,64 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 4871070591500597285}
   audioClip: {fileID: 8300000, guid: 75676f361bdfeaf41a46623e95df3dbc, type: 3}
+--- !u!1 &4029612126874702849
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1934456247340470898}
+  - component: {fileID: 1016856853701375147}
+  m_Layer: 0
+  m_Name: Weapon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1934456247340470898
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4029612126874702849}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1390185573739196194}
+  m_Father: {fileID: 7017033740898244967}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1016856853701375147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4029612126874702849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073ba6f9df046bf479ce71da89454821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserProjectilePrefab: {fileID: 6060749886461449775, guid: 0d904a29f8c8ec64ca10732ee86695c8, type: 3}
+  laserOffset: {x: 0, y: 1, z: 0}
+  fireDelayTimer:
+    minCoolDownTime: 0.5
+    maxCoolDownTime: 3
+    percentageCompleted:
+      useConstant: 1
+      constantValue: 0
+      variable: {fileID: 0}
+    coolDownTimeLeft:
+      useConstant: 1
+      constantValue: 0
+      variable: {fileID: 0}
+  laserSoundEffect: {fileID: 2410278569044483245}
 --- !u!1 &7017033740898244962
 GameObject:
   m_ObjectHideFlags: 0
@@ -154,10 +212,11 @@ GameObject:
   - component: {fileID: 459698224306611799}
   - component: {fileID: 8145056890364575934}
   - component: {fileID: 1461970207832534315}
-  - component: {fileID: 7520782547613656350}
   - component: {fileID: 6001576803891449032}
+  - component: {fileID: 1459673295710147516}
   - component: {fileID: 7017033740898244963}
   - component: {fileID: 3375779739693696444}
+  - component: {fileID: -3352234410330103883}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -176,7 +235,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1390185573739196194}
+  - {fileID: 1934456247340470898}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -278,43 +337,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.25, y: 2.75}
   m_EdgeRadius: 0
---- !u!114 &7520782547613656350
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7017033740898244962}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d71e7d99072b9a48a6995ddf927567c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementSpeed: 4
-  gameMoveDirection:
-    useConstant: 0
-    constantValue: 0
-    variable: {fileID: 11400000, guid: 516083d7ea62c974a88ba28da36e6310, type: 2}
-  moveDirection:
-    useConstant: 1
-    constantValue: {x: 0, y: 0, z: 0}
-    variable: {fileID: 0}
-  bounds: {fileID: 11400000, guid: 0ce5d6c5dc2700a4ca5913afe4ee2c11, type: 2}
-  outOfBoundsEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7017033740898244963}
-        m_TargetAssemblyTypeName: Enemy, Assembly-CSharp
-        m_MethodName: OutOfBoundsAction
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &6001576803891449032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -331,8 +353,10 @@ MonoBehaviour:
     useConstant: 1
     constantValue:
       currentValue: 0
-      maxValue: 0
+      maxValue: 1
       valueChanged: {fileID: 0}
+      valueIncreased: {fileID: 0}
+      valueDecreased: {fileID: 0}
     variable: {fileID: 0}
   shieldHealth:
     useConstant: 1
@@ -340,6 +364,8 @@ MonoBehaviour:
       currentValue: 0
       maxValue: 0
       valueChanged: {fileID: 0}
+      valueIncreased: {fileID: 0}
+      valueDecreased: {fileID: 0}
     variable: {fileID: 0}
   receivesDamageFromTags:
   - Player
@@ -348,6 +374,24 @@ MonoBehaviour:
   gameObjectDestroyed: {fileID: 11400000, guid: a7ae85abac0bb5a40b3ef90034cab0b2, type: 2}
   explosionVFX: {fileID: 7578308582667034835, guid: a12b6868e604b8f47aeafbf0af8f2007, type: 3}
   destroyedSoundEffect: {fileID: 8300000, guid: a885c043fab7e46438bba03ba9dab6bc, type: 3}
+--- !u!114 &1459673295710147516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7017033740898244962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb6f8cefcc6cdea4ebb3327266536a15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 3
+  gameMoveDirection:
+    useConstant: 0
+    constantValue: 0
+    variable: {fileID: 11400000, guid: 516083d7ea62c974a88ba28da36e6310, type: 2}
+  bounds: {fileID: 11400000, guid: 0ce5d6c5dc2700a4ca5913afe4ee2c11, type: 2}
 --- !u!114 &7017033740898244963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -360,19 +404,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29e6f11407e2c844989f6e99c459ef1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bounds: {fileID: 11400000, guid: 0ce5d6c5dc2700a4ca5913afe4ee2c11, type: 2}
-  laserProjectilePrefab: {fileID: 6060749886461449775, guid: 0d904a29f8c8ec64ca10732ee86695c8, type: 3}
-  laserOffset: {x: 0, y: 0, z: 0}
-  projectileContainerName: {fileID: 11400000, guid: ffb6f3543f284b448904a21752721539, type: 2}
-  fireDelayTimer:
-    minCoolDownTime: 0.5
-    maxCoolDownTime: 4
-    percentageCompleted:
-      useConstant: 1
-      constantValue: 0
-      variable: {fileID: 0}
-  laserSoundEffect: {fileID: 2410278569044483245}
-  gameMoveDirectionVariable: {fileID: 11400000, guid: 516083d7ea62c974a88ba28da36e6310, type: 2}
 --- !u!95 &3375779739693696444
 Animator:
   serializedVersion: 3
@@ -392,3 +423,31 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-3352234410330103883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7017033740898244962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0ecfa326719ac04ea9e5dd7abb53c8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  event: {fileID: 11400000, guid: a7ae85abac0bb5a40b3ef90034cab0b2, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: cbe5a35adf0d95c48a49d785ce33bade, type: 2}
+        m_TargetAssemblyTypeName: IntVariable, Assembly-CSharp
+        m_MethodName: Add
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

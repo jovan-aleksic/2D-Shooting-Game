@@ -1,7 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Debug = UnityEngine.Debug;
 
 public class CoolDownTimerDisplay : MonoBehaviour
 {
@@ -9,10 +8,7 @@ public class CoolDownTimerDisplay : MonoBehaviour
 
     public FloatReference coolDownTimer;
 
-    /// <summary>
-    /// Start is called before the first frame update
-    /// </summary>
-    void Start()
+    private void Awake()
     {
         m_slider = GetComponent<Slider>();
 
@@ -25,11 +21,10 @@ public class CoolDownTimerDisplay : MonoBehaviour
         coolDownTimer.Value = 0;
     }
 
-    /// <summary>
-    ///  Update is called once per frame.
-    /// </summary>
-    void Update()
+    private void Update()
     {
+        Debug.Assert(m_slider != null, nameof(m_slider) + " != null");
+        Debug.Assert(coolDownTimer != null, nameof(coolDownTimer) + " != null");
         m_slider.value = coolDownTimer.Value;
     }
 }

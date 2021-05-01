@@ -16,17 +16,4 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Game Move Direction", menuName = "Variable/Game Move Direction")]
-public class GameMoveDirectionVariable : VariableBase<GameMoveDirectionEnum>
-{
-    #region Overrides of VariableBase<GameMoveDirectionEnum>
-
-    /// <inheritdoc />
-    public override void Add(GameMoveDirectionEnum amount) =>
-        throw new System.NotSupportedException("Adding of Enum is not supported.");
-
-    /// <inheritdoc />
-    public override void Add(VariableBase<GameMoveDirectionEnum> amount) =>
-        throw new System.NotSupportedException("Adding of Enum is not supported.");
-
-    #endregion
-}
+public class GameMoveDirectionVariable : VariableBase<GameMoveDirectionEnum> { }

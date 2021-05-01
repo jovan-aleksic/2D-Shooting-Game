@@ -22,7 +22,7 @@ public class CameraShake : MonoBehaviour
     /// </summary>
     [SerializeField] private float frequency;
 
-    private float m_tick = 0;
+    private float m_tick;
 
     private Vector3 m_amt;
 
@@ -61,7 +61,6 @@ public class CameraShake : MonoBehaviour
 
             m_amt = m_amt * amplitude;
 
-            //transform.localPosition = m_originalPosition + Random.insideUnitSphere * amplitude;
             transform.localPosition = m_originalPosition + m_amt;
 
             yield return null;

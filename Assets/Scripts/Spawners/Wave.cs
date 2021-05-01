@@ -31,7 +31,6 @@ public class Wave
 
     public void Awake()
     {
-        //Debug.Log("Wave Awake: " + name);
         m_currentObjectNumber = 0;
         IsActive = false;
         m_spawnRoutine = null;
@@ -56,25 +55,20 @@ public class Wave
 
         IsActive = true;
 
-        // while the current number of objects is < the number of objects in Wave
         while (m_currentObjectNumber < numberObjectsInWave)
         {
             m_positionToSpawnAt = PositionHelper.GetRandomPosition(m_gameMoveDirection, m_screenBounds);
-            // for number objects to spawn at a time
             for (int i = 0; i < numberObjectsToSpawnAtATime; i++)
             {
-                // Pick A Random game object to spawn
                 int prefabIndex = Random.Range(0, prefabsToSpawn.Length);
-                // Spawn the random prefab at the random spawn position
-                m_spawnedObjects.Add(Object.Instantiate(prefabsToSpawn[prefabIndex], m_positionToSpawnAt, Quaternion.identity, m_container));
-                // Increase Current Object Number by one
+                m_spawnedObjects.Add(Object.Instantiate(prefabsToSpawn[prefabIndex], m_positionToSpawnAt,
+                                                        Quaternion.identity, m_container));
                 m_currentObjectNumber++;
             }
 
             yield return m_spawnWaitTime;
         }
 
-        // Added
         while (HasObjects)
         {
             for (int i = m_spawnedObjects.Count - 1; i > -1; i--)
@@ -89,7 +83,6 @@ public class Wave
 
     public void StartWave()
     {
-        //Debug.Log("Wave StartWave: " + name);
         if (!m_hasBeenInit) return;
         StopWave();
 

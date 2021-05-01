@@ -14,15 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeToWaitBeforeStarting: 30
   spawnTime: 8
-  prefabToSpawn: {fileID: 100947975949838633, guid: 162220e4136bfa6418b6246295acf56b, type: 3}
-  playerLives:
-    useConstant: 0
-    constantValue:
-      currentValue: 0
-      maxValue: 0
-      valueChanged: {fileID: 0}
-      valueIncreased: {fileID: 0}
-      valueDecreased: {fileID: 0}
-    variable: {fileID: 11400000, guid: f8423857274f8d24285c0d0191d78996, type: 2}
+  prefabToSpawn: {fileID: 1008358459883591577, guid: 162220e4136bfa6418b6246295acf56b, type: 3}
   screenBounds: {fileID: 11400000, guid: 0ce5d6c5dc2700a4ca5913afe4ee2c11, type: 2}
   gameMoveDirectionVariable: {fileID: 11400000, guid: 516083d7ea62c974a88ba28da36e6310, type: 2}

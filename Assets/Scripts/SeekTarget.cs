@@ -29,10 +29,12 @@ public class SeekTarget : MonoBehaviour
     {
         if (m_target != null)
         {
-            transform.position =
-                Vector3.MoveTowards(transform.position, m_target.position, movementSpeed * Time.deltaTime);
+            Transform localTransform;
+            Vector3 targetPosition = m_target.position;
+            (localTransform = transform).position =
+                Vector3.MoveTowards(transform.position, targetPosition, movementSpeed * Time.deltaTime);
 
-            Vector3 relativePos = m_target.position - transform.position;
+            Vector3 relativePos = targetPosition - localTransform.position;
             Quaternion newRotation = Quaternion.LookRotation(relativePos, Vector3.back);
             newRotation = Quaternion.Euler(0, 0, newRotation.eulerAngles.z);
 

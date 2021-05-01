@@ -4,24 +4,47 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    [Scene] [SerializeField] private string mainMenuScene;
+
     [SerializeField] private CodedGameEventListener waveSpawnerComplete;
-    [SerializeField] private int spawnerCompleteSceneToLoad;
+    [Scene] [SerializeField] private int spawnerCompleteSceneToLoad;
 
-    private void OnDisable() => waveSpawnerComplete?.OnDisable();
-    private void OnEnable() => waveSpawnerComplete?.OnEnable(WaveSpawnerCompleted);
+    [SerializeField] private IntReference score;
+    private int m_savedScore;
 
+    [SerializeField] private CodedGameEventListener playerDestroyed;
 
-    void Update()
+    [SerializeField] private GameOverController gameOverController;
+
+    private bool m_gameOver;
+
+    private void OnDisable()
+    {
+        waveSpawnerComplete?.OnDisable();
+        playerDestroyed?.OnDisable();
+    }
+
+    private void OnEnable()
+    {
+        waveSpawnerComplete?.OnEnable(WaveSpawnerCompleted);
+        playerDestroyed?.OnEnable(OnPlayerDestroyed);
+    }
+
+    private void Awake()
+    {
+        m_savedScore = score.Value;
+    }
+
+    private void Update()
     {
         if (Input.GetButtonDown("Exit Game"))
         {
-            #if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
-            #elif UNITY_WEBGL
-                Application.OpenURL("https://jameslafritz.com/");
-            #else
-                Application.Quit();
-            #endif
+            SceneManager.LoadScene(mainMenuScene);
+        }
+
+        if (m_gameOver && Input.GetButtonDown("Restart Level"))
+        {
+            RestartLevel();
         }
     }
 
@@ -34,5 +57,18 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene(spawnerCompleteSceneToLoad);
+    }
+
+    private void OnPlayerDestroyed()
+    {
+        if (gameOverController != null)
+            gameOverController.DisplayGameOver();
+        m_gameOver = true;
+    }
+
+    private void RestartLevel()
+    {
+        score.Value = m_savedScore;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

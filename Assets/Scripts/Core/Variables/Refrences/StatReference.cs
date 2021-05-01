@@ -46,7 +46,7 @@ public class StatReference : VariableReference<StatVariable, Stat>
     public void Remove(float amount)
     {
         if (useConstant)
-            constantValue.Add(amount);
+            constantValue.Remove(amount);
         else
             variable.Remove(amount);
     }

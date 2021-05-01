@@ -1,10 +1,4 @@
 ﻿#region Description
-// VariableReferencePropertyDrawer.cs
-// 03-13-2019
-// James LaFritz
-#endregion
-
-#region Description
 
 // 03-05-2021
 // James LaFritz
@@ -30,12 +24,6 @@ public static class VariableReferencePropertyDrawer
     private static readonly string[] PopupOptions =
         {"Use Constant", "Use Variable"};
 
-    /// <summary>
-    /// Options to display in the popup to select Copy constant to memory.
-    /// </summary>
-    private static readonly string[] PopupOptions1 =
-        {"Copy Variable to memory", "Use Variable as Constant"};
-
     /// <summary> Cached style to use to draw the popup button. </summary>
     private static GUIStyle _popupStyle;
 
@@ -43,7 +31,7 @@ public static class VariableReferencePropertyDrawer
     {
         if (_popupStyle == null)
         {
-            _popupStyle = new GUIStyle(GUI.skin?.GetStyle("PaneOptions"))
+            _popupStyle = new GUIStyle(GUI.skin.GetStyle("PaneOptions"))
             {
                 imagePosition = ImagePosition.ImageOnly
             };
@@ -56,7 +44,6 @@ public static class VariableReferencePropertyDrawer
 
         // Get properties
         SerializedProperty useConstant = property?.FindPropertyRelative("useConstant");
-        //SerializedProperty copyFromConstant = property?.FindPropertyRelative("copyFromConstant");
         SerializedProperty constantValue = property?.FindPropertyRelative("constantValue");
         SerializedProperty variable = property?.FindPropertyRelative("variable");
 
@@ -65,7 +52,6 @@ public static class VariableReferencePropertyDrawer
         Debug.Assert(_popupStyle.margin != null, "m_popupStyle.margin != null");
         constantButtonRect.yMin += _popupStyle.margin.top;
         constantButtonRect.width = _popupStyle.fixedWidth + _popupStyle.margin.right;
-        //Rect copyFromConstantButtonRect = new Rect(constantButtonRect) {xMin = constantButtonRect.xMax};
         position.xMin = constantButtonRect.xMax;
 
         // Store old indent level and set it to 0, the PrefixLabel takes care of it
@@ -79,10 +65,8 @@ public static class VariableReferencePropertyDrawer
         {
             useConstant.boolValue = useConstantResults == 0;
 
-            //int copyConstantResults = EditorGUI.Popup(constantButtonRect, copyFromConstant?.boolValue == true ? 0 : 1,
-            //                                          PopupOptions, _popupStyle);
-
-            EditorGUI.PropertyField(position, useConstant.boolValue ? constantValue : variable, GUIContent.none);
+            EditorGUI.PropertyField(position, useConstant.boolValue ? constantValue : variable, GUIContent.none,
+                                    useConstant.boolValue);
         }
 
         if (EditorGUI.EndChangeCheck())
@@ -90,5 +74,18 @@ public static class VariableReferencePropertyDrawer
 
         EditorGUI.indentLevel = indent;
         EditorGUI.EndProperty();
+    }
+
+    public static float GetPropertyHeight(SerializedProperty property, GUIContent label)
+    {
+        float totalHeight = EditorGUI.GetPropertyHeight(property, label) + EditorGUIUtility.singleLineHeight;
+
+        SerializedProperty useConstant = property?.FindPropertyRelative("useConstant");
+        if (useConstant?.boolValue != true) return totalHeight;
+
+        SerializedProperty constantValue = property.FindPropertyRelative("constantValue");
+        totalHeight = constantValue.CountInProperty() * EditorGUIUtility.singleLineHeight;
+
+        return totalHeight;
     }
 }

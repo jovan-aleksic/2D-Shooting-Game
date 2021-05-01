@@ -16,17 +16,4 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Bool", menuName = "Variable/Bool")]
-public class BoolVariable : VariableBase<bool>
-{
-    #region Overrides of VariableBase<bool>
-
-    /// <inheritdoc />
-    public override void Add(bool amount) => variableValue = variableValue && amount;
-
-    /// <inheritdoc />
-    public override void Add(VariableBase<bool> amount) => variableValue = variableValue && amount.Value;
-
-    #endregion
-
-
-}
+public class BoolVariable : VariableBase<bool> { }

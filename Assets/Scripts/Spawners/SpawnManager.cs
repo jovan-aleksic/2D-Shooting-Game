@@ -43,7 +43,7 @@ public class SpawnManager : MonoBehaviour
     private void OnDisable()
     {
         waveSpawnerCompetedEvent.OnDisable();
-        playerDestroyedEvent.OnDisable();
+        if (usePlayerDestroyedEvent) playerDestroyedEvent.OnDisable();
     }
 
     private void OnEnable()

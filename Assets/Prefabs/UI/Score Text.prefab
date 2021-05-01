@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 8489369387367332504}
   - component: {fileID: 8489369387367332505}
   - component: {fileID: 8489369387367332506}
-  - component: {fileID: 8489369387367332507}
   m_Layer: 5
   m_Name: Score Text
   m_TagString: Untagged
@@ -93,36 +92,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44d51306bb8f411bac5d3fb1506ea981, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_message: 'Score: '
-  m_intReference:
+  message: 'Score: '
+  intReference:
     useConstant: 0
     constantValue: 0
     variable: {fileID: 11400000, guid: cbe5a35adf0d95c48a49d785ce33bade, type: 2}
---- !u!114 &8489369387367332507
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8489369387367332455}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0ecfa326719ac04ea9e5dd7abb53c8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  event: {fileID: 11400000, guid: a7ae85abac0bb5a40b3ef90034cab0b2, type: 2}
-  response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: cbe5a35adf0d95c48a49d785ce33bade, type: 2}
-        m_TargetAssemblyTypeName: IntVariable, Assembly-CSharp
-        m_MethodName: Add
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 10
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
