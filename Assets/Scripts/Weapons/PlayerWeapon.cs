@@ -1,5 +1,4 @@
 using UnityEngine;
-using Debug = System.Diagnostics.Debug;
 
 public class PlayerWeapon : Weapon
 {
@@ -63,8 +62,7 @@ public class PlayerWeapon : Weapon
 
         Debug.Assert(tripleShotActiveTimer != null, nameof(tripleShotActiveTimer) + " != null");
         Debug.Assert(homingLaserActiveTimer != null, nameof(homingLaserActiveTimer) + " != null");
-        if (!tripleShotActiveTimer.IsActive && !homingLaserActiveTimer.IsActive ||
-            !m_hasTripleShotPrefab && !m_hasHomingLaserPrefab)
+        if (!tripleShotActiveTimer.IsActive && !homingLaserActiveTimer.IsActive)
         {
             base.FireLaser();
             return;
@@ -137,6 +135,7 @@ public class PlayerWeapon : Weapon
 
     private void ActivateTripleShot()
     {
+        Debug.Log("Triple Shoot Activated");
         Debug.Assert(tripleShotActiveTimer != null, nameof(tripleShotActiveTimer) + " != null");
         StartCoroutine(tripleShotActiveTimer.CoolDown());
     }

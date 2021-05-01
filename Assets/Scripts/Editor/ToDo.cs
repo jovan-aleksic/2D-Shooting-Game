@@ -22,7 +22,7 @@ public class ToDo
      *          ToDo: ● Enable the Enemies to move in a new way,either from side to side, circling, or coming into the play field at an angle.
      *              Random Movement Added.
      * Player Ammo
-     *          ● Visualize on screenthe ammo count of the player in the form of current/max
+     *          ● Visualize on screen the ammo count of the player in the form of current/max
      * Wave System
      *          ● Implement wave sequencing of enemies with more enemies coming each wave.
      * Negative Pickup

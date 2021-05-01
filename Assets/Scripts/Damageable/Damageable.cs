@@ -1,13 +1,14 @@
 using UnityEngine;
+using Debug = UnityEngine.Debug;
 
 [RequireComponent(typeof(Collider2D))]
 public class Damageable : MonoBehaviour
 {
     [Header("Health")]
     [SerializeField]
-    private StatReference lives;
+    protected StatReference lives;
 
-    [SerializeField] private StatReference shieldHealth;
+    [SerializeField] protected StatReference shieldHealth;
 
     [Header("Tags And Events")]
     [InfoBox("The Tags of the game objects that can do damage to this game object.", order = 1)]
@@ -38,16 +39,21 @@ public class Damageable : MonoBehaviour
         m_hasDestroyedSoundEffect = destroyedSoundEffect != null;
     }
 
-    private void Start()
+    protected virtual void Start()
     {
+        Debug.Assert(lives != null, nameof(lives) + " != null");
         lives.ResetStat();
+        Debug.Assert(shieldHealth != null, nameof(shieldHealth) + " != null");
         shieldHealth.ResetStat();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if (receivesDamageFromTags == null) return;
+
         foreach (string doesDamageTag in receivesDamageFromTags)
         {
+            Debug.Assert(other != null, nameof(other) + " != null");
             if (!other.CompareTag(doesDamageTag)) continue;
 
             Damage();
@@ -58,16 +64,23 @@ public class Damageable : MonoBehaviour
     /// Deal damage to this GameObject.
     /// Destroy the Game Object.
     /// </summary>
-    private void Damage()
+    protected virtual void Damage()
     {
+        Debug.Assert(shieldHealth != null, nameof(shieldHealth) + " != null");
         if (shieldHealth.Value > 0)
         {
             shieldHealth.Remove(1);
             return;
         }
 
+        Debug.Assert(lives != null, nameof(lives) + " != null");
         lives.Remove(1);
-        if (m_hasDamagedSoundEffect) damagedSoundEffect.Play();
+        if (m_hasDamagedSoundEffect)
+        {
+            Debug.Assert(damagedSoundEffect != null, nameof(damagedSoundEffect) + " != null");
+            damagedSoundEffect.Play();
+        }
+
         if (lives.Value > 0) return;
 
         if (gameObjectDestroyed != null)
