@@ -10,6 +10,7 @@ public class Damageable : MonoBehaviour
     [SerializeField] private StatReference shieldHealth;
 
     [Header("Tags And Events")]
+    [InfoBox("The Tags of the game objects that can do damage to this game object.", order = 1)]
     [Tooltip("The Tags of the game objects that can do damage to this game object.")]
     [SerializeField]
     [Tag]
@@ -18,7 +19,9 @@ public class Damageable : MonoBehaviour
     [SerializeField] private SoundEffect damagedSoundEffect;
     private bool m_hasDamagedSoundEffect;
 
-    [Tooltip("The Game Event to raise when this game object has no more lives and gets destroyed.")] [SerializeField]
+    [Tooltip("The Game Event to raise when this game object has no more lives and gets destroyed.")]
+    [InfoBox("The Game Event to raise when this game object has no more lives and gets destroyed. Not Required")]
+    [SerializeField]
     private GameEvent gameObjectDestroyed;
 
     [Header("Explosion VFX")]

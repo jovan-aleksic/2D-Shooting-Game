@@ -11,7 +11,7 @@ public class ToDo
      *          ● Header with Separator, Color
      *          ● Scene Selection Attribute
      *          ● Tag Selection Attribute
-     *          ToDo: ● Input Selection Attribute "For the Player"
+     *          ● Input Selection Attribute "For the Player"
      *          ToDo: ● Info Box Attribute
      * 
      * ToDo: Remove the Laser Firing from Ship, Create a new Gun Prefab that can be added that controls the laser.

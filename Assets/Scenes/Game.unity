@@ -951,22 +951,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5626883672520933510, guid: bb652211173ac6741986bf940b8f6c32, type: 3}
-      propertyPath: doesDamage
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5626883672520933510, guid: bb652211173ac6741986bf940b8f6c32, type: 3}
-      propertyPath: receivesDamageFromTags.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5626883672520933510, guid: bb652211173ac6741986bf940b8f6c32, type: 3}
-      propertyPath: receivesDamageFromTags.Array.data[0]
-      value: Enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 5626883672520933510, guid: bb652211173ac6741986bf940b8f6c32, type: 3}
-      propertyPath: receivesDamageFromTags.Array.data[2]
-      value: MainCamera
-      objectReference: {fileID: 0}
     - target: {fileID: 5626883672520933530, guid: bb652211173ac6741986bf940b8f6c32, type: 3}
       propertyPath: m_RootOrder
       value: 6

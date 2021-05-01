@@ -7,7 +7,9 @@ public class Moveable : MonoBehaviour
     /// <summary>
     /// How Fast the game object moves in game.
     /// </summary>
-    [Tooltip("The Speed that the game object moves in game.")] [SerializeField]
+    [InfoBox("The Speed that the game object moves in game.")]
+    [Tooltip("The Speed that the game object moves in game.")]
+    [SerializeField]
     private float movementSpeed = 4.0f;
 
     [SerializeField] private GameMoveDirectionReference gameMoveDirection;
@@ -15,12 +17,18 @@ public class Moveable : MonoBehaviour
     /// <summary>
     /// The direction to move the game object.
     /// </summary>
-    [Tooltip("The direction the Game Object Should move. This value gets set by the game move direction value. If you are using a component that will change the move direction of this object then set this to the same variable.")] [SerializeField]
+    [InfoBox("The direction the Game Object Should move." +
+             "This value gets set by the game move direction value." +
+             "If you are using a component that will change the move direction of this object then set this to the same variable.", InfoBoxType.Error)]
+    [Tooltip("The direction the Game Object Should move. This value gets set by the game move direction value. If you are using a component that will change the move direction of this object then set this to the same variable.")]
+    [SerializeField]
     public Vector3Reference moveDirection;
 
     [SerializeField] private BoundsVariable bounds;
 
     [Tooltip("Actions to perform when the Game object goes out of bounds. If this is not Set then the game object that this is attached to will be destroyed.")]
+    [InfoBox("Actions to perform when the Game object goes out of bounds." +
+             "If this is not Set then the game object that this is attached to will be destroyed.", InfoBoxType.Warning)]
     [SerializeField]
     private UnityEvent outOfBoundsEvent;
 
