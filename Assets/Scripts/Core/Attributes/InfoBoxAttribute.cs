@@ -1,4 +1,3 @@
-using UnityEditor;
 using UnityEngine;
 
 public enum InfoBoxType
@@ -8,7 +7,7 @@ public enum InfoBoxType
     Error
 }
 
-[CustomPropertyDrawer(typeof(InfoBoxAttribute))]
+[System.AttributeUsage(System.AttributeTargets.Field, AllowMultiple = true)]
 public class InfoBoxAttribute : PropertyAttribute
 {
     public readonly string text;

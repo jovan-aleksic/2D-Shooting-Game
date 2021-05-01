@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be36d944-fe34-41b0-b054-b6cd290abc4a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Attributes/InfoBoxAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Attributes/InfoBoxAttribute.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +118,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Main Menu/MainMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Attributes/InputAxisAttribute.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Attributes/Editor/InputAxisPropertyDrawer.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Attributes/InfoBoxAttribute.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Attributes/Editor/InfoBoxDecoratorDrawer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Damageable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Events/UnityGameEventListener.cs" />
@@ -143,6 +145,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/VariableReferencePropertyDrawer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Damageable/Damageable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Editor/ToDo.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Attributes/InfoBoxAttribute.cs" />
     </changedPaths>
   </component>
   <component name="IgnoredFileRootStore">
@@ -221,7 +224,7 @@
       <workItem from="1619022897773" duration="35576000" />
       <workItem from="1619313314398" duration="13471000" />
       <workItem from="1619481648860" duration="24529000" />
-      <workItem from="1619687489946" duration="77405000" />
+      <workItem from="1619687489946" duration="79057000" />
     </task>
     <servers />
   </component>
