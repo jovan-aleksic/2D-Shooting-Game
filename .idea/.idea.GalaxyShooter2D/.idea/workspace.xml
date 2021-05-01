@@ -2,57 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be36d944-fe34-41b0-b054-b6cd290abc4a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Enemy Astroid.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Enemy Astroid.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Enemy Homing Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Enemy Homing Variant.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/VariableReferencePropertyDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/VariableReferencePropertyDrawer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Damageable/Damageable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Damageable/Damageable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/ToDo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/ToDo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ships/Enemy.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ships/Player.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ships/Ship.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/PlayerWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/PlayerWeapon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Cases/AirCase8Section.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Cases/CyanYellowCase8Section.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Cases/EarthCase8Section.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Cases/FireCase8Section.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Cases/IceCase.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Cases/NatureCase8Section.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Cases/NatureCase8SectionRedDial.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Cases/NatureCaseNoSections.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Cases/SunCase8Section.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Cases/SunCaseNoSections.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Cases/WaterCase8Section.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Cases/YellowCase8Section.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Elemental Meters Instruction Manual.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Fill/BlankFill.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Fill/BlankFillHexagonal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Frames/AirFrame.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Frames/EarthFrame.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Frames/FireFrame.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Frames/IceFrame.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Frames/LightningFrame.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Frames/NatureFrame.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Frames/SunFrame.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Frames/WaterFrame.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Masks/AirMask.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Masks/EarthMask.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Masks/FireMask.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Masks/IceMask.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Masks/LightningMaskCyan.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Masks/LightningMaskYellow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Masks/MetallicAirMask.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Masks/MetallicFireMask.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Masks/MetallicNatureMask.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Masks/MetallicWaterMask.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Masks/MetallicYellowMask.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Masks/WaterMask.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Props/SquareProp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Scripts/MeterButtons.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Scripts/MeterScript.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Scripts/PlayerController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -271,7 +221,7 @@
       <workItem from="1619022897773" duration="35576000" />
       <workItem from="1619313314398" duration="13471000" />
       <workItem from="1619481648860" duration="24529000" />
-      <workItem from="1619687489946" duration="76989000" />
+      <workItem from="1619687489946" duration="77405000" />
     </task>
     <servers />
   </component>

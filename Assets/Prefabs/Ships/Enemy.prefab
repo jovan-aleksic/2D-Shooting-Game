@@ -214,7 +214,6 @@ GameObject:
   - component: {fileID: 1461970207832534315}
   - component: {fileID: 6001576803891449032}
   - component: {fileID: 1459673295710147516}
-  - component: {fileID: 7017033740898244963}
   - component: {fileID: 3375779739693696444}
   - component: {fileID: -3352234410330103883}
   m_Layer: 0
@@ -349,6 +348,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c77f7705efca9e4facf647b0a0c6284, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectToDestroy: {fileID: 0}
   lives:
     useConstant: 1
     constantValue:
@@ -392,18 +392,6 @@ MonoBehaviour:
     constantValue: 0
     variable: {fileID: 11400000, guid: 516083d7ea62c974a88ba28da36e6310, type: 2}
   bounds: {fileID: 11400000, guid: 0ce5d6c5dc2700a4ca5913afe4ee2c11, type: 2}
---- !u!114 &7017033740898244963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7017033740898244962}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29e6f11407e2c844989f6e99c459ef1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &3375779739693696444
 Animator:
   serializedVersion: 3
