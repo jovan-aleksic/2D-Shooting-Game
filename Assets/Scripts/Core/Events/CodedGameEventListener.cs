@@ -22,7 +22,7 @@ public class CodedGameEventListener : IGameEventListener
 
    public void OnDisable()
    {
-      @event.UnregisterListener(this);
+      if (@event != null) @event.UnregisterListener(this);
       m_onResponse = null;
    }
 }

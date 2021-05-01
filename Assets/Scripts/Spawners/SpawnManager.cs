@@ -90,7 +90,6 @@ public class SpawnManager : MonoBehaviour
 
     private void StopSpawning()
     {
-        Debug.Log("Stopping all Spawning");
         foreach (ISpawner enemySpawner in enemySpawners.Cast<ISpawner>())
         {
             enemySpawner.Stop();

@@ -3,10 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="be36d944-fe34-41b0-b054-b6cd290abc4a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Events/UnityGameEventListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Events/UnityGameEventListener.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Damageable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Damageable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gloabal Data/Player/PlayerMoveDirection.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/ToDo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/ToDo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Moveable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Moveable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Moveable.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ships/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ships/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ships/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ships/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ships/Ship.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ships/Ship.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +46,7 @@
     <setting file="file://$PROJECT_DIR$/../Scripts/WaveSpawner.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/GameMoveDirectionVariable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/VariableBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/IntVariable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/StringVariable.cs" root0="FORCE_HIGHLIGHTING" />
@@ -58,7 +62,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SeekTarget.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Vector3Reference.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/FloatReference.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Moveable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DischargeRechargeTimer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Prefabs/UI/Tripple Shot Slider.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/IntReferenceDrawer.cs" root0="FORCE_HIGHLIGHTING" />
@@ -82,6 +85,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ships/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Power Ups/Homing Laser Power Up.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement/EnemyMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Camera/CinemachineGameEventImpulseSource.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Camera/CameraShake.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Camera/CameraScreenBounds.cs" root0="FORCE_HIGHLIGHTING" />
@@ -110,7 +114,6 @@
       <option value="$PROJECT_DIR$/../../../../../../Assets/manifest.json" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Events/Editor/GameEventEditor.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Attributes/Header.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Ships/Ship.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Attributes/HeaderAttribute.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Attributes/Editor/HeaderDrawer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Attributes/Editor/TagAttributePropertyDrawer.cs" />
@@ -122,13 +125,18 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Main Menu/MainMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Attributes/InputAxisAttribute.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Attributes/Editor/InputAxisPropertyDrawer.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Ships/Player.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Editor/ToDo.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Attributes/InfoBoxAttribute.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Attributes/Editor/InfoBoxDecoratorDrawer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Damageable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Events/UnityGameEventListener.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Moveable.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Editor/ToDo.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Ships/Player.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Movement/PlayerMovement.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Ships/Enemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Movement/EnemyMovement.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Movement/Moveable.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Ships/Ship.cs" />
     </changedPaths>
   </component>
   <component name="IgnoredFileRootStore">
@@ -207,7 +215,7 @@
       <workItem from="1619022897773" duration="35576000" />
       <workItem from="1619313314398" duration="13471000" />
       <workItem from="1619481648860" duration="24529000" />
-      <workItem from="1619687489946" duration="57111000" />
+      <workItem from="1619687489946" duration="61435000" />
     </task>
     <servers />
   </component>

@@ -819,9 +819,9 @@ GameObject:
   - component: {fileID: 7683256240337558829}
   - component: {fileID: 5816665596581499169}
   - component: {fileID: 696523717167568941}
-  - component: {fileID: 2801464419590441203}
+  - component: {fileID: 4964488923080646720}
   - component: {fileID: 5626883672520933510}
-  - component: {fileID: 5626883672520933531}
+  - component: {fileID: 5503643404859783457}
   - component: {fileID: 1348680711}
   - component: {fileID: 4786210042829318683}
   m_Layer: 0
@@ -952,7 +952,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.25, y: 4}
   m_EdgeRadius: 0
---- !u!114 &2801464419590441203
+--- !u!114 &4964488923080646720
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -961,34 +961,40 @@ MonoBehaviour:
   m_GameObject: {fileID: 5626883672520933534}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d71e7d99072b9a48a6995ddf927567c, type: 3}
+  m_Script: {fileID: 11500000, guid: e5ce27163f8f0e74c9077fe08ef5a7e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 4
   gameMoveDirection:
     useConstant: 0
-    constantValue: 4
+    constantValue: 0
     variable: {fileID: 11400000, guid: 9b2a5a686be14fb449dbe8fe6de3ea3d, type: 2}
-  moveDirection:
-    useConstant: 0
-    constantValue: {x: 0, y: 0, z: 0}
-    variable: {fileID: 11400000, guid: 13213989cec2f98429f933024749a1a0, type: 2}
   bounds: {fileID: 11400000, guid: 14c3352f5f468ed4182ae6e353422661, type: 2}
-  outOfBoundsEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5626883672520933531}
-        m_TargetAssemblyTypeName: Player, Assembly-CSharp
-        m_MethodName: OutOfBoundsAction
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  horizontalInput: Horizontal
+  verticalInput: Vertical
+  thrusterInput: Fire3
+  boostSpeedAmount: 2
+  speedBoostActiveTimer:
+    minCoolDownTime: 0.5
+    maxCoolDownTime: 0.5
+    percentageCompleted:
+      useConstant: 1
+      constantValue: 0
+      variable: {fileID: 0}
+    coolDownTimeLeft:
+      useConstant: 1
+      constantValue: 0
+      variable: {fileID: 0}
+  speedBoostPowerUp:
+    event: {fileID: 0}
+  thrusterSpeedAmount: {x: 0, y: 0.5}
+  thrustersVisual: {fileID: 353414014}
+  thrusterUsageTimer:
+    timeCanUse: 5
+    percentageLeft:
+      useConstant: 0
+      constantValue: 0
+      variable: {fileID: 11400000, guid: 9aaf384f0f309474b95f083060101ab9, type: 2}
 --- !u!114 &5626883672520933510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1026,7 +1032,7 @@ MonoBehaviour:
   gameObjectDestroyed: {fileID: 11400000, guid: f5458e33557b9bf44bde763793bf952f, type: 2}
   explosionVFX: {fileID: 9147861024262124636, guid: 62c770ca0e9239142a3223671593aa44, type: 3}
   destroyedSoundEffect: {fileID: 8300000, guid: a885c043fab7e46438bba03ba9dab6bc, type: 3}
---- !u!114 &5626883672520933531
+--- !u!114 &5503643404859783457
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1057,7 +1063,7 @@ MonoBehaviour:
   ammoCount: {fileID: 11400000, guid: 6b8bfe7f20b227c47b4995531730a5cd, type: 2}
   ammoPowerUp:
     event: {fileID: 11400000, guid: d55c1b23e811a4e4a8a22cd5065a02db, type: 2}
-  movementDirection: {fileID: 11400000, guid: 13213989cec2f98429f933024749a1a0, type: 2}
+  fireLaserInput: Fire1
   lives: {fileID: 11400000, guid: f8423857274f8d24285c0d0191d78996, type: 2}
   rightEngine: {fileID: 956923323}
   leftEngine: {fileID: 1331602752}
@@ -1096,28 +1102,6 @@ MonoBehaviour:
   homingLaserPowerUp:
     event: {fileID: 11400000, guid: 411b2f2cf93f3b742a515ae5ea6d17d2, type: 2}
   homingLaserFireSoundEffect: {fileID: 723687327940459979}
-  boostSpeedAmount: 1.5
-  speedBoostActiveTimer:
-    minCoolDownTime: 5
-    maxCoolDownTime: 5
-    percentageCompleted:
-      useConstant: 0
-      constantValue: 0
-      variable: {fileID: 11400000, guid: 61b4e43e72a8e0b41991e905c7a8830d, type: 2}
-    coolDownTimeLeft:
-      useConstant: 1
-      constantValue: 0
-      variable: {fileID: 0}
-  speedBoostPowerUp:
-    event: {fileID: 11400000, guid: abbbe5030f5ca95409469e430c84e5d6, type: 2}
-  thrusterSpeedAmount: {x: 1, y: 1}
-  thrustersVisual: {fileID: 353414014}
-  thrusterUsageTimer:
-    timeCanUse: 5
-    percentageLeft:
-      useConstant: 0
-      constantValue: 0
-      variable: {fileID: 11400000, guid: 9aaf384f0f309474b95f083060101ab9, type: 2}
 --- !u!114 &1348680711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1134,7 +1118,7 @@ MonoBehaviour:
   response:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5626883672520933531}
+      - m_Target: {fileID: 5503643404859783457}
         m_TargetAssemblyTypeName: Player, Assembly-CSharp
         m_MethodName: ReceivedDamage
         m_Mode: 1

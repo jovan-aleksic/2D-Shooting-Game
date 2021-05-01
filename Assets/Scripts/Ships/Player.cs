@@ -6,13 +6,11 @@ public class Player : Ship
     [SerializeField] private CodedGameEventListener ammoPowerUp;
 
     [Header("Player", 3f)]
-    [SerializeField]
-    private Vector3Variable movementDirection;
 
-    [InputAxis] [SerializeField] private string horizontalInput = "Horizontal";
-    [InputAxis] [SerializeField] private string verticalInput = "Vertical";
-    [InputAxis] [SerializeField] private string fireLaserInput = "Fire1";
-    [InputAxis] [SerializeField] private string thrusterInput = "Fire3";
+    // ReSharper disable once RedundantBlankLines
+    [InputAxis]
+    [SerializeField]
+    private string fireLaserInput = "Fire1";
 
     [Header("Receive Damage")]
     [SerializeField]
@@ -55,28 +53,6 @@ public class Player : Ship
     [SerializeField] private SoundEffect homingLaserFireSoundEffect;
     private bool m_hasHomingLaserFireSoundEffect;
 
-    [Header("Speed Boost")]
-    [SerializeField]
-    [Range(1, 10)]
-    private float boostSpeedAmount = 2.0f;
-
-    [SerializeField] private CoolDownTimer speedBoostActiveTimer;
-
-    [SerializeField] private CodedGameEventListener speedBoostPowerUp;
-
-    private float m_boostSpeed;
-
-    [Header("Thrusters")]
-    [SerializeField]
-    private Vector2 thrusterSpeedAmount = new Vector2(0, 0.5f);
-
-    private Vector2 m_thrusterSpeed = Vector2.zero;
-    [SerializeField] private GameObject thrustersVisual;
-
-    private bool m_hasThrustersVisual;
-
-    [SerializeField] private DischargeRechargeTimer thrusterUsageTimer;
-
     #region Unity Methods
 
     /// <summary>
@@ -84,16 +60,9 @@ public class Player : Ship
     /// </summary>
     private void Start()
     {
-        transform.position = new Vector3(bounds.Value.center.x, bounds.Min.y + 0.1f);
-
-        thrusterUsageTimer.InitTimer(this);
-
         ammoCount.ResetStat();
 
         shield.Remove(shield.Max);
-
-        m_hasThrustersVisual = thrustersVisual != null;
-        if (m_hasThrustersVisual) thrustersVisual.SetActive(false);
 
         m_hasTripleShotFireSoundEffect = tripleShotFireSoundEffect != null;
         m_hasTripleShotPrefab = tripleShotPrefab != null;
@@ -115,7 +84,6 @@ public class Player : Ship
         shieldPowerUp.OnDisable();
         tripleShotPowerUp.OnDisable();
         homingLaserPowerUp.OnDisable();
-        speedBoostPowerUp.OnDisable();
     }
 
     private void OnEnable()
@@ -125,19 +93,11 @@ public class Player : Ship
         shieldPowerUp.OnEnable(ActivateShields);
         tripleShotPowerUp.OnEnable(ActivateTripleShot);
         homingLaserPowerUp.OnEnable(ActivateHomingLaser);
-        speedBoostPowerUp.OnEnable(ActivateSpeedBoost);
     }
 
     #endregion
 
     #region Overrides of Ship
-
-    /// <inheritdoc />
-    protected override void Update()
-    {
-        SetMoveDirection();
-        base.Update();
-    }
 
     /// <inheritdoc />
     protected override bool ShouldFireLaser()
@@ -196,58 +156,6 @@ public class Player : Ship
 
     #endregion
 
-    /// <summary>
-    /// Set the move direction so the ship moves.
-    /// </summary>
-    private void SetMoveDirection()
-    {
-        // If the Fire 3 button was pressed this frame
-        if (Input.GetButtonDown(thrusterInput) && thrusterUsageTimer.CanDischarge)
-        {
-            thrusterUsageTimer.StartDischarging();
-            if (m_hasThrustersVisual) thrustersVisual.SetActive(true);
-            m_thrusterSpeed = thrusterSpeedAmount;
-        }
-
-        // If the Fire 3 Button is being held down this frame
-        if (Input.GetButton(thrusterInput))
-        {
-            if (!thrusterUsageTimer.CanDischarge)
-            {
-                if (m_hasThrustersVisual) thrustersVisual.SetActive(false);
-                m_thrusterSpeed = Vector2.zero;
-                thrusterUsageTimer.StartRecharging();
-            }
-        }
-
-        // If the Fire 3 Button was released this frame
-        if (Input.GetButtonUp(thrusterInput))
-        {
-            thrusterUsageTimer.StartRecharging();
-            if (m_hasThrustersVisual) thrustersVisual.SetActive(false);
-            m_thrusterSpeed = Vector2.zero;
-        }
-
-        m_boostSpeed = speedBoostActiveTimer.IsActive ? boostSpeedAmount : 1;
-        movementDirection.SetValue(Input.GetAxis(horizontalInput) * (m_boostSpeed + m_thrusterSpeed.x),
-                                   Input.GetAxis(verticalInput) * (m_boostSpeed + m_thrusterSpeed.y));
-    }
-
-    public void OutOfBoundsAction()
-    {
-        Vector3 position = transform.position;
-
-        position.y = Mathf.Clamp(position.y, bounds.Min.y + 0.0001f, bounds.Max.y - 0.0001f);
-
-        if (position.x > bounds.Max.x)
-            position.x = bounds.Min.x + 0.1f;
-
-        if (position.x < bounds.Min.x)
-            position.x = bounds.Max.x - 0.1f;
-
-        transform.position = position;
-    }
-
     #region Power Up Activation
 
     private void ActivateTripleShot()
@@ -258,11 +166,6 @@ public class Player : Ship
     private void ActivateHomingLaser()
     {
         StartCoroutine(homingLaserActiveTimer.CoolDown());
-    }
-
-    private void ActivateSpeedBoost()
-    {
-        StartCoroutine(speedBoostActiveTimer.CoolDown());
     }
 
     private void ActivateShields()

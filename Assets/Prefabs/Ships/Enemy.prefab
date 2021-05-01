@@ -154,8 +154,8 @@ GameObject:
   - component: {fileID: 459698224306611799}
   - component: {fileID: 8145056890364575934}
   - component: {fileID: 1461970207832534315}
-  - component: {fileID: 7520782547613656350}
   - component: {fileID: 6001576803891449032}
+  - component: {fileID: 1459673295710147516}
   - component: {fileID: 7017033740898244963}
   - component: {fileID: 3375779739693696444}
   - component: {fileID: -3352234410330103883}
@@ -279,43 +279,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.25, y: 2.75}
   m_EdgeRadius: 0
---- !u!114 &7520782547613656350
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7017033740898244962}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d71e7d99072b9a48a6995ddf927567c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementSpeed: 4
-  gameMoveDirection:
-    useConstant: 0
-    constantValue: 0
-    variable: {fileID: 11400000, guid: 516083d7ea62c974a88ba28da36e6310, type: 2}
-  moveDirection:
-    useConstant: 1
-    constantValue: {x: 0, y: 0, z: 0}
-    variable: {fileID: 0}
-  bounds: {fileID: 11400000, guid: 0ce5d6c5dc2700a4ca5913afe4ee2c11, type: 2}
-  outOfBoundsEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7017033740898244963}
-        m_TargetAssemblyTypeName: Enemy, Assembly-CSharp
-        m_MethodName: OutOfBoundsAction
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &6001576803891449032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -353,6 +316,24 @@ MonoBehaviour:
   gameObjectDestroyed: {fileID: 11400000, guid: a7ae85abac0bb5a40b3ef90034cab0b2, type: 2}
   explosionVFX: {fileID: 7578308582667034835, guid: a12b6868e604b8f47aeafbf0af8f2007, type: 3}
   destroyedSoundEffect: {fileID: 8300000, guid: a885c043fab7e46438bba03ba9dab6bc, type: 3}
+--- !u!114 &1459673295710147516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7017033740898244962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb6f8cefcc6cdea4ebb3327266536a15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 3
+  gameMoveDirection:
+    useConstant: 0
+    constantValue: 0
+    variable: {fileID: 11400000, guid: 516083d7ea62c974a88ba28da36e6310, type: 2}
+  bounds: {fileID: 11400000, guid: 0ce5d6c5dc2700a4ca5913afe4ee2c11, type: 2}
 --- !u!114 &7017033740898244963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -381,7 +362,6 @@ MonoBehaviour:
       constantValue: 0
       variable: {fileID: 0}
   laserSoundEffect: {fileID: 2410278569044483245}
-  gameMoveDirectionVariable: {fileID: 11400000, guid: 516083d7ea62c974a88ba28da36e6310, type: 2}
 --- !u!95 &3375779739693696444
 Animator:
   serializedVersion: 3

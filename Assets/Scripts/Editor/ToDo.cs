@@ -7,12 +7,12 @@
 public class ToDo
 {
     /*
-     * ToDo: Attributes for inspector
+     * Attributes for inspector
      *          ● Header with Separator, Color
      *          ● Scene Selection Attribute
      *          ● Tag Selection Attribute
      *          ● Input Selection Attribute "For the Player"
-     *          ToDo: ● Info Box Attribute
+     *          ● Info Box Attribute
      * 
      * ToDo: Remove the Laser Firing from Ship, Create a new Gun Prefab that can be added that controls the laser.
      * ToDo: Add Total retries for a level before having to start over at the beginning.
@@ -34,8 +34,8 @@ public class ToDo
      *          ● Create a balancedspawning systembetween Enemies &pickups
      *          ● Ie. Pickups like Health should be rare, where ammo is frequent
      * ToDo: Enemy Shields
-     *          ● Provide logic for some enemies to have shields
-     *          ● Shields allow the enemies to take 1 free hit.
+     *          ToDo: ● Provide logic for some enemies to have shields
+     *          ToDo: ● Shields allow the enemies to take 1 free hit.
      * ToDO: Aggressive Enemy Type
      *          ToDO: ● Create the functionality to support enemy aggression
      *          ToDO: ● If an enemy is close to a player, the enemy will try and “ram” it.
