@@ -65,7 +65,6 @@ public class Spawner : ScriptableObject, ISpawner
     public void Stop()
     {
         if (!m_hasBeenInit) return;
-        Debug.Log("Stopping " + name);
         if (m_spawnRoutine != null)
             m_monoBehaviour.StopCoroutine(SpawnRoutine());
         m_shouldSpawn = false;
@@ -95,7 +94,6 @@ public class Spawner : ScriptableObject, ISpawner
         {
             m_positionToSpawnAt = PositionHelper.GetRandomPosition(gameMoveDirectionVariable.Value, screenBounds.Value);
             m_spawnedObjects.Add(Instantiate(prefabToSpawn, m_positionToSpawnAt, Quaternion.identity, m_container));
-            Debug.Log("Spawning from: " + name);
 
             for (int i = m_spawnedObjects.Count - 1; i > -1; i--)
             {

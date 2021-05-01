@@ -9,8 +9,8 @@ public class ToDo
     /*
      * ToDo: Attributes for inspector
      *          ● Header with Separator, Color
-     *          ToDo: ● Scene Selection Attribute
-     *          ToDo: ● Tag Selection Attribute
+     *          ● Scene Selection Attribute
+     *          ● Tag Selection Attribute
      *          ToDo: ● Input Selection Attribute "For the Player"
      *          ToDo: ● Info Box Attribute
      * 

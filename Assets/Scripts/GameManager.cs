@@ -1,12 +1,13 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.SocialPlatforms.Impl;
 
 public class GameManager : MonoBehaviour
 {
+    [Scene] [SerializeField] private string mainMenuScene;
+
     [SerializeField] private CodedGameEventListener waveSpawnerComplete;
-    [SerializeField] private int spawnerCompleteSceneToLoad;
+    [Scene] [SerializeField] private int spawnerCompleteSceneToLoad;
 
     [SerializeField] private IntReference score;
     private int m_savedScore;
@@ -38,7 +39,7 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetButtonDown("Exit Game"))
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(mainMenuScene);
         }
 
         if (m_gameOver && Input.GetButtonDown("Restart Level"))
