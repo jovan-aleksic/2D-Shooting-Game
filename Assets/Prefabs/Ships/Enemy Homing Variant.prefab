@@ -13,7 +13,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7017033740898244962, guid: 313e82be39be92540b5099d61023b551, type: 3}
       propertyPath: m_Name
-      value: Enemy Homing Laser Variant
+      value: Enemy Homing Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7017033740898244963, guid: 313e82be39be92540b5099d61023b551, type: 3}
       propertyPath: laserProjectilePrefab

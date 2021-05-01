@@ -33,6 +33,17 @@ public class Moveable : MonoBehaviour
     }
 
     /// <summary>
+    /// Implement OnDrawGizmosSelected to draw a gizmo if the object is selected.
+    /// </summary>
+    private void OnDrawGizmosSelected()
+    {
+        if (bounds == null) return;
+
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireCube(bounds.Value.center, bounds.Value.size);
+    }
+
+    /// <summary>
     /// Moves the game object.
     /// </summary>
     private void Move()

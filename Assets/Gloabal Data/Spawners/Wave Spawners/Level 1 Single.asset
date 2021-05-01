@@ -19,7 +19,7 @@ MonoBehaviour:
     numberObjectsToSpawnAtATime: 1
     timeBetweenSpawning: 0
     prefabsToSpawn:
-    - {fileID: 100947975949838633, guid: 162220e4136bfa6418b6246295acf56b, type: 3}
+    - {fileID: 1008358459883591577, guid: 162220e4136bfa6418b6246295acf56b, type: 3}
   - name: Ship
     numberObjectsInWave: 1
     numberObjectsToSpawnAtATime: 1

@@ -14,7 +14,8 @@ public class ToDo
      *          ● Input Selection Attribute "For the Player"
      *          ● Info Box Attribute
      * 
-     * ToDo: Remove the Laser Firing from Ship, Create a new Gun Prefab that can be added that controls the laser.
+     * Remove the Laser Firing from Ship, Create a new Gun Prefab that can be added that controls the laser.
+     * ToDo: Add Player Upgrade Weapon
      * ToDo: Add Total retries for a level before having to start over at the beginning.
      * ToDo: Add Destroy All Objects Pick Up.
      * ToDo: New Enemy Movement

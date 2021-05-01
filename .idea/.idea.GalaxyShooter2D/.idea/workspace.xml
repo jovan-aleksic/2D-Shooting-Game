@@ -3,13 +3,27 @@
   <component name="ChangeListManager">
     <list default="true" id="be36d944-fe34-41b0-b054-b6cd290abc4a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gloabal Data/Player/PlayerMoveDirection.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gloabal Data/Spawners/Enemy Astroid Spawner.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gloabal Data/Spawners/Enemy Astroid Spawner.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gloabal Data/Spawners/Wave Spawners/Level 1 Single.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gloabal Data/Spawners/Wave Spawners/Level 1 Single.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Enemy Astroid Variant.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Enemy Homing Laser Variant.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Enemy.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Test Homing Enemy.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/UI/CoolDownTimerDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/UI/CoolDownTimerDisplay.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/UI/DisplayIntVariable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/UI/DisplayIntVariable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/UI/FloatSliderDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/UI/FloatSliderDisplay.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/UI/FloatTextDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/UI/FloatTextDisplay.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/UI/StatSliderDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/UI/StatSliderDisplay.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/ToDo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/ToDo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Moveable.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/Moveable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/Moveable.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ships/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ships/Enemy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ships/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ships/Player.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ships/Ship.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ships/Ship.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/DisplayPlayerLives.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/DisplayPlayerLives.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/GameOverController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/GameOverController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ShieldsSpriteColorChanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ShieldsSpriteColorChanger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/WaveTimerDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/WaveTimerDisplay.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +35,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/PositionHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/Weapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UI Meters/ElementalMeters/Scripts/MeterScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/manifest.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/CoolDownTimer.cs" root0="FORCE_HIGHLIGHTING" />
@@ -33,6 +48,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Game.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Events/UnityGameEventListener.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Events/CodedGameEventListener.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/PlayerWeapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Events/IGameEventListener.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Events/GameEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Gloabal Data/Spawners/Enemy Astroid Spawner.asset" root0="FORCE_HIGHLIGHTING" />
@@ -130,13 +146,26 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Damageable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Events/UnityGameEventListener.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Moveable.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Editor/ToDo.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Ships/Player.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Movement/PlayerMovement.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Ships/Enemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Movement/EnemyMovement.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Events/CodedGameEventListener.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Movement/Moveable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Ships/Ship.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Ships/Enemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/Weapon.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Ships/Player.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/PlayerWeapon.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Editor/ToDo.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/ShieldsSpriteColorChanger.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/GameOverController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/UI/FloatTextDisplay.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/UI/FloatSliderDisplay.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/UI/DisplayIntVariable.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/UI/CoolDownTimerDisplay.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/UI/StatSliderDisplay.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/WaveTimerDisplay.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/DisplayPlayerLives.cs" />
     </changedPaths>
   </component>
   <component name="IgnoredFileRootStore">
@@ -215,7 +244,7 @@
       <workItem from="1619022897773" duration="35576000" />
       <workItem from="1619313314398" duration="13471000" />
       <workItem from="1619481648860" duration="24529000" />
-      <workItem from="1619687489946" duration="61435000" />
+      <workItem from="1619687489946" duration="69196000" />
     </task>
     <servers />
   </component>

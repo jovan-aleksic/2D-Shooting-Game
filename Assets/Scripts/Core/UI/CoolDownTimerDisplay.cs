@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using Debug = UnityEngine.Debug;
 
 public class CoolDownTimerDisplay : MonoBehaviour
 {
@@ -7,7 +8,7 @@ public class CoolDownTimerDisplay : MonoBehaviour
 
     public FloatReference coolDownTimer;
 
-    private void Start()
+    private void Awake()
     {
         m_slider = GetComponent<Slider>();
 
@@ -22,6 +23,8 @@ public class CoolDownTimerDisplay : MonoBehaviour
 
     private void Update()
     {
+        Debug.Assert(m_slider != null, nameof(m_slider) + " != null");
+        Debug.Assert(coolDownTimer != null, nameof(coolDownTimer) + " != null");
         m_slider.value = coolDownTimer.Value;
     }
 }
