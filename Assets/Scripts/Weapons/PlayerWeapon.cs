@@ -135,7 +135,6 @@ public class PlayerWeapon : Weapon
 
     private void ActivateTripleShot()
     {
-        Debug.Log("Triple Shoot Activated");
         Debug.Assert(tripleShotActiveTimer != null, nameof(tripleShotActiveTimer) + " != null");
         StartCoroutine(tripleShotActiveTimer.CoolDown());
     }

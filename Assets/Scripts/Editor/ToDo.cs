@@ -19,20 +19,20 @@ public class ToDo
      * ToDo: Add Total retries for a level before having to start over at the beginning.
      * ToDo: Add Destroy All Objects Pick Up.
      * ToDo: New Enemy Movement
-     *          ToDo: ● Enable the Enemies to move in a new way,either from side to side, circling, or coming into the play field at an angle.
-     *              Random Movement Added.
+     *          ● Enable the Enemies to move in a new way,either from side to side, circling, or coming into the play field at an angle.
+     *              Random zig zag movement.
      * Player Ammo
      *          ● Visualize on screen the ammo count of the player in the form of current/max
      * Wave System
      *          ● Implement wave sequencing of enemies with more enemies coming each wave.
      * Negative Pickup
      *          ● Create a powerup that negatively affects the player.
-     * ToDo: New Enemy Type
+     * New Enemy Type
      *          ● Create enemy types that can fire &damage the player
-     *          ToDo: ● Create enemy type with unique projectile.(ie. Laser beam, heatseeking, etc)
+     *          ● Create enemy type with unique projectile - player seeking.(ie. Laser beam, heatseeking, etc)
      *          ToDo: ● Unique MovementBehavior (zig-zag,wave, etc)
      * Balanced Spawning
-     *          ● Create a balancedspawning systembetween Enemies &pickups
+     *          ● Create a balanced spawning system between Enemies & pickups
      *          ● Ie. Pickups like Health should be rare, where ammo is frequent
      * ToDo: Enemy Shields
      *          ToDo: ● Provide logic for some enemies to have shields
@@ -49,7 +49,7 @@ public class ToDo
      * ToDO: Enemy Avoid Shot
      *          ToDO: ● Create an enemy type that can avoid the player’s weapon
      *          ToDO: ● When you fire a shot,the enemy should detect a shot in range and try to avoid it.
-     * Homing Projectile (Completed in Phase I.
+     * Homing Projectile (Completed in Phase I).
      *          ● Create a homing projectile that seeks the closest target.
      *          ● Turn into a rare powerup
      * ToDO: Boss AI

@@ -1077,6 +1077,7 @@ MonoBehaviour:
       valueIncreased: {fileID: 0}
       valueDecreased: {fileID: 0}
     variable: {fileID: 11400000, guid: 52118a3b354a45f4eace3c6a4f25029b, type: 2}
+  objectToDestroy: {fileID: 5626883672520933534}
   receivesDamageFromTags:
   - Enemy
   - Enemy Laser

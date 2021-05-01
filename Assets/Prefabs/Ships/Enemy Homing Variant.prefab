@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 1016856853701375147, guid: 313e82be39be92540b5099d61023b551, type: 3}
+      propertyPath: laserProjectilePrefab
+      value: 
+      objectReference: {fileID: 3383844200832018908, guid: a2f1818e63f4c804d9f8b1c5999f350e, type: 3}
     - target: {fileID: 7017033740898244962, guid: 313e82be39be92540b5099d61023b551, type: 3}
       propertyPath: m_Name
       value: Enemy Homing Variant

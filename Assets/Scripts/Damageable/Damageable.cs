@@ -4,6 +4,8 @@ using Debug = UnityEngine.Debug;
 [RequireComponent(typeof(Collider2D))]
 public class Damageable : MonoBehaviour
 {
+    [SerializeField] private GameObject objectToDestroy;
+
     [Header("Health")]
     [SerializeField]
     protected StatReference lives;
@@ -37,6 +39,8 @@ public class Damageable : MonoBehaviour
         m_hasDamagedSoundEffect = damagedSoundEffect != null;
 
         m_hasDestroyedSoundEffect = destroyedSoundEffect != null;
+
+        if (objectToDestroy == null) objectToDestroy = gameObject;
     }
 
     protected virtual void Start()
@@ -94,6 +98,6 @@ public class Damageable : MonoBehaviour
 
         if (m_hasDestroyedSoundEffect)
             AudioSource.PlayClipAtPoint(destroyedSoundEffect, transform.position);
-        Destroy(gameObject);
+        Destroy(objectToDestroy);
     }
 }

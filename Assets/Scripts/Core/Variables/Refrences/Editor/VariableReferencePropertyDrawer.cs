@@ -78,7 +78,7 @@ public static class VariableReferencePropertyDrawer
 
     public static float GetPropertyHeight(SerializedProperty property, GUIContent label)
     {
-        float totalHeight = EditorGUI.GetPropertyHeight(property, label);
+        float totalHeight = EditorGUI.GetPropertyHeight(property, label) + EditorGUIUtility.singleLineHeight;
 
         SerializedProperty useConstant = property?.FindPropertyRelative("useConstant");
         if (useConstant?.boolValue != true) return totalHeight;
