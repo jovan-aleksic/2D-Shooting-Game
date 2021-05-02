@@ -34,9 +34,9 @@ public class ToDo
      * Balanced Spawning
      *          ● Create a balanced spawning system between Enemies & pickups
      *          ● Ie. Pickups like Health should be rare, where ammo is frequent
-     * ToDo: Enemy Shields
-     *          ToDo: ● Provide logic for some enemies to have shields
-     *          ToDo: ● Shields allow the enemies to take 1 free hit.
+     * Enemy Shields
+     *          ● Provide logic for some enemies to have shields
+     *          ● Shields allow the enemies to take 1 free hit.
      * ToDO: Aggressive Enemy Type
      *          ToDO: ● Create the functionality to support enemy aggression
      *          ToDO: ● If an enemy is close to a player, the enemy will try and “ram” it.

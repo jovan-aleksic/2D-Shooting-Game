@@ -12,6 +12,10 @@ public class Damageable : MonoBehaviour
 
     [SerializeField] protected StatReference shieldHealth;
 
+    [SerializeField] protected GameObject shieldGameObject;
+
+    private bool m_hasShieldGameObject;
+
     [Header("Tags And Events")]
     [InfoBox("The Tags of the game objects that can do damage to this game object.", order = 1)]
     [Tooltip("The Tags of the game objects that can do damage to this game object.")]
@@ -41,6 +45,8 @@ public class Damageable : MonoBehaviour
         m_hasDestroyedSoundEffect = destroyedSoundEffect != null;
 
         if (objectToDestroy == null) objectToDestroy = gameObject;
+
+        m_hasShieldGameObject = shieldGameObject != null;
     }
 
     protected virtual void Start()
@@ -49,6 +55,7 @@ public class Damageable : MonoBehaviour
         lives.ResetStat();
         Debug.Assert(shieldHealth != null, nameof(shieldHealth) + " != null");
         shieldHealth.ResetStat();
+        DisableShields();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -74,6 +81,7 @@ public class Damageable : MonoBehaviour
         if (shieldHealth.Value > 0)
         {
             shieldHealth.Remove(1);
+            DisableShields();
             return;
         }
 
@@ -99,5 +107,13 @@ public class Damageable : MonoBehaviour
         if (m_hasDestroyedSoundEffect)
             AudioSource.PlayClipAtPoint(destroyedSoundEffect, transform.position);
         Destroy(objectToDestroy);
+    }
+
+    private void DisableShields()
+    {
+        System.Diagnostics.Debug.Assert(shieldHealth != null, nameof(shieldHealth) + " != null");
+        if (!m_hasShieldGameObject || shieldHealth.Value != 0) return;
+        Debug.Assert(shieldGameObject != null, nameof(shieldGameObject) + " != null");
+        shieldGameObject.SetActive(false);
     }
 }
