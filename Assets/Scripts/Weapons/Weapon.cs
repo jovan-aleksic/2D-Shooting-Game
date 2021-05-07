@@ -8,8 +8,8 @@ public class Weapon : MonoBehaviour
 
     [SerializeField] protected CoolDownTimer fireDelayTimer;
 
-    [SerializeField] private SoundEffect laserSoundEffect;
-    private bool m_hasLaserSoundEffect;
+    [SerializeField] protected SoundEffect laserSoundEffect;
+    protected bool hasLaserSoundEffect;
 
     #region Unity Methods
 
@@ -22,12 +22,12 @@ public class Weapon : MonoBehaviour
         }
 
         if (laserSoundEffect != null)
-            m_hasLaserSoundEffect = true;
+            hasLaserSoundEffect = true;
     }
 
     protected virtual void Start()
     {
-        Debug.Assert(fireDelayTimer != null, nameof(fireDelayTimer) + " != null"); 
+        Debug.Assert(fireDelayTimer != null, nameof(fireDelayTimer) + " != null");
         StartCoroutine(fireDelayTimer.CoolDown());
     }
 
@@ -51,7 +51,7 @@ public class Weapon : MonoBehaviour
 
         Instantiate(laserProjectilePrefab, transform.position + laserOffset, Quaternion.identity);
 
-        if (!m_hasLaserSoundEffect) return;
+        if (!hasLaserSoundEffect) return;
         Debug.Assert(laserSoundEffect != null, nameof(laserSoundEffect) + " != null");
         laserSoundEffect.Play();
     }

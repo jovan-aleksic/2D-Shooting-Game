@@ -22,10 +22,10 @@ public static class PhysicsHelper
     {
         Box box = new Box(transform.position, offset, size, transform.rotation);
 
-        Debug.DrawLine(box.TopLeft, box.TopRight, Color.magenta);
-        Debug.DrawLine(box.TopRight, box.BottomRight, Color.magenta);
-        Debug.DrawLine(box.BottomRight, box.BottomLeft, Color.magenta);
-        Debug.DrawLine(box.BottomLeft, box.TopLeft, Color.magenta);
+        Debug.DrawLine(box.TopLeft, box.TopRight, Gizmos.color);
+        Debug.DrawLine(box.TopRight, box.BottomRight, Gizmos.color);
+        Debug.DrawLine(box.BottomRight, box.BottomLeft, Gizmos.color);
+        Debug.DrawLine(box.BottomLeft, box.TopLeft, Gizmos.color);
 
         if (compareTags == null) return;
 

@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="be36d944-fe34-41b0-b054-b6cd290abc4a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/Player Homing Laser Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/Player Homing Laser Variant.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/ToDo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/ToDo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/EnemyMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/EnemyMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/Moveable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/Moveable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SeekTarget.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SeekTarget.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/PhysicsHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/PhysicsHelper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/AggressiveEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/AggressiveEnemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/Weapon.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +37,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/BoolVariable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Vector2Variable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/FloatVariable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/EnemySmartWeapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Vector3Variable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/BoundsVariable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Scripts/WaveSpawner.cs" root0="SKIP_HIGHLIGHTING" />
@@ -131,7 +129,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Events/CodedGameEventListener.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Ships/Ship.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Ships/Enemy.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/Weapon.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/ShieldsSpriteColorChanger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/GameOverController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/UI/FloatTextDisplay.cs" />
@@ -149,10 +146,12 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Damageable/Damageable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Movement/EnemyMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Movement/Moveable.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Movement/AggressiveEnemy.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/PhysicsHelper.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Editor/ToDo.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SeekTarget.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/PhysicsHelper.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Movement/AggressiveEnemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/Weapon.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/EnemySmartWeapon.cs" />
     </changedPaths>
   </component>
   <component name="IgnoredFileRootStore">
@@ -232,7 +231,7 @@
       <workItem from="1619313314398" duration="13471000" />
       <workItem from="1619481648860" duration="24529000" />
       <workItem from="1619687489946" duration="94556000" />
-      <workItem from="1620078830766" duration="38433000" />
+      <workItem from="1620078830766" duration="42999000" />
     </task>
     <servers />
   </component>
