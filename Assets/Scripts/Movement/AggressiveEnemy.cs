@@ -19,7 +19,10 @@ public class AggressiveEnemy : EnemyMovement
 
     protected override void OnDrawGizmosSelected()
     {
+        Color color = Gizmos.color;
+        Gizmos.color = Color.magenta;
         PhysicsHelper.DrawBoxCast(transform, offset, seekSize, maxHits, seekTargetTag, false);
+        Gizmos.color = color;
     }
 
     /// <inheritdoc />
