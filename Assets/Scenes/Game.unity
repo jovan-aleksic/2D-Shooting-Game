@@ -1759,11 +1759,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2474742254263474289, guid: bb652211173ac6741986bf940b8f6c32, type: 3}
       propertyPath: homingLaserActiveTimer.maxCoolDownTime
-      value: 1000
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2474742254263474289, guid: bb652211173ac6741986bf940b8f6c32, type: 3}
       propertyPath: homingLaserActiveTimer.minCoolDownTime
-      value: 1000
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5626883672520933530, guid: bb652211173ac6741986bf940b8f6c32, type: 3}
       propertyPath: m_RootOrder

@@ -3,19 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="be36d944-fe34-41b0-b054-b6cd290abc4a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Power Ups/Ammo Power Up.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Power Ups/Ammo Power Up.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Power Ups/Homing Laser Power Up.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Power Ups/Homing Laser Power Up.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Power Ups/Player Life Power Up.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Power Ups/Player Life Power Up.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Power Ups/Shield Power Down Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Power Ups/Shield Power Down Variant.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Power Ups/Shield Power Up.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Power Ups/Shield Power Up.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Power Ups/Speed Boost Power Up.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Power Ups/Speed Boost Power Up.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Power Ups/Triple Shot Power Up.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Power Ups/Triple Shot Power Up.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Damageable/Damageable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Damageable/Damageable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/ToDo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/ToDo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/EnemySmartWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/EnemySmartWeapon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/Weapon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -243,7 +231,7 @@
       <workItem from="1619313314398" duration="13471000" />
       <workItem from="1619481648860" duration="24529000" />
       <workItem from="1619687489946" duration="94556000" />
-      <workItem from="1620078830766" duration="49569000" />
+      <workItem from="1620078830766" duration="49690000" />
     </task>
     <servers />
   </component>
