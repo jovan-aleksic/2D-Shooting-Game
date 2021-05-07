@@ -40,10 +40,10 @@ public class ToDo
      * Aggressive Enemy Type
      *          ● Create the functionality to support enemy aggression
      *          ● If an enemy is close to a player, the enemy will try and “ram” it.
-     * ToDo: Smart Enemy
-     *          ToDO ● Create an enemy type that knows when it’s behind the player, and fires a weapon backwards.
-     * ToDO: Enemy Pickups
-     *          ToDO: ● If a pickup is in front of an enemy, the enemy will fire its weapon at the pickup to destroy it before the player can get it.
+     * Smart Enemy
+     *          ● Create an enemy type that knows when it’s behind the player, and fires a weapon backwards.
+     * Enemy Pickups
+     *          ● If a pickup is in front of an enemy, the enemy will fire its weapon at the pickup to destroy it before the player can get it.
      * ToDO: Pickup Collect
      *          ToDO: ●When the ‘C’ key is pressed by the Player,Pickups quickly moveto the player.
      * ToDO: Enemy Avoid Shot

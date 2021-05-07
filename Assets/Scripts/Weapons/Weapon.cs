@@ -13,7 +13,7 @@ public class Weapon : MonoBehaviour
 
     #region Unity Methods
 
-    private void Awake()
+    protected virtual void Start()
     {
         if (laserProjectilePrefab == null)
         {
@@ -23,10 +23,7 @@ public class Weapon : MonoBehaviour
 
         if (laserSoundEffect != null)
             hasLaserSoundEffect = true;
-    }
 
-    protected virtual void Start()
-    {
         Debug.Assert(fireDelayTimer != null, nameof(fireDelayTimer) + " != null");
         StartCoroutine(fireDelayTimer.CoolDown());
     }

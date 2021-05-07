@@ -111,7 +111,7 @@ public class Damageable : MonoBehaviour
 
     private void DisableShields()
     {
-        System.Diagnostics.Debug.Assert(shieldHealth != null, nameof(shieldHealth) + " != null");
+        Debug.Assert(shieldHealth != null, nameof(shieldHealth) + " != null");
         if (!m_hasShieldGameObject || shieldHealth.Value != 0) return;
         Debug.Assert(shieldGameObject != null, nameof(shieldGameObject) + " != null");
         shieldGameObject.SetActive(false);

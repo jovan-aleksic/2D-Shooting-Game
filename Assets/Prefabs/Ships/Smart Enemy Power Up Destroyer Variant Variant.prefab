@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2813269604524430189
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2031247031205968369, guid: 69346cecd4046a74caf5ed5d4f870bed, type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2795135688694011931, guid: 69346cecd4046a74caf5ed5d4f870bed, type: 3}
+      propertyPath: seekSize.x
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 2795135688694011931, guid: 69346cecd4046a74caf5ed5d4f870bed, type: 3}
+      propertyPath: seekOffset.y
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2795135688694011931, guid: 69346cecd4046a74caf5ed5d4f870bed, type: 3}
+      propertyPath: primaryWeaponEnabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2795135688694011931, guid: 69346cecd4046a74caf5ed5d4f870bed, type: 3}
+      propertyPath: laserProjectilePrefab
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2795135688694011931, guid: 69346cecd4046a74caf5ed5d4f870bed, type: 3}
+      propertyPath: secondaryLaserOffset.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2795135688694011931, guid: 69346cecd4046a74caf5ed5d4f870bed, type: 3}
+      propertyPath: seekTargetTag.Array.data[0]
+      value: Power Up
+      objectReference: {fileID: 0}
+    - target: {fileID: 2795135688694011931, guid: 69346cecd4046a74caf5ed5d4f870bed, type: 3}
+      propertyPath: secondaryLaserProjectilePrefab
+      value: 
+      objectReference: {fileID: 8298206751191997340, guid: f6f833c6b432e1b47b034d74e51fb906, type: 3}
+    - target: {fileID: 2795135688694011931, guid: 69346cecd4046a74caf5ed5d4f870bed, type: 3}
+      propertyPath: rearFireDelayTimer.maxCoolDownTime
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182791473118347043, guid: 69346cecd4046a74caf5ed5d4f870bed, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182791473118347043, guid: 69346cecd4046a74caf5ed5d4f870bed, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182791473118347043, guid: 69346cecd4046a74caf5ed5d4f870bed, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182791473118347043, guid: 69346cecd4046a74caf5ed5d4f870bed, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182791473118347043, guid: 69346cecd4046a74caf5ed5d4f870bed, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182791473118347043, guid: 69346cecd4046a74caf5ed5d4f870bed, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182791473118347043, guid: 69346cecd4046a74caf5ed5d4f870bed, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182791473118347043, guid: 69346cecd4046a74caf5ed5d4f870bed, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182791473118347043, guid: 69346cecd4046a74caf5ed5d4f870bed, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182791473118347043, guid: 69346cecd4046a74caf5ed5d4f870bed, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182791473118347043, guid: 69346cecd4046a74caf5ed5d4f870bed, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182791473118347046, guid: 69346cecd4046a74caf5ed5d4f870bed, type: 3}
+      propertyPath: m_Name
+      value: Smart Enemy Power Up Destroyer Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6416439633484887544, guid: 69346cecd4046a74caf5ed5d4f870bed, type: 3}
+      propertyPath: movementSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 69346cecd4046a74caf5ed5d4f870bed, type: 3}

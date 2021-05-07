@@ -8,6 +8,8 @@ TagManager:
   - Player Laser
   - Enemy Laser
   - NonCollidable
+  - Power Up
+  - Power Up Destroyer
   layers:
   - Default
   - TransparentFX
