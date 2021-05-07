@@ -37,9 +37,9 @@ public class ToDo
      * Enemy Shields
      *          ● Provide logic for some enemies to have shields
      *          ● Shields allow the enemies to take 1 free hit.
-     * ToDO: Aggressive Enemy Type
-     *          ToDO: ● Create the functionality to support enemy aggression
-     *          ToDO: ● If an enemy is close to a player, the enemy will try and “ram” it.
+     * Aggressive Enemy Type
+     *          ● Create the functionality to support enemy aggression
+     *          ● If an enemy is close to a player, the enemy will try and “ram” it.
      * ToDo: Smart Enemy
      *          ToDO ● Create an enemy type that knows when it’s behind the player, and fires a weapon backwards.
      * ToDO: Enemy Pickups

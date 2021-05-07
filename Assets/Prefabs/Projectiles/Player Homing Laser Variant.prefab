@@ -12,14 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5971413831d60914d9195e868c3f3290, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetTag: Enemy
+  offset: {x: 0, y: 5, z: 0}
+  seekSize: {x: 40, y: 10, z: 1}
+  maxTargets: 10
+  targetTag:
+  - Enemy
   movementSpeed: 10
+  rotationSpeed: 120
   timeToLive: 15
   gameMoveDirection:
     useConstant: 0
     constantValue: 0
     variable: {fileID: 11400000, guid: 8f6290431b4c99e4a823ad688e91837c, type: 2}
-  rotationSpeed: 120
 --- !u!1001 &3121858498402627738
 PrefabInstance:
   m_ObjectHideFlags: 0

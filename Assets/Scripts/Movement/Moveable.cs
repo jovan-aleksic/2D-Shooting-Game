@@ -9,7 +9,7 @@ public class Moveable : MonoBehaviour
     [InfoBox("The Speed that the game object moves in game.")]
     [Tooltip("The Speed that the game object moves in game.")]
     [SerializeField]
-    private float movementSpeed = 4.0f;
+    protected float movementSpeed = 4.0f;
 
     [SerializeField] protected GameMoveDirectionReference gameMoveDirection;
 
@@ -35,7 +35,7 @@ public class Moveable : MonoBehaviour
     /// <summary>
     /// Implement OnDrawGizmosSelected to draw a gizmo if the object is selected.
     /// </summary>
-    private void OnDrawGizmosSelected()
+    protected virtual void OnDrawGizmosSelected()
     {
         if (bounds == null) return;
 
@@ -46,7 +46,7 @@ public class Moveable : MonoBehaviour
     /// <summary>
     /// Moves the game object.
     /// </summary>
-    private void Move()
+    protected virtual void Move()
     {
         SetMoveDirection();
         // m_direction * movementSpeed * Real Time(Time.deltaTime)
