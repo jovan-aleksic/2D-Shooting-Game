@@ -5,7 +5,7 @@ public class EnemyMovement : Moveable
     private float m_amplitude = 1f;
     private float m_frequency = 1f;
 
-    private void Start()
+    protected virtual void Start()
     {
         RandomizeMoveDirection();
     }

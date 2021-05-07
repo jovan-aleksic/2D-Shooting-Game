@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be36d944-fe34-41b0-b054-b6cd290abc4a" name="Default Changelist" comment="" />
+    <list default="true" id="be36d944-fe34-41b0-b054-b6cd290abc4a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/Player Homing Laser Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/Player Homing Laser Variant.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/ToDo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/ToDo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/EnemyMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/EnemyMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/Moveable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/Moveable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SeekTarget.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SeekTarget.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,7 +39,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Events/Editor/GameEventEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/BoolVariable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Vector2Variable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/AppData/Local/Temp/Temp1_separatorAttribute.zip/separatorDrawer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/FloatVariable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Vector3Variable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/BoundsVariable.cs" root0="FORCE_HIGHLIGHTING" />
@@ -68,6 +75,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/VariableReferencePropertyDrawer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/StatReferenceDrawer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement/AggressiveEnemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/BoolReferenceDrawer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/Vector2ReferenceDrawer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Attributes/HeaderAttribute.cs" root0="FORCE_HIGHLIGHTING" />
@@ -89,6 +97,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/WaveTimerDisplay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/DisplayPlayerLives.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8C48E4BC-2FF3-4638-B690-95CBB65E2E27/44/e2304ce6/EditorStyles.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/PhysicsHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Attributes/Editor/HeaderDrawer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Stat.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/GameMoveDirectionEnum.cs" root0="FORCE_HIGHLIGHTING" />
@@ -118,10 +127,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Events/UnityGameEventListener.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Moveable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Movement/PlayerMovement.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Movement/EnemyMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Events/CodedGameEventListener.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Movement/Moveable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Ships/Ship.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Ships/Enemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/Weapon.cs" />
@@ -140,7 +147,12 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/VariableReferencePropertyDrawer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Attributes/InfoBoxAttribute.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Damageable/Damageable.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Movement/EnemyMovement.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Movement/Moveable.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Movement/AggressiveEnemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/PhysicsHelper.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Editor/ToDo.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SeekTarget.cs" />
     </changedPaths>
   </component>
   <component name="IgnoredFileRootStore">
@@ -219,7 +231,8 @@
       <workItem from="1619022897773" duration="35576000" />
       <workItem from="1619313314398" duration="13471000" />
       <workItem from="1619481648860" duration="24529000" />
-      <workItem from="1619687489946" duration="82058000" />
+      <workItem from="1619687489946" duration="94556000" />
+      <workItem from="1620078830766" duration="38433000" />
     </task>
     <servers />
   </component>
