@@ -12,10 +12,11 @@ GameObject:
   - component: {fileID: 6800146113393024564}
   - component: {fileID: 2057088396831884206}
   - component: {fileID: 6129272638455546518}
-  - component: {fileID: 8587430982465056962}
+  - component: {fileID: -1510276522156160840}
+  - component: {fileID: -6723713305849481364}
   m_Layer: 0
   m_Name: Homing Laser Power Up
-  m_TagString: Untagged
+  m_TagString: Power Up
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -129,15 +130,29 @@ MonoBehaviour:
     useConstant: 0
     constantValue: 0
     variable: {fileID: 11400000, guid: 516083d7ea62c974a88ba28da36e6310, type: 2}
-  moveDirection:
-    useConstant: 1
-    constantValue: {x: 0, y: 0, z: 0}
-    variable: {fileID: 0}
   bounds: {fileID: 11400000, guid: 0ce5d6c5dc2700a4ca5913afe4ee2c11, type: 2}
-  outOfBoundsEvent:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &8587430982465056962
+--- !u!50 &-1510276522156160840
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5642184354749133584}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!114 &-6723713305849481364
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,33 +161,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 5642184354749133584}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c77f7705efca9e4facf647b0a0c6284, type: 3}
+  m_Script: {fileID: 11500000, guid: 26a481a20d454b54d8d99ce4a0e27e12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lives:
-    useConstant: 1
-    constantValue:
-      currentValue: 0
-      maxValue: 0
-      valueChanged: {fileID: 0}
-      valueIncreased: {fileID: 0}
-      valueDecreased: {fileID: 0}
-    variable: {fileID: 0}
-  shieldHealth:
-    useConstant: 1
-    constantValue:
-      currentValue: 0
-      maxValue: 0
-      valueChanged: {fileID: 0}
-      valueIncreased: {fileID: 0}
-      valueDecreased: {fileID: 0}
-    variable: {fileID: 0}
-  receivesDamageFromTags:
-  - Player
-  damagedSoundEffect: {fileID: 0}
-  gameObjectDestroyed: {fileID: 11400000, guid: 411b2f2cf93f3b742a515ae5ea6d17d2, type: 2}
-  explosionVFX: {fileID: 0}
-  destroyedSoundEffect: {fileID: 8300000, guid: 5ee343246919d2b4bba63ae629e95494, type: 3}
+  collectorTag: Player
+  destroyedByTag: Power Up Destroyer
+  collectedSoundEffect: {fileID: 8300000, guid: 5ee343246919d2b4bba63ae629e95494, type: 3}
+  collectedGameEvent: {fileID: 11400000, guid: 411b2f2cf93f3b742a515ae5ea6d17d2, type: 2}
 --- !u!1001 &1942002925377164624
 PrefabInstance:
   m_ObjectHideFlags: 0

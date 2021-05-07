@@ -3,6 +3,8 @@ using UnityEngine.Serialization;
 
 public class EnemySmartWeapon : Weapon
 {
+    [SerializeField] private bool primaryWeaponEnabled = true;
+
     [FormerlySerializedAs("offset")] [SerializeField]
     private Vector3 seekOffset = Vector3.zero;
 
@@ -15,7 +17,7 @@ public class EnemySmartWeapon : Weapon
     [FormerlySerializedAs("rearLaserProjectilePrefab")] [SerializeField] private GameObject secondaryLaserProjectilePrefab;
 
     [FormerlySerializedAs("rearLaserOffset")] [SerializeField] private Vector3 secondaryLaserOffset = Vector3.up;
-    [SerializeField] protected CoolDownTimer rearFireDelayTimer;
+    [FormerlySerializedAs("rearFireDelayTimer")] [SerializeField] protected CoolDownTimer secondaryFireDelayTimer;
     private bool m_hasSecondaryLaserPrefab;
 
     #region Overrides of Weapon
@@ -23,22 +25,29 @@ public class EnemySmartWeapon : Weapon
     /// <inheritdoc />
     protected override void Start()
     {
-        base.Start();
+        if (primaryWeaponEnabled)
+            base.Start();
 
         if (secondaryLaserProjectilePrefab != null)
             m_hasSecondaryLaserPrefab = true;
+    }
+
+    /// <inheritdoc />
+    protected override bool ShouldFireLaser()
+    {
+        return primaryWeaponEnabled && base.ShouldFireLaser();
     }
 
     #endregion
 
     private void FixedUpdate()
     {
-        Debug.Assert(rearFireDelayTimer != null, nameof(rearFireDelayTimer) + " != null");
-        if (rearFireDelayTimer.IsActive) return;
+        Debug.Assert(secondaryFireDelayTimer != null, nameof(secondaryFireDelayTimer) + " != null");
+        if (secondaryFireDelayTimer.IsActive) return;
         if (PhysicsHelper.GetFirstTargetHit(transform, seekOffset, seekSize, maxTargets, seekTargetTag) == null) return;
         if (!m_hasSecondaryLaserPrefab) return;
 
-        StartCoroutine(rearFireDelayTimer.CoolDown());
+        StartCoroutine(secondaryFireDelayTimer.CoolDown());
         Instantiate(secondaryLaserProjectilePrefab, transform.position + secondaryLaserOffset, Quaternion.identity);
 
         if (!hasLaserSoundEffect) return;
