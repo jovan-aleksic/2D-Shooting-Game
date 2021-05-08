@@ -2,14 +2,14 @@ using UnityEngine;
 
 public class AggressiveEnemy : EnemyMovement
 {
-    [SerializeField] private float rotationSpeed = 60f;
+    [SerializeField] private float m_rotationSpeed = 60f;
 
-    [SerializeField] private Vector3 offset = Vector3.zero;
-    [SerializeField] private Vector3 seekSize = Vector3.one;
+    [SerializeField] private Vector3 m_offset = Vector3.zero;
+    [SerializeField] private Vector3 m_seekSize = Vector3.one;
 
-    [Tag] [SerializeField] private string[] seekTargetTag = new[] {"Player"};
+    [Tag] [SerializeField] private string[] m_seekTargetTag = new[] {"Player"};
 
-    [SerializeField] private int maxHits = 10;
+    [SerializeField] private int m_maxHits = 10;
 
     private Transform m_target;
 
@@ -21,7 +21,7 @@ public class AggressiveEnemy : EnemyMovement
     {
         Color color = Gizmos.color;
         Gizmos.color = Color.magenta;
-        PhysicsHelper.DrawBoxCast(transform, offset, seekSize, maxHits, seekTargetTag, false);
+        PhysicsHelper.DrawBoxCast(transform, m_offset, m_seekSize, m_maxHits, m_seekTargetTag, false);
         Gizmos.color = color;
     }
 
@@ -36,14 +36,14 @@ public class AggressiveEnemy : EnemyMovement
         {
             targetPosition = m_target.position;
             localTransform.position =
-                Vector3.MoveTowards(transform.position, targetPosition, movementSpeed * Time.deltaTime);
+                Vector3.MoveTowards(transform.position, targetPosition, m_movementSpeed * Time.deltaTime);
 
             Vector3 relativePos = targetPosition - localTransform.position;
             Quaternion newRotation = Quaternion.LookRotation(relativePos, Vector3.forward);
             newRotation = Quaternion.Euler(0, 0, newRotation.eulerAngles.z);
 
             transform.rotation =
-                Quaternion.RotateTowards(transform.rotation, newRotation, rotationSpeed * Time.deltaTime);
+                Quaternion.RotateTowards(transform.rotation, newRotation, m_rotationSpeed * Time.deltaTime);
         }
         // else move normally
         else
@@ -52,7 +52,7 @@ public class AggressiveEnemy : EnemyMovement
             Quaternion newRotation = Quaternion.LookRotation(relativePos, Vector3.forward);
             newRotation = Quaternion.Euler(0, 0, newRotation.eulerAngles.z);
             transform.rotation =
-                Quaternion.RotateTowards(transform.rotation, newRotation, rotationSpeed * Time.deltaTime);
+                Quaternion.RotateTowards(transform.rotation, newRotation, m_rotationSpeed * Time.deltaTime);
 
             base.Move();
         }
@@ -64,6 +64,6 @@ public class AggressiveEnemy : EnemyMovement
 
     private void FixedUpdate()
     {
-        m_target = PhysicsHelper.GetFirstTargetHit(transform, offset, seekSize, maxHits, seekTargetTag);
+        m_target = PhysicsHelper.GetFirstTargetHit(transform, m_offset, m_seekSize, m_maxHits, m_seekTargetTag);
     }
 }

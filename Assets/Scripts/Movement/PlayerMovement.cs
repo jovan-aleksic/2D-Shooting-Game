@@ -1,55 +1,56 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 using Debug = UnityEngine.Debug;
 
 public class PlayerMovement : Moveable
 {
     [Header("Inputs")] [InputAxis] [SerializeField]
-    private string horizontalInput = "Horizontal";
+    private string m_horizontalInput = "Horizontal";
 
-    [InputAxis] [SerializeField] private string verticalInput = "Vertical";
-    [InputAxis] [SerializeField] private string thrusterInput = "Fire3";
+    [InputAxis] [SerializeField] private string m_verticalInput = "Vertical";
+    [InputAxis] [SerializeField] private string m_thrusterInput = "Fire3";
 
     [Header("Speed Boost")] [SerializeField] [Range(1, 10)]
-    private float boostSpeedAmount = 2.0f;
+    private float m_boostSpeedAmount = 2.0f;
 
-    [SerializeField] private CoolDownTimer speedBoostActiveTimer;
+    [SerializeField] private CoolDownTimer m_speedBoostActiveTimer;
 
-    [SerializeField] private CodedGameEventListener speedBoostPowerUp;
+    [SerializeField] private CodedGameEventListener m_speedBoostPowerUp;
 
     private float m_boostSpeed;
 
-    [Header("Thrusters")] [SerializeField] private Vector2 thrusterSpeedAmount = new Vector2(0, 0.5f);
+    [Header("Thrusters")] [SerializeField] private Vector2 m_thrusterSpeedAmount = new Vector2(0, 0.5f);
 
     private Vector2 m_thrusterSpeed = Vector2.zero;
-    [SerializeField] private GameObject thrustersVisual;
+    [SerializeField] private GameObject m_thrustersVisual;
 
     private bool m_hasThrustersVisual;
 
-    [SerializeField] private DischargeRechargeTimer thrusterUsageTimer;
+    [SerializeField] private DischargeRechargeTimer m_thrusterUsageTimer;
 
     private void Start()
     {
-        if (bounds is { }) transform.position = new Vector3(bounds.Value.center.x, bounds.Min.y + 0.1f);
+        if (m_bounds is { }) transform.position = new Vector3(m_bounds.Value.center.x, m_bounds.Min.y + 0.1f);
 
-        Debug.Assert(thrusterUsageTimer != null, nameof(thrusterUsageTimer) + " != null");
-        thrusterUsageTimer.InitTimer(this);
+        Debug.Assert(m_thrusterUsageTimer != null, nameof(m_thrusterUsageTimer) + " != null");
+        m_thrusterUsageTimer.InitTimer(this);
 
-        m_hasThrustersVisual = thrustersVisual != null;
+        m_hasThrustersVisual = m_thrustersVisual != null;
         if (!m_hasThrustersVisual) return;
-        Debug.Assert(thrustersVisual != null, nameof(thrustersVisual) + " != null");
-        thrustersVisual.SetActive(false);
+        Debug.Assert(m_thrustersVisual != null, nameof(m_thrustersVisual) + " != null");
+        m_thrustersVisual.SetActive(false);
     }
 
     private void OnDisable()
     {
-        Debug.Assert(speedBoostPowerUp != null, nameof(speedBoostPowerUp) + " != null");
-        speedBoostPowerUp.OnDisable();
+        Debug.Assert(m_speedBoostPowerUp != null, nameof(m_speedBoostPowerUp) + " != null");
+        m_speedBoostPowerUp.OnDisable();
     }
 
     private void OnEnable()
     {
-        Debug.Assert(speedBoostPowerUp != null, nameof(speedBoostPowerUp) + " != null");
-        speedBoostPowerUp.OnEnable(ActivateSpeedBoost);
+        Debug.Assert(m_speedBoostPowerUp != null, nameof(m_speedBoostPowerUp) + " != null");
+        m_speedBoostPowerUp.OnEnable(ActivateSpeedBoost);
     }
 
     #region Overrides of Moveable
@@ -58,51 +59,51 @@ public class PlayerMovement : Moveable
     protected override void SetMoveDirection()
     {
         // If the Fire 3 button was pressed this frame
-        if (Input.GetButtonDown(thrusterInput) && thrusterUsageTimer is {CanDischarge: true})
+        if (Input.GetButtonDown(m_thrusterInput) && m_thrusterUsageTimer is {CanDischarge: true})
         {
-            thrusterUsageTimer.StartDischarging();
+            m_thrusterUsageTimer.StartDischarging();
             if (m_hasThrustersVisual)
             {
-                Debug.Assert(thrustersVisual != null, nameof(thrustersVisual) + " != null");
-                thrustersVisual.SetActive(true);
+                Debug.Assert(m_thrustersVisual != null, nameof(m_thrustersVisual) + " != null");
+                m_thrustersVisual.SetActive(true);
             }
 
-            m_thrusterSpeed = thrusterSpeedAmount;
+            m_thrusterSpeed = m_thrusterSpeedAmount;
         }
 
         // If the Fire 3 Button is being held down this frame
-        if (Input.GetButton(thrusterInput))
+        if (Input.GetButton(m_thrusterInput))
         {
-            if (thrusterUsageTimer is {CanDischarge: false})
+            if (m_thrusterUsageTimer is {CanDischarge: false})
             {
                 if (m_hasThrustersVisual)
                 {
-                    Debug.Assert(thrustersVisual != null, nameof(thrustersVisual) + " != null");
-                    thrustersVisual.SetActive(false);
+                    Debug.Assert(m_thrustersVisual != null, nameof(m_thrustersVisual) + " != null");
+                    m_thrustersVisual.SetActive(false);
                 }
 
                 m_thrusterSpeed = Vector2.zero;
-                thrusterUsageTimer.StartRecharging();
+                m_thrusterUsageTimer.StartRecharging();
             }
         }
 
         // If the Fire 3 Button was released this frame
-        if (Input.GetButtonUp(thrusterInput))
+        if (Input.GetButtonUp(m_thrusterInput))
         {
-            Debug.Assert(thrusterUsageTimer != null, nameof(thrusterUsageTimer) + " != null");
-            thrusterUsageTimer.StartRecharging();
+            Debug.Assert(m_thrusterUsageTimer != null, nameof(m_thrusterUsageTimer) + " != null");
+            m_thrusterUsageTimer.StartRecharging();
             if (m_hasThrustersVisual)
             {
-                Debug.Assert(thrustersVisual != null, nameof(thrustersVisual) + " != null");
-                thrustersVisual.SetActive(false);
+                Debug.Assert(m_thrustersVisual != null, nameof(m_thrustersVisual) + " != null");
+                m_thrustersVisual.SetActive(false);
             }
 
             m_thrusterSpeed = Vector2.zero;
         }
 
-        m_boostSpeed = speedBoostActiveTimer is {IsActive: true} ? boostSpeedAmount : 1;
-        moveDirection = new Vector3(Input.GetAxis(horizontalInput) * (m_boostSpeed + m_thrusterSpeed.x),
-                                    Input.GetAxis(verticalInput) * (m_boostSpeed + m_thrusterSpeed.y));
+        m_boostSpeed = m_speedBoostActiveTimer is {IsActive: true} ? m_boostSpeedAmount : 1;
+        moveDirection = new Vector3(Input.GetAxis(m_horizontalInput) * (m_boostSpeed + m_thrusterSpeed.x),
+                                    Input.GetAxis(m_verticalInput) * (m_boostSpeed + m_thrusterSpeed.y));
     }
 
     /// <inheritdoc />
@@ -110,15 +111,15 @@ public class PlayerMovement : Moveable
     {
         Vector3 position = transform.position;
 
-        if (bounds is { })
+        if (m_bounds is { })
         {
-            position.y = Mathf.Clamp(position.y, bounds.Min.y + 0.0001f, bounds.Max.y - 0.0001f);
+            position.y = Mathf.Clamp(position.y, m_bounds.Min.y + 0.0001f, m_bounds.Max.y - 0.0001f);
 
-            if (position.x > bounds.Max.x)
-                position.x = bounds.Min.x + 0.1f;
+            if (position.x > m_bounds.Max.x)
+                position.x = m_bounds.Min.x + 0.1f;
 
-            if (position.x < bounds.Min.x)
-                position.x = bounds.Max.x - 0.1f;
+            if (position.x < m_bounds.Min.x)
+                position.x = m_bounds.Max.x - 0.1f;
         }
 
         transform.position = position;
@@ -128,7 +129,7 @@ public class PlayerMovement : Moveable
 
     private void ActivateSpeedBoost()
     {
-        Debug.Assert(speedBoostActiveTimer != null, nameof(speedBoostActiveTimer) + " != null");
-        StartCoroutine(speedBoostActiveTimer.CoolDown());
+        Debug.Assert(m_speedBoostActiveTimer != null, nameof(m_speedBoostActiveTimer) + " != null");
+        StartCoroutine(m_speedBoostActiveTimer.CoolDown());
     }
 }

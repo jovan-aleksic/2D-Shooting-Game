@@ -1,21 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-1494440308058375260
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 444741686107317182}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26a481a20d454b54d8d99ce4a0e27e12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collectorTag: Player
-  destroyedByTag: Power Up Destroyer
-  collectedSoundEffect: {fileID: 8300000, guid: 5ee343246919d2b4bba63ae629e95494, type: 3}
-  collectedGameEvent: {fileID: 11400000, guid: 322773d03b6dc9441ad29323df0b86a5, type: 2}
 --- !u!1 &1748011432941891188
 GameObject:
   m_ObjectHideFlags: 0
@@ -244,14 +228,17 @@ PrefabInstance:
       propertyPath: destroyedByTag
       value: Player Laser
       objectReference: {fileID: 0}
+    - target: {fileID: 4698525327118314997, guid: 84d73eda8b3ab534b87b7d47eb1decf4, type: 3}
+      propertyPath: m_destroyedByTag
+      value: Player Laser
+      objectReference: {fileID: 0}
+    - target: {fileID: 4698525327118314997, guid: 84d73eda8b3ab534b87b7d47eb1decf4, type: 3}
+      propertyPath: m_collectedGameEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: 322773d03b6dc9441ad29323df0b86a5, type: 2}
     m_RemovedComponents:
     - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 84d73eda8b3ab534b87b7d47eb1decf4, type: 3}
---- !u!1 &444741686107317182 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2328456288792078752, guid: 84d73eda8b3ab534b87b7d47eb1decf4, type: 3}
-  m_PrefabInstance: {fileID: 2773193301967620638}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2795354857293641651 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 51585734752320941, guid: 84d73eda8b3ab534b87b7d47eb1decf4, type: 3}

@@ -9,19 +9,23 @@ public class Moveable : MonoBehaviour
     [InfoBox("The Speed that the game object moves in game.")]
     [Tooltip("The Speed that the game object moves in game.")]
     [SerializeField]
-    protected float movementSpeed = 4.0f;
+    protected float m_movementSpeed = 4.0f;
 
-    [SerializeField] protected GameMoveDirectionReference gameMoveDirection;
+
+    [SerializeField] protected GameMoveDirectionReference m_gameMoveDirection;
 
     protected Vector3 moveDirection;
 
-    [SerializeField] protected BoundsVariable bounds;
+
+    [SerializeField] protected BoundsVariable m_bounds;
+
 
     private Vector3 m_position = Vector3.zero;
 
     private void Awake()
     {
-        moveDirection = PositionHelper.GetDirection(gameMoveDirection.Value);
+        Debug.Assert(m_gameMoveDirection != null, nameof(m_gameMoveDirection) + " != null");
+        moveDirection = PositionHelper.GetDirection(m_gameMoveDirection.Value);
     }
 
     /// <summary>
@@ -37,10 +41,10 @@ public class Moveable : MonoBehaviour
     /// </summary>
     protected virtual void OnDrawGizmosSelected()
     {
-        if (bounds == null) return;
+        if (m_bounds == null) return;
 
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireCube(bounds.Value.center, bounds.Value.size);
+        Gizmos.DrawWireCube(m_bounds.Value.center, m_bounds.Value.size);
     }
 
     /// <summary>
@@ -50,7 +54,7 @@ public class Moveable : MonoBehaviour
     {
         SetMoveDirection();
         // m_direction * movementSpeed * Real Time(Time.deltaTime)
-        transform.Translate(moveDirection * (movementSpeed * Time.deltaTime));
+        transform.Translate(moveDirection * (m_movementSpeed * Time.deltaTime));
         CheckBounds();
     }
 
@@ -60,9 +64,9 @@ public class Moveable : MonoBehaviour
     {
         m_position = transform.position;
 
-        if (bounds is { } &&
-            !(m_position.x < bounds.Min.x) && !(m_position.x > bounds.Max.x) &&
-            !(m_position.y < bounds.Min.y) && !(m_position.y > bounds.Max.y)) return;
+        if (m_bounds is { } &&
+            !(m_position.x < m_bounds.Min.x) && !(m_position.x > m_bounds.Max.x) &&
+            !(m_position.y < m_bounds.Min.y) && !(m_position.y > m_bounds.Max.y)) return;
 
         Destroy((gameObject));
     }

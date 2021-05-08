@@ -44,8 +44,8 @@ public class ToDo
      *          ● Create an enemy type that knows when it’s behind the player, and fires a weapon backwards.
      * Enemy Pickups
      *          ● If a pickup is in front of an enemy, the enemy will fire its weapon at the pickup to destroy it before the player can get it.
-     * ToDO: Pickup Collect
-     *          ToDO: ●When the ‘C’ key is pressed by the Player,Pickups quickly moveto the player.
+     * Pickup Collect
+     *          ●When the ‘C’ key is pressed by the Player,Pickups quickly moveto the player.
      * ToDO: Enemy Avoid Shot
      *          ToDO: ● Create an enemy type that can avoid the player’s weapon
      *          ToDO: ● When you fire a shot,the enemy should detect a shot in range and try to avoid it.

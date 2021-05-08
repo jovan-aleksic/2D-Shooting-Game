@@ -93,9 +93,9 @@ GameObject:
   - component: {fileID: 5946970042832537902}
   - component: {fileID: 1239145115775607934}
   - component: {fileID: 1121576144769597034}
-  - component: {fileID: 3649471173880348748}
   - component: {fileID: -470479748617737123}
   - component: {fileID: -5967444408236996769}
+  - component: {fileID: 8478293256058176848}
   m_Layer: 0
   m_Name: Player Life Power Up
   m_TagString: Power Up
@@ -195,24 +195,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &3649471173880348748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5134466739339906033}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d71e7d99072b9a48a6995ddf927567c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementSpeed: 2
-  gameMoveDirection:
-    useConstant: 0
-    constantValue: 0
-    variable: {fileID: 11400000, guid: 516083d7ea62c974a88ba28da36e6310, type: 2}
-  bounds: {fileID: 11400000, guid: 0ce5d6c5dc2700a4ca5913afe4ee2c11, type: 2}
 --- !u!50 &-470479748617737123
 Rigidbody2D:
   serializedVersion: 4
@@ -246,7 +228,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26a481a20d454b54d8d99ce4a0e27e12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectorTag: Player
-  destroyedByTag: Power Up Destroyer
-  collectedSoundEffect: {fileID: 8300000, guid: 5ee343246919d2b4bba63ae629e95494, type: 3}
-  collectedGameEvent: {fileID: 11400000, guid: d575cf9496d1700439fb931115a85462, type: 2}
+  m_collectorTag: Player
+  m_destroyedByTag: Power Up Destroyer
+  m_collectedSoundEffect: {fileID: 8300000, guid: 5ee343246919d2b4bba63ae629e95494, type: 3}
+  m_collectedGameEvent: {fileID: 11400000, guid: d575cf9496d1700439fb931115a85462, type: 2}
+  m_collectorInput: Fire3
+--- !u!114 &8478293256058176848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5134466739339906033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d71e7d99072b9a48a6995ddf927567c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_movementSpeed: 2
+  m_gameMoveDirection:
+    useConstant: 0
+    constantValue: 0
+    variable: {fileID: 11400000, guid: 516083d7ea62c974a88ba28da36e6310, type: 2}
+  m_bounds: {fileID: 11400000, guid: 0ce5d6c5dc2700a4ca5913afe4ee2c11, type: 2}
