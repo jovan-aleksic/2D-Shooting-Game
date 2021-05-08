@@ -58,7 +58,7 @@ public class EnemySmartWeapon : Weapon
     private void OnDrawGizmosSelected()
     {
         Color color = Gizmos.color;
-        Gizmos.color = Color.yellow;
+        Gizmos.color = Color.cyan;
         PhysicsHelper.DrawBoxCast(transform, seekOffset, seekSize, maxTargets, seekTargetTag, false);
         Gizmos.color = color;
     }

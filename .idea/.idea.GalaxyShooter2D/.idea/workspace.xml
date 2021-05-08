@@ -3,31 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="be36d944-fe34-41b0-b054-b6cd290abc4a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player Shield.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player Shield.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Power Ups/Ammo Power Up.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Power Ups/Ammo Power Up.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Power Ups/Homing Laser Power Up.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Power Ups/Homing Laser Power Up.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Power Ups/Player Life Power Up.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Power Ups/Player Life Power Up.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Power Ups/Shield Power Down Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Power Ups/Shield Power Down Variant.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Power Ups/Shield Power Up.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Power Ups/Shield Power Up.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Power Ups/Speed Boost Power Up.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Power Ups/Speed Boost Power Up.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Power Ups/Triple Shot Power Up.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Power Ups/Triple Shot Power Up.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/Enemy Homing Laser Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/Enemy Homing Laser Variant.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/Player Homing Laser Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/Player Homing Laser Variant.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/Player Laser.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/Player Laser.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Aggresive Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Aggresive Enemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Enemy Astroid.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Enemy Astroid.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Enemy Shield Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Enemy Shield Variant.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Enemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gloabal Data/Player/Player Ammo.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gloabal Data/Player/Player Ammo.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gloabal Data/Player/Player Lives.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gloabal Data/Player/Player Lives.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/Enemy Laser Laser Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/Enemy Laser Laser Variant.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Aggresive Enemy.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Enemy Homing Variant.prefab" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/ToDo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/ToDo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/AggressiveEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/AggressiveEnemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/EnemyMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/EnemyMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/Moveable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/Moveable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/PlayerMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PowerUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PowerUp.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SeekTarget.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SeekTarget.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/EnemySmartWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/EnemySmartWeapon.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +22,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/PositionHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement/AvoidTarget.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/Weapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/manifest.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/CoolDownTimer.cs" root0="FORCE_HIGHLIGHTING" />
@@ -167,7 +151,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Attributes/InfoBoxAttribute.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/PhysicsHelper.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Damageable/Damageable.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/EnemySmartWeapon.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/Weapon.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Movement/AggressiveEnemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Movement/EnemyMovement.cs" />
@@ -175,7 +158,10 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Movement/Moveable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SeekTarget.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUp.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/EnemySmartWeapon.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Movement/AvoidLaser.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Editor/ToDo.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Movement/AvoidTarget.cs" />
     </changedPaths>
   </component>
   <component name="IgnoredFileRootStore">
