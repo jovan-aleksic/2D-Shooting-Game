@@ -46,9 +46,9 @@ public class ToDo
      *          ● If a pickup is in front of an enemy, the enemy will fire its weapon at the pickup to destroy it before the player can get it.
      * Pickup Collect
      *          ●When the ‘C’ key is pressed by the Player,Pickups quickly moveto the player.
-     * ToDO: Enemy Avoid Shot
-     *          ToDO: ● Create an enemy type that can avoid the player’s weapon
-     *          ToDO: ● When you fire a shot,the enemy should detect a shot in range and try to avoid it.
+     * Enemy Avoid Shot
+     *          ● Create an enemy type that can avoid the player’s weapon
+     *          ● When you fire a shot,the enemy should detect a shot in range and try to avoid it.
      * Homing Projectile (Completed in Phase I).
      *          ● Create a homing projectile that seeks the closest target.
      *          ● Turn into a rare powerup
