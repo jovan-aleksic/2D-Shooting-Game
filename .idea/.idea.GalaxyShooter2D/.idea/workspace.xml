@@ -3,14 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="be36d944-fe34-41b0-b054-b6cd290abc4a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gloabal Data/Player/Player Ammo.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gloabal Data/Player/Player Ammo.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gloabal Data/Player/Player Lives.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gloabal Data/Player/Player Lives.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/Enemy Laser Laser Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/Enemy Laser Laser Variant.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Aggresive Enemy.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Enemy Homing Variant.prefab" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/ToDo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/ToDo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/EnemySmartWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/EnemySmartWeapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,8 +155,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUp.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/EnemySmartWeapon.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Movement/AvoidLaser.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Editor/ToDo.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Movement/AvoidTarget.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Editor/ToDo.cs" />
     </changedPaths>
   </component>
   <component name="IgnoredFileRootStore">
@@ -242,6 +237,7 @@
       <workItem from="1619481648860" duration="24529000" />
       <workItem from="1619687489946" duration="94556000" />
       <workItem from="1620078830766" duration="58170000" />
+      <workItem from="1620512823948" duration="1076000" />
     </task>
     <servers />
   </component>
