@@ -155,6 +155,7 @@ MonoBehaviour:
       valueIncreased: {fileID: 0}
       valueDecreased: {fileID: 0}
     variable: {fileID: 0}
+  shieldGameObject: {fileID: 0}
   receivesDamageFromTags:
   - Player
   - Player Laser
@@ -174,12 +175,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d71e7d99072b9a48a6995ddf927567c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 2
-  gameMoveDirection:
+  m_movementSpeed: 2
+  m_gameMoveDirection:
     useConstant: 0
     constantValue: 0
     variable: {fileID: 11400000, guid: 516083d7ea62c974a88ba28da36e6310, type: 2}
-  bounds: {fileID: 11400000, guid: 0ce5d6c5dc2700a4ca5913afe4ee2c11, type: 2}
+  m_bounds: {fileID: 11400000, guid: 0ce5d6c5dc2700a4ca5913afe4ee2c11, type: 2}
+  m_position: {x: 0, y: 0, z: 0}
 --- !u!114 &8718006687100408099
 MonoBehaviour:
   m_ObjectHideFlags: 0

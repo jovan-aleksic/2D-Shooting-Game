@@ -113,12 +113,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c77f7705efca9e4facf647b0a0c6284, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectToDestroy: {fileID: 0}
   lives:
     useConstant: 1
     constantValue:
       currentValue: 0
       maxValue: 0
       valueChanged: {fileID: 0}
+      valueIncreased: {fileID: 0}
+      valueDecreased: {fileID: 0}
     variable: {fileID: 0}
   shieldHealth:
     useConstant: 1
@@ -126,7 +129,10 @@ MonoBehaviour:
       currentValue: 0
       maxValue: 0
       valueChanged: {fileID: 0}
+      valueIncreased: {fileID: 0}
+      valueDecreased: {fileID: 0}
     variable: {fileID: 0}
+  shieldGameObject: {fileID: 0}
   receivesDamageFromTags:
   - Enemy
   damagedSoundEffect: {fileID: 0}
@@ -145,16 +151,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d71e7d99072b9a48a6995ddf927567c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 6
-  gameMoveDirection:
+  m_movementSpeed: 6
+  m_gameMoveDirection:
     useConstant: 0
     constantValue: 0
     variable: {fileID: 11400000, guid: 8f6290431b4c99e4a823ad688e91837c, type: 2}
-  moveDirection:
-    useConstant: 1
-    constantValue: {x: 0, y: 0, z: 0}
-    variable: {fileID: 0}
-  bounds: {fileID: 11400000, guid: 0ce5d6c5dc2700a4ca5913afe4ee2c11, type: 2}
-  outOfBoundsEvent:
-    m_PersistentCalls:
-      m_Calls: []
+  m_bounds: {fileID: 11400000, guid: 0ce5d6c5dc2700a4ca5913afe4ee2c11, type: 2}
+  m_position: {x: 0, y: 0, z: 0}

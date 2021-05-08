@@ -22,14 +22,14 @@ public class EnemyMovement : Moveable
     /// <inheritdoc />
     protected override void SetMoveDirection()
     {
-        if (gameMoveDirection == null) return;
+        if (m_gameMoveDirection == null) return;
 
         float x = moveDirection.x;
         float y = moveDirection.y;
         float z = moveDirection.z;
         float t = Time.time * m_frequency;
 
-        switch (gameMoveDirection.Value)
+        switch (m_gameMoveDirection.Value)
         {
             case GameMoveDirectionEnum.TopToBottom:
             case GameMoveDirectionEnum.BottomToTop:
@@ -48,38 +48,38 @@ public class EnemyMovement : Moveable
     /// <inheritdoc />
     protected override void CheckBounds()
     {
-        if (gameMoveDirection == null || bounds == null) return;
+        if (m_gameMoveDirection == null || m_bounds == null) return;
 
         Vector3 position = transform.position;
 
-        switch (gameMoveDirection.Value)
+        switch (m_gameMoveDirection.Value)
         {
             case GameMoveDirectionEnum.TopToBottom:
             {
-                if (position.y < bounds.Min.y)
+                if (position.y < m_bounds.Min.y)
                     transform.position =
-                        PositionHelper.GetRandomPosition(gameMoveDirection.Value, bounds.Value);
+                        PositionHelper.GetRandomPosition(m_gameMoveDirection.Value, m_bounds.Value);
                 break;
             }
             case GameMoveDirectionEnum.BottomToTop:
             {
-                if (position.y > bounds.Max.y)
+                if (position.y > m_bounds.Max.y)
                     transform.position =
-                        PositionHelper.GetRandomPosition(gameMoveDirection.Value, bounds.Value);
+                        PositionHelper.GetRandomPosition(m_gameMoveDirection.Value, m_bounds.Value);
                 break;
             }
             case GameMoveDirectionEnum.LeftToRight:
             {
-                if (position.x > bounds.Max.x)
+                if (position.x > m_bounds.Max.x)
                     transform.position =
-                        PositionHelper.GetRandomPosition(gameMoveDirection.Value, bounds.Value);
+                        PositionHelper.GetRandomPosition(m_gameMoveDirection.Value, m_bounds.Value);
                 break;
             }
             case GameMoveDirectionEnum.RightToLeft:
             {
-                if (position.x < bounds.Min.x)
+                if (position.x < m_bounds.Min.x)
                     transform.position =
-                        PositionHelper.GetRandomPosition(gameMoveDirection.Value, bounds.Value);
+                        PositionHelper.GetRandomPosition(m_gameMoveDirection.Value, m_bounds.Value);
                 break;
             }
         }

@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 1086686503947867353}
   - component: {fileID: 5998357045703402502}
   - component: {fileID: 8574964569739835262}
-  - component: {fileID: 4514016551461943794}
   - component: {fileID: -6522520051656380216}
   - component: {fileID: -6374109565485561002}
+  - component: {fileID: 2436298809411255108}
   m_Layer: 0
   m_Name: Triple Shot Power Up
   m_TagString: Power Up
@@ -122,24 +122,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.4
---- !u!114 &4514016551461943794
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6498381912734358968}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d71e7d99072b9a48a6995ddf927567c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementSpeed: 2
-  gameMoveDirection:
-    useConstant: 0
-    constantValue: 0
-    variable: {fileID: 11400000, guid: 516083d7ea62c974a88ba28da36e6310, type: 2}
-  bounds: {fileID: 11400000, guid: 0ce5d6c5dc2700a4ca5913afe4ee2c11, type: 2}
 --- !u!50 &-6522520051656380216
 Rigidbody2D:
   serializedVersion: 4
@@ -173,7 +155,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26a481a20d454b54d8d99ce4a0e27e12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectorTag: Player
-  destroyedByTag: Power Up Destroyer
-  collectedSoundEffect: {fileID: 8300000, guid: 5ee343246919d2b4bba63ae629e95494, type: 3}
-  collectedGameEvent: {fileID: 11400000, guid: c615448c406a27640b86f2357bd5fc99, type: 2}
+  m_collectorTag: Player
+  m_destroyedByTag: Power Up Destroyer
+  m_collectedSoundEffect: {fileID: 8300000, guid: 5ee343246919d2b4bba63ae629e95494, type: 3}
+  m_collectedGameEvent: {fileID: 11400000, guid: c615448c406a27640b86f2357bd5fc99, type: 2}
+  m_collectorInput: Fire3
+--- !u!114 &2436298809411255108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6498381912734358968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d71e7d99072b9a48a6995ddf927567c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_movementSpeed: 2
+  m_gameMoveDirection:
+    useConstant: 0
+    constantValue: 0
+    variable: {fileID: 11400000, guid: 516083d7ea62c974a88ba28da36e6310, type: 2}
+  m_bounds: {fileID: 11400000, guid: 0ce5d6c5dc2700a4ca5913afe4ee2c11, type: 2}
