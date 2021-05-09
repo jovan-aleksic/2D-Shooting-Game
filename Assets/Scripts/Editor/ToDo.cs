@@ -55,6 +55,6 @@ public class ToDo
      * Boss AI
      *          ToDO: ● Create a final wave that includes a boss at the end.
      *          ● Moves down the screen to the center and stays there.
-     *          ToDO: ● Unique attacks towards the player
+     *          ● Unique attacks towards the player
      */
 }

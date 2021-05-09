@@ -1450,9 +1450,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1026632812}
-  - component: {fileID: 1026632813}
   - component: {fileID: 1026632815}
   - component: {fileID: 1026632814}
+  - component: {fileID: 1026632813}
   m_Layer: 0
   m_Name: Weapon Wing Left
   m_TagString: Untagged
@@ -1467,7 +1467,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1026632811}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
   m_LocalPosition: {x: 1, y: 0.25, z: 0}
   m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_Children:
@@ -1475,7 +1475,7 @@ Transform:
   - {fileID: 311440020}
   m_Father: {fileID: 797090064}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!114 &1026632813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1485,14 +1485,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1026632811}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 073ba6f9df046bf479ce71da89454821, type: 3}
+  m_Script: {fileID: 11500000, guid: 186613ac9cf378e429a7165eaa84e899, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   laserProjectilePrefab: {fileID: 6060749886461449775, guid: 0d904a29f8c8ec64ca10732ee86695c8, type: 3}
   laserOffset: {x: 0, y: 1, z: 0}
   fireDelayTimer:
     minCoolDownTime: 0.5
-    maxCoolDownTime: 3
+    maxCoolDownTime: 0.5
     percentageCompleted:
       useConstant: 1
       constantValue: 0
@@ -1502,6 +1502,25 @@ MonoBehaviour:
       constantValue: 0
       variable: {fileID: 0}
   laserSoundEffect: {fileID: 920178522}
+  primaryWeaponEnabled: 1
+  seekOffset: {x: 0, y: -3, z: 0}
+  seekSize: {x: 3, y: 6, z: 1}
+  seekTargetTag:
+  - Player
+  maxTargets: 10
+  secondaryLaserProjectilePrefab: {fileID: 3383844200832018908, guid: a2f1818e63f4c804d9f8b1c5999f350e, type: 3}
+  secondaryLaserOffset: {x: 0, y: 0, z: 0}
+  secondaryFireDelayTimer:
+    minCoolDownTime: 0.5
+    maxCoolDownTime: 0.5
+    percentageCompleted:
+      useConstant: 1
+      constantValue: 0
+      variable: {fileID: 0}
+    coolDownTimeLeft:
+      useConstant: 1
+      constantValue: 0
+      variable: {fileID: 0}
 --- !u!114 &1026632814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2016,11 +2035,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 073ba6f9df046bf479ce71da89454821, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserProjectilePrefab: {fileID: 6060749886461449775, guid: 0d904a29f8c8ec64ca10732ee86695c8, type: 3}
+  laserProjectilePrefab: {fileID: 4894915655351433600, guid: 72b37adb01c2c324f848ea0e4888b23a, type: 3}
   laserOffset: {x: 0, y: 1, z: 0}
   fireDelayTimer:
-    minCoolDownTime: 0.5
-    maxCoolDownTime: 3
+    minCoolDownTime: 0.1
+    maxCoolDownTime: 1
     percentageCompleted:
       useConstant: 1
       constantValue: 0
@@ -2313,9 +2332,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1562502489}
-  - component: {fileID: 1562502490}
   - component: {fileID: 1562502492}
   - component: {fileID: 1562502491}
+  - component: {fileID: 1562502490}
   m_Layer: 0
   m_Name: Weapon Wing Right
   m_TagString: Untagged
@@ -2330,7 +2349,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1562502488}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
   m_LocalPosition: {x: -1, y: 0.25, z: 0}
   m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_Children:
@@ -2338,7 +2357,7 @@ Transform:
   - {fileID: 2011881183}
   m_Father: {fileID: 797090064}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!114 &1562502490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2348,14 +2367,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1562502488}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 073ba6f9df046bf479ce71da89454821, type: 3}
+  m_Script: {fileID: 11500000, guid: 186613ac9cf378e429a7165eaa84e899, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   laserProjectilePrefab: {fileID: 6060749886461449775, guid: 0d904a29f8c8ec64ca10732ee86695c8, type: 3}
   laserOffset: {x: 0, y: 1, z: 0}
   fireDelayTimer:
     minCoolDownTime: 0.5
-    maxCoolDownTime: 3
+    maxCoolDownTime: 0.5
     percentageCompleted:
       useConstant: 1
       constantValue: 0
@@ -2365,6 +2384,25 @@ MonoBehaviour:
       constantValue: 0
       variable: {fileID: 0}
   laserSoundEffect: {fileID: 1710272212}
+  primaryWeaponEnabled: 1
+  seekOffset: {x: 0, y: -3, z: 0}
+  seekSize: {x: 3, y: 6, z: 1}
+  seekTargetTag:
+  - Player
+  maxTargets: 10
+  secondaryLaserProjectilePrefab: {fileID: 3383844200832018908, guid: a2f1818e63f4c804d9f8b1c5999f350e, type: 3}
+  secondaryLaserOffset: {x: 0, y: 0, z: 0}
+  secondaryFireDelayTimer:
+    minCoolDownTime: 0.5
+    maxCoolDownTime: 0.5
+    percentageCompleted:
+      useConstant: 1
+      constantValue: 0
+      variable: {fileID: 0}
+    coolDownTimeLeft:
+      useConstant: 1
+      constantValue: 0
+      variable: {fileID: 0}
 --- !u!114 &1562502491
 MonoBehaviour:
   m_ObjectHideFlags: 0
