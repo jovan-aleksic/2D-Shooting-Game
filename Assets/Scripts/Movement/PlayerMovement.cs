@@ -45,6 +45,7 @@ public class PlayerMovement : Moveable
     {
         Debug.Assert(m_speedBoostPowerUp != null, nameof(m_speedBoostPowerUp) + " != null");
         m_speedBoostPowerUp.OnDisable();
+        m_speedBoostActiveTimer.OnDisabled();
     }
 
     private void OnEnable()

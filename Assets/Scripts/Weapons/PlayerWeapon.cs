@@ -7,7 +7,6 @@ public class PlayerWeapon : Weapon
 
     [SerializeField] private CodedGameEventListener ammoPowerUp;
 
-    // ReSharper disable once RedundantBlankLines
     [InputAxis] [SerializeField] private string fireLaserInput = "Fire1";
 
     [Header("Triple Shot")] [SerializeField]
@@ -33,6 +32,23 @@ public class PlayerWeapon : Weapon
     private bool m_hasHomingLaserFireSoundEffect;
 
     #region Overrides of Weapon
+
+    protected override void OnDisable()
+    {
+        if (ammoPowerUp != null) ammoPowerUp.OnDisable();
+        if (tripleShotPowerUp != null) tripleShotPowerUp.OnDisable();
+        if (homingLaserPowerUp != null) homingLaserPowerUp.OnDisable();
+
+        tripleShotActiveTimer.OnDisabled();
+        homingLaserActiveTimer.OnDisabled();
+    }
+
+    protected override void OnEnable()
+    {
+        if (ammoPowerUp != null) ammoPowerUp.OnEnable(AmmoCollected);
+        if (tripleShotPowerUp != null) tripleShotPowerUp.OnEnable(ActivateTripleShot);
+        if (homingLaserPowerUp != null) homingLaserPowerUp.OnEnable(ActivateHomingLaser);
+    }
 
     /// <inheritdoc />
     protected override void Start()
@@ -111,20 +127,6 @@ public class PlayerWeapon : Weapon
     }
 
     #endregion
-
-    private void OnDisable()
-    {
-        if (ammoPowerUp != null) ammoPowerUp.OnDisable();
-        if (tripleShotPowerUp != null) tripleShotPowerUp.OnDisable();
-        if (homingLaserPowerUp != null) homingLaserPowerUp.OnDisable();
-    }
-
-    private void OnEnable()
-    {
-        if (ammoPowerUp != null) ammoPowerUp.OnEnable(AmmoCollected);
-        if (tripleShotPowerUp != null) tripleShotPowerUp.OnEnable(ActivateTripleShot);
-        if (homingLaserPowerUp != null) homingLaserPowerUp.OnEnable(ActivateHomingLaser);
-    }
 
     #region Power Up Activation
 

@@ -13,6 +13,18 @@ public class Weapon : MonoBehaviour
 
     #region Unity Methods
 
+    protected virtual void OnEnable()
+    {
+        Debug.Assert(fireDelayTimer != null, nameof(fireDelayTimer) + " != null");
+        StartCoroutine(fireDelayTimer.CoolDown());
+    }
+
+    protected virtual void OnDisable()
+    {
+        Debug.Assert(fireDelayTimer != null, nameof(fireDelayTimer) + " != null");
+        fireDelayTimer.OnDisabled();
+    }
+
     protected virtual void Start()
     {
         if (laserProjectilePrefab == null)
@@ -23,9 +35,6 @@ public class Weapon : MonoBehaviour
 
         if (laserSoundEffect != null)
             hasLaserSoundEffect = true;
-
-        Debug.Assert(fireDelayTimer != null, nameof(fireDelayTimer) + " != null");
-        StartCoroutine(fireDelayTimer.CoolDown());
     }
 
     /// <summary>

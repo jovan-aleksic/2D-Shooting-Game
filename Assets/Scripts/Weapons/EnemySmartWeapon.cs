@@ -23,6 +23,15 @@ public class EnemySmartWeapon : Weapon
     #region Overrides of Weapon
 
     /// <inheritdoc />
+    protected override void OnDisable()
+    {
+        base.OnDisable();
+
+        Debug.Assert(secondaryFireDelayTimer != null, nameof(secondaryFireDelayTimer) + " != null");
+        secondaryFireDelayTimer.OnDisabled();
+    }
+
+    /// <inheritdoc />
     protected override void Start()
     {
         if (primaryWeaponEnabled)
