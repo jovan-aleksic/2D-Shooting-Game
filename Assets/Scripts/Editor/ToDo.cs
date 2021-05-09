@@ -53,7 +53,7 @@ public class ToDo
      *          ● Create a homing projectile that seeks the closest target.
      *          ● Turn into a rare powerup
      * Boss AI
-     *          ToDO: ● Create a final wave that includes a boss at the end.
+     *          ● Create a final wave that includes a boss at the end.
      *          ● Moves down the screen to the center and stays there.
      *          ● Unique attacks towards the player
      */
