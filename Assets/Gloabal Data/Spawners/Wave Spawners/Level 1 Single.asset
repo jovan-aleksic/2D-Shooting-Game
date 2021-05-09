@@ -32,12 +32,6 @@ MonoBehaviour:
     timeBetweenSpawning: 0
     prefabsToSpawn:
     - {fileID: 3615412909860068479, guid: 9c3e181b942b9634fb97f16e6ed0b7e8, type: 3}
-  - name: Ship Homing Laser
-    numberObjectsInWave: 1
-    numberObjectsToSpawnAtATime: 1
-    timeBetweenSpawning: 0
-    prefabsToSpawn:
-    - {fileID: 7114326097833735192, guid: 5f7f3846dc954e946999ee4204f65b5a, type: 3}
   timeBetweenWaves:
     minCoolDownTime: 2
     maxCoolDownTime: 2
@@ -51,13 +45,13 @@ MonoBehaviour:
       variable: {fileID: 11400000, guid: b222b8a85c653ea4e86cd552a2c7f625, type: 2}
   timerStarted: {fileID: 11400000, guid: 7395f8037e10773489e17d7b256e88e6, type: 2}
   waitAllObjectsDestroyed: 1
-  useWaitTimeWithDestroyAllObjects: 0
+  useWaitTimeWithDestroyAllObjects: 1
   screenBounds: {fileID: 11400000, guid: 0ce5d6c5dc2700a4ca5913afe4ee2c11, type: 2}
   gameMoveDirection:
     useConstant: 0
     constantValue: 0
     variable: {fileID: 11400000, guid: 516083d7ea62c974a88ba28da36e6310, type: 2}
-  nextWaveSpawner: {fileID: 11400000, guid: 6d2eb52480331984f951bc8dce05c98a, type: 2}
+  nextWaveSpawner: {fileID: 11400000, guid: cc3cc9d262342ef4189879aa080f8c05, type: 2}
   currentWaveName:
     useConstant: 0
     constantValue: 

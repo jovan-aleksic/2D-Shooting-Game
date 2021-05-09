@@ -25,6 +25,11 @@ public class CoolDownTimer
 
     private float m_startTime;
 
+    public void OnDisabled()
+    {
+        IsActive = false;
+    }
+
     public IEnumerator CoolDown()
     {
         IsActive = true;

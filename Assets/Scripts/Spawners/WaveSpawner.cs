@@ -47,6 +47,11 @@ public class WaveSpawner : ScriptableObject, ISpawner
         }
     }
 
+    private void OnDisable()
+    {
+        timeBetweenWaves.OnDisabled();
+    }
+
     #region Implementation of ISpawner
 
     /// <inheritdoc />

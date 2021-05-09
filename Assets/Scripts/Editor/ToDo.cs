@@ -52,9 +52,9 @@ public class ToDo
      * Homing Projectile (Completed in Phase I).
      *          ● Create a homing projectile that seeks the closest target.
      *          ● Turn into a rare powerup
-     * ToDO: Boss AI
-     *          ToDO: ● Create a final wave that includes a boss at the end.
-     *          ToDO: ● Moves down the screen to the center and stays there.
-     *          ToDO: ● Unique attacks towards the player
+     * Boss AI
+     *          ● Create a final wave that includes a boss at the end.
+     *          ● Moves down the screen to the center and stays there.
+     *          ● Unique attacks towards the player
      */
 }
