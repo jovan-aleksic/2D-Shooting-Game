@@ -19,19 +19,43 @@ MonoBehaviour:
     numberObjectsToSpawnAtATime: 1
     timeBetweenSpawning: 0
     prefabsToSpawn:
-    - {fileID: 100947975949838633, guid: 162220e4136bfa6418b6246295acf56b, type: 3}
+    - {fileID: 1008358459883591577, guid: 162220e4136bfa6418b6246295acf56b, type: 3}
   - name: Ship
     numberObjectsInWave: 1
     numberObjectsToSpawnAtATime: 1
     timeBetweenSpawning: 0
     prefabsToSpawn:
     - {fileID: 7017033740898244962, guid: 313e82be39be92540b5099d61023b551, type: 3}
-  - name: Ship Homing Laser
+  - name: Ship Enemy Shield
     numberObjectsInWave: 1
     numberObjectsToSpawnAtATime: 1
     timeBetweenSpawning: 0
     prefabsToSpawn:
-    - {fileID: 7114326097833735192, guid: 5f7f3846dc954e946999ee4204f65b5a, type: 3}
+    - {fileID: 3615412909860068479, guid: 9c3e181b942b9634fb97f16e6ed0b7e8, type: 3}
+  - name: Ship Avoid Player Laser
+    numberObjectsInWave: 1
+    numberObjectsToSpawnAtATime: 1
+    timeBetweenSpawning: 0
+    prefabsToSpawn:
+    - {fileID: 580063365123546263, guid: d5f4f33d7dc3016449808a4fe809b0d9, type: 3}
+  - name: Ship Rams Player
+    numberObjectsInWave: 1
+    numberObjectsToSpawnAtATime: 1
+    timeBetweenSpawning: 0
+    prefabsToSpawn:
+    - {fileID: 8076574222554727663, guid: 394b111782fe21a499e4929fa3357d22, type: 3}
+  - name: Ship Shoots at Player Behind
+    numberObjectsInWave: 1
+    numberObjectsToSpawnAtATime: 1
+    timeBetweenSpawning: 0
+    prefabsToSpawn:
+    - {fileID: 3182791473118347046, guid: 69346cecd4046a74caf5ed5d4f870bed, type: 3}
+  - name: Ship Destroyes Power Ups
+    numberObjectsInWave: 1
+    numberObjectsToSpawnAtATime: 1
+    timeBetweenSpawning: 0
+    prefabsToSpawn:
+    - {fileID: 801981820752718923, guid: f617419c349bd754da434b0c8c697b42, type: 3}
   timeBetweenWaves:
     minCoolDownTime: 2
     maxCoolDownTime: 2
@@ -45,7 +69,7 @@ MonoBehaviour:
       variable: {fileID: 11400000, guid: b222b8a85c653ea4e86cd552a2c7f625, type: 2}
   timerStarted: {fileID: 11400000, guid: 7395f8037e10773489e17d7b256e88e6, type: 2}
   waitAllObjectsDestroyed: 1
-  useWaitTimeWithDestroyAllObjects: 0
+  useWaitTimeWithDestroyAllObjects: 1
   screenBounds: {fileID: 11400000, guid: 0ce5d6c5dc2700a4ca5913afe4ee2c11, type: 2}
   gameMoveDirection:
     useConstant: 0

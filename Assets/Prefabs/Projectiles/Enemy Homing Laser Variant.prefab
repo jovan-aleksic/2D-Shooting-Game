@@ -8,23 +8,71 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2162648556609553093, guid: cb5bce7468ac90e4aa86f464449e1d20, type: 3}
+      propertyPath: offset.y
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2162648556609553093, guid: cb5bce7468ac90e4aa86f464449e1d20, type: 3}
       propertyPath: targetTag
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2162648556609553093, guid: cb5bce7468ac90e4aa86f464449e1d20, type: 3}
+      propertyPath: m_offset.y
+      value: -2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2162648556609553093, guid: cb5bce7468ac90e4aa86f464449e1d20, type: 3}
+      propertyPath: seekSize.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2162648556609553093, guid: cb5bce7468ac90e4aa86f464449e1d20, type: 3}
+      propertyPath: seekSize.y
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2162648556609553093, guid: cb5bce7468ac90e4aa86f464449e1d20, type: 3}
       propertyPath: timeToLive
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2162648556609553093, guid: cb5bce7468ac90e4aa86f464449e1d20, type: 3}
+      propertyPath: m_seekSize.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2162648556609553093, guid: cb5bce7468ac90e4aa86f464449e1d20, type: 3}
+      propertyPath: m_seekSize.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2162648556609553093, guid: cb5bce7468ac90e4aa86f464449e1d20, type: 3}
+      propertyPath: m_timeToLive
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2162648556609553093, guid: cb5bce7468ac90e4aa86f464449e1d20, type: 3}
       propertyPath: movementSpeed
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2162648556609553093, guid: cb5bce7468ac90e4aa86f464449e1d20, type: 3}
+      propertyPath: m_movementSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2162648556609553093, guid: cb5bce7468ac90e4aa86f464449e1d20, type: 3}
+      propertyPath: targetTag.Array.data[0]
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2162648556609553093, guid: cb5bce7468ac90e4aa86f464449e1d20, type: 3}
+      propertyPath: m_targetTag.Array.data[0]
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 2162648556609553093, guid: cb5bce7468ac90e4aa86f464449e1d20, type: 3}
       propertyPath: gameMoveDirection.variable
       value: 
       objectReference: {fileID: 11400000, guid: 516083d7ea62c974a88ba28da36e6310, type: 2}
+    - target: {fileID: 2162648556609553093, guid: cb5bce7468ac90e4aa86f464449e1d20, type: 3}
+      propertyPath: m_gameMoveDirection.variable
+      value: 
+      objectReference: {fileID: 11400000, guid: 516083d7ea62c974a88ba28da36e6310, type: 2}
     - target: {fileID: 5447328934912432731, guid: cb5bce7468ac90e4aa86f464449e1d20, type: 3}
       propertyPath: receivesDamageFromTags.Array.data[0]
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5447328934912432731, guid: cb5bce7468ac90e4aa86f464449e1d20, type: 3}
+      propertyPath: m_receivesDamageFromTags.Array.data[0]
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 7362457595983974875, guid: cb5bce7468ac90e4aa86f464449e1d20, type: 3}

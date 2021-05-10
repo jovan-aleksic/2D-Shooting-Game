@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using Debug = System.Diagnostics.Debug;
 
 [RequireComponent(typeof(Text))]
 public class FloatTextDisplay : MonoBehaviour
@@ -9,7 +10,17 @@ public class FloatTextDisplay : MonoBehaviour
     [SerializeField] private string message = "";
     [SerializeField] private FloatReference floatReference;
 
-    private void Start() => m_text = GetComponent<Text>();
+    private void Awake()
+    {
+        m_text = GetComponent<Text>();
 
-    private void Update() => m_text.text = $"{message} {floatReference.Value:00.00}";
+        if (floatReference == null) gameObject.SetActive(false);
+    }
+
+    private void Update()
+    {
+        Debug.Assert(m_text != null, nameof(m_text) + " != null");
+        Debug.Assert(floatReference != null, nameof(floatReference) + " != null");
+        m_text.text = $"{message} {floatReference.Value:00.00}";
+    }
 }

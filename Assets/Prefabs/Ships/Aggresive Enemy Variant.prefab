@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1122008922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8076574222554727663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1de8f845ccdb614c86350cbe7f3d905, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_movementSpeed: 3
+  m_gameMoveDirection:
+    useConstant: 0
+    constantValue: 0
+    variable: {fileID: 11400000, guid: 516083d7ea62c974a88ba28da36e6310, type: 2}
+  m_bounds: {fileID: 11400000, guid: 0ce5d6c5dc2700a4ca5913afe4ee2c11, type: 2}
+  m_rotationSpeed: 60
+  m_offset: {x: 0, y: -2, z: 0}
+  m_seekSize: {x: 8, y: 4, z: 1}
+  m_seekTargetTag:
+  - Player
+  m_maxHits: 10
+--- !u!1001 &1257703264851860877
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7017033740898244962, guid: 313e82be39be92540b5099d61023b551, type: 3}
+      propertyPath: m_Name
+      value: Aggresive Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017033740898244967, guid: 313e82be39be92540b5099d61023b551, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017033740898244967, guid: 313e82be39be92540b5099d61023b551, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017033740898244967, guid: 313e82be39be92540b5099d61023b551, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017033740898244967, guid: 313e82be39be92540b5099d61023b551, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017033740898244967, guid: 313e82be39be92540b5099d61023b551, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017033740898244967, guid: 313e82be39be92540b5099d61023b551, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017033740898244967, guid: 313e82be39be92540b5099d61023b551, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017033740898244967, guid: 313e82be39be92540b5099d61023b551, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017033740898244967, guid: 313e82be39be92540b5099d61023b551, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017033740898244967, guid: 313e82be39be92540b5099d61023b551, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017033740898244967, guid: 313e82be39be92540b5099d61023b551, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1459673295710147516, guid: 313e82be39be92540b5099d61023b551, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 313e82be39be92540b5099d61023b551, type: 3}
+--- !u!1 &8076574222554727663 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7017033740898244962, guid: 313e82be39be92540b5099d61023b551, type: 3}
+  m_PrefabInstance: {fileID: 1257703264851860877}
+  m_PrefabAsset: {fileID: 0}

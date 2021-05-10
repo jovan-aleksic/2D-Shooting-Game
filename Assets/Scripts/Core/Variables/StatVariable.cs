@@ -20,20 +20,6 @@ public class StatVariable : VariableBase<Stat>
 
     public float Max => variableValue.Max;
 
-    #region Overrides of VariableBase<Stat>
-
-    /// <inheritdoc />
-    public override void Add(Stat amount)
-    {
-        variableValue.ChangeMax(variableValue.Max + amount.Max);
-        variableValue.Add(variableValue.Value + amount.Value);
-    }
-
-    /// <inheritdoc />
-    public override void Add(VariableBase<Stat> amount) => Add(amount.Value);
-
-    #endregion
-
     public void Add(float amount) => variableValue.Add(amount);
 
     public void ChangeMax(float amount) => variableValue.ChangeMax(amount);

@@ -17,15 +17,4 @@ using UnityEngine;
 
 
 [CreateAssetMenu(fileName = "Float", menuName = "Variable/Float", order = 0)]
-public class FloatVariable : VariableBase<float>
-{
-    #region Overrides of VariableBase<float>
-
-    /// <inheritdoc />
-    public override void Add(float amount) => variableValue += amount;
-
-    /// <inheritdoc />
-    public override void Add(VariableBase<float> amount) => variableValue += amount.Value;
-
-    #endregion
-}
+public class FloatVariable : VariableBase<float> { }

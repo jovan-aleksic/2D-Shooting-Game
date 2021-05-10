@@ -35,7 +35,6 @@ public class WaveSpawner : ScriptableObject, ISpawner
 
     private void Awake()
     {
-        //Debug.Log("Wave Spawner Awake: " + name);
         m_hasBeenInit = false;
         m_currentWaveNumber = 0;
         m_currentWave = null;
@@ -46,6 +45,11 @@ public class WaveSpawner : ScriptableObject, ISpawner
         {
             wave.Awake();
         }
+    }
+
+    private void OnDisable()
+    {
+        timeBetweenWaves.OnDisabled();
     }
 
     #region Implementation of ISpawner
@@ -72,8 +76,6 @@ public class WaveSpawner : ScriptableObject, ISpawner
             nextWaveSpawner.Init(waveContainer, monoBehaviour);
 
         m_hasBeenInit = true;
-
-        //Debug.Log("Init: " + name + " = " + m_hasBeenInit + ", current wave number = " + m_currentWaveNumber);
     }
 
     /// <inheritdoc />
@@ -173,23 +175,16 @@ public class WaveSpawner : ScriptableObject, ISpawner
                 // if wait for wave destroy all objects and current wave Has Objects is true
                 if (waitAllObjectsDestroyed && m_currentWave.HasObjects)
                     yield return null;
-                // else if  wait for wave destroy all objects and wave has objects is false
                 else if (waitAllObjectsDestroyed && !m_currentWave.HasObjects)
                 {
-                    // increase the current wave number
                     m_currentWaveNumber++;
-                    // Set the current wave
                     SetCurrentWave();
-                    // if useWaitTimeWithDestroyAllObjects Start the time Between Waves
                     if (useWaitTimeWithDestroyAllObjects) StartTimer();
                 }
                 else
                 {
-                    // increase the current wave number
                     m_currentWaveNumber++;
-                    // Set the current wave
                     SetCurrentWave();
-                    // start the time Between Waves
                     StartTimer();
                 }
 

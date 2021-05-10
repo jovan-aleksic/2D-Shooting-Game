@@ -62,16 +62,4 @@ public abstract class VariableBase<T> : ScriptableObject
     {
         variableValue = value.variableValue;
     }
-
-    /// <summary>
-    /// Add the Amount passed in <see cref="T"/> to this variable.
-    /// </summary>
-    /// <param name="amount">The Amount to add to this variable.</param>
-    public abstract void Add(T amount);
-
-    /// <summary>
-    /// Add the Amount passed in <see cref="T"/> of <see cref="variableValue"/> to this variable.
-    /// </summary>
-    /// <param name="amount">The <see cref="variableValue"/> to add to this variable.</param>
-    public abstract void Add(VariableBase<T> amount);
 }

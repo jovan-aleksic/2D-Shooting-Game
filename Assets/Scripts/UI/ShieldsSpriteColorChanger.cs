@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityEngine.Events;
+using Debug = System.Diagnostics.Debug;
 
 /// <summary>
 /// Change the Shields Sprite Color Parameter based on the percentage of health that the shield has.
@@ -13,25 +13,40 @@ public class ShieldsSpriteColorChanger : MonoBehaviour
 
     [SerializeField] private StatReference shieldHealth;
 
-    [SerializeField] private CodedGameEventListener m_statUpdateGameEventListener;
+    [SerializeField] private CodedGameEventListener statUpdateGameEventListener;
+    private static readonly int Color = Shader.PropertyToID("_Color");
 
-    void Start()
+    private void Awake()
     {
         m_spriteRenderer = GetComponent<SpriteRenderer>();
         m_propBlock = new MaterialPropertyBlock();
 
+        if (shieldHealth == null) gameObject.SetActive(false);
+    }
+
+    private void Start()
+    {
         UpdateSpriteColor();
     }
 
-    private void OnEnable() => m_statUpdateGameEventListener.OnEnable(UpdateSpriteColor);
+    private void OnEnable()
+    {
+        if (statUpdateGameEventListener != null) statUpdateGameEventListener.OnEnable(UpdateSpriteColor);
+    }
 
-    private void OnDisable() => m_statUpdateGameEventListener.OnDisable();
+    private void OnDisable()
+    {
+        if (statUpdateGameEventListener != null) statUpdateGameEventListener.OnDisable();
+    }
 
     private void UpdateSpriteColor()
     {
+        Debug.Assert(shieldHealth != null, nameof(shieldHealth) + " != null");
         float shieldHealthPercentage = shieldHealth.Value / shieldHealth.Max;
+        Debug.Assert(m_spriteRenderer != null, nameof(m_spriteRenderer) + " != null");
         m_spriteRenderer.GetPropertyBlock(m_propBlock);
-        m_propBlock.SetColor("_Color",
+        Debug.Assert(m_propBlock != null, nameof(m_propBlock) + " != null");
+        m_propBlock.SetColor(Color,
                              new Color(shieldHealthPercentage, shieldHealthPercentage, shieldHealthPercentage,
                                        shieldHealthPercentage));
         m_spriteRenderer.SetPropertyBlock(m_propBlock);

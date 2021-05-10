@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-[System.Serializable]
+[Serializable]
 public class CodedGameEventListener : IGameEventListener
 {
    [SerializeField] private GameEvent @event;
@@ -22,7 +22,7 @@ public class CodedGameEventListener : IGameEventListener
 
    public void OnDisable()
    {
-      @event.UnregisterListener(this);
+      if (@event != null) @event.UnregisterListener(this);
       m_onResponse = null;
    }
 }
