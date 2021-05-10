@@ -28,6 +28,7 @@ MonoBehaviour:
     prefabsToSpawn:
     - {fileID: 7017033740898244962, guid: 313e82be39be92540b5099d61023b551, type: 3}
     - {fileID: 3615412909860068479, guid: 9c3e181b942b9634fb97f16e6ed0b7e8, type: 3}
+    - {fileID: 3182791473118347046, guid: 69346cecd4046a74caf5ed5d4f870bed, type: 3}
   - name: Wave 3
     numberObjectsInWave: 4
     numberObjectsToSpawnAtATime: 2
@@ -35,6 +36,8 @@ MonoBehaviour:
     prefabsToSpawn:
     - {fileID: 7017033740898244962, guid: 313e82be39be92540b5099d61023b551, type: 3}
     - {fileID: 3615412909860068479, guid: 9c3e181b942b9634fb97f16e6ed0b7e8, type: 3}
+    - {fileID: 2455576444473389559, guid: 184c575ef8f0d1d4ea0b06dd3b258b92, type: 3}
+    - {fileID: 801981820752718923, guid: f617419c349bd754da434b0c8c697b42, type: 3}
   timeBetweenWaves:
     minCoolDownTime: 2
     maxCoolDownTime: 2

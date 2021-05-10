@@ -26,7 +26,7 @@ MonoBehaviour:
     numberObjectsToSpawnAtATime: 2
     timeBetweenSpawning: 1
     prefabsToSpawn:
-    - {fileID: 3615412909860068479, guid: 9c3e181b942b9634fb97f16e6ed0b7e8, type: 3}
+    - {fileID: 801981820752718923, guid: f617419c349bd754da434b0c8c697b42, type: 3}
     - {fileID: 7017033740898244962, guid: 313e82be39be92540b5099d61023b551, type: 3}
   - name: Wave 6
     numberObjectsInWave: 6
@@ -34,10 +34,10 @@ MonoBehaviour:
     timeBetweenSpawning: 2
     prefabsToSpawn:
     - {fileID: 7017033740898244962, guid: 313e82be39be92540b5099d61023b551, type: 3}
-    - {fileID: 7017033740898244962, guid: 313e82be39be92540b5099d61023b551, type: 3}
-    - {fileID: 7017033740898244962, guid: 313e82be39be92540b5099d61023b551, type: 3}
+    - {fileID: 3182791473118347046, guid: 69346cecd4046a74caf5ed5d4f870bed, type: 3}
+    - {fileID: 2455576444473389559, guid: 184c575ef8f0d1d4ea0b06dd3b258b92, type: 3}
     - {fileID: 3383844200832018908, guid: a2f1818e63f4c804d9f8b1c5999f350e, type: 3}
-    - {fileID: 3615412909860068479, guid: 9c3e181b942b9634fb97f16e6ed0b7e8, type: 3}
+    - {fileID: 3182791473118347046, guid: 69346cecd4046a74caf5ed5d4f870bed, type: 3}
     - {fileID: 3615412909860068479, guid: 9c3e181b942b9634fb97f16e6ed0b7e8, type: 3}
   timeBetweenWaves:
     minCoolDownTime: 2
@@ -58,7 +58,7 @@ MonoBehaviour:
     useConstant: 0
     constantValue: 0
     variable: {fileID: 11400000, guid: 516083d7ea62c974a88ba28da36e6310, type: 2}
-  nextWaveSpawner: {fileID: 0}
+  nextWaveSpawner: {fileID: 11400000, guid: cc3cc9d262342ef4189879aa080f8c05, type: 2}
   currentWaveName:
     useConstant: 0
     constantValue: 
