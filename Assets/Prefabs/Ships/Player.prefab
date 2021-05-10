@@ -884,14 +884,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_movementSpeed: 4
   m_gameMoveDirection:
-    useConstant: 1
+    useConstant: 0
     constantValue: 0
-    variable: {fileID: 0}
+    variable: {fileID: 11400000, guid: 9b2a5a686be14fb449dbe8fe6de3ea3d, type: 2}
   m_bounds: {fileID: 11400000, guid: 14c3352f5f468ed4182ae6e353422661, type: 2}
-  m_position: {x: 0, y: 0, z: 0}
   m_horizontalInput: Horizontal
   m_verticalInput: Vertical
-  m_thrusterInput: Fire3
+  m_thrusterInput: Fire2
   m_boostSpeedAmount: 2
   m_speedBoostActiveTimer:
     minCoolDownTime: 0.5
@@ -1060,8 +1059,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e028e25d4ccb6c34aa47c0523578a960, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToDestroy: {fileID: 5626883672520933534}
-  lives:
+  m_objectToDestroy: {fileID: 5626883672520933534}
+  m_lives:
     useConstant: 0
     constantValue:
       currentValue: 0
@@ -1079,14 +1078,15 @@ MonoBehaviour:
       valueIncreased: {fileID: 0}
       valueDecreased: {fileID: 0}
     variable: {fileID: 11400000, guid: 52118a3b354a45f4eace3c6a4f25029b, type: 2}
-  shieldGameObject: {fileID: 0}
-  receivesDamageFromTags:
+  shieldGameObject: {fileID: 8218337777623333536}
+  m_receivesDamageFromTags:
   - Enemy
   - Enemy Laser
-  damagedSoundEffect: {fileID: 1276666983}
-  gameObjectDestroyed: {fileID: 11400000, guid: f5458e33557b9bf44bde763793bf952f, type: 2}
-  explosionVFX: {fileID: 9147861024262124636, guid: 62c770ca0e9239142a3223671593aa44, type: 3}
-  destroyedSoundEffect: {fileID: 8300000, guid: a885c043fab7e46438bba03ba9dab6bc, type: 3}
+  m_gameObjectDestroyed: {fileID: 11400000, guid: f5458e33557b9bf44bde763793bf952f, type: 2}
+  m_timeBeforeCausingDamage: 0.5
+  m_damagedSoundEffect: {fileID: 1276666983}
+  m_explosionVFX: {fileID: 9147861024262124636, guid: 62c770ca0e9239142a3223671593aa44, type: 3}
+  m_destroyedSoundEffect: {fileID: 8300000, guid: a885c043fab7e46438bba03ba9dab6bc, type: 3}
   rightEngine: {fileID: 956923323}
   leftEngine: {fileID: 1331602752}
   lifePowerUp:

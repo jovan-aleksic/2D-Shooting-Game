@@ -57,7 +57,12 @@ public class EnemySmartWeapon : Weapon
         if (!m_hasSecondaryLaserPrefab) return;
 
         StartCoroutine(secondaryFireDelayTimer.CoolDown());
-        Instantiate(secondaryLaserProjectilePrefab, transform.position + secondaryLaserOffset, Quaternion.identity);
+
+        MoveWithTarget moveWithTarget =
+            Instantiate(secondaryLaserProjectilePrefab, transform.position + secondaryLaserOffset, Quaternion.identity)
+                ?.GetComponent<MoveWithTarget>();
+        if (moveWithTarget != null)
+            moveWithTarget.SetTarget(transform);
 
         if (!hasLaserSoundEffect) return;
         Debug.Assert(laserSoundEffect != null, nameof(laserSoundEffect) + " != null");

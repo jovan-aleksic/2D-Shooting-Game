@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Debug = System.Diagnostics.Debug;
 
@@ -72,12 +70,12 @@ public class PlayerDamageable : Damageable
 
     private void LifeCollected()
     {
-        Debug.Assert(lives != null, nameof(lives) + " != null");
-        lives.Add(1);
+        Debug.Assert(m_lives != null, nameof(m_lives) + " != null");
+        m_lives.Add(1);
 
         if (!m_hasEngines) return;
 
-        switch (lives.Value)
+        switch (m_lives.Value)
         {
             case 2:
                 int selectedEngine = Random.Range(0, 100);
@@ -106,8 +104,8 @@ public class PlayerDamageable : Damageable
         Debug.Assert(shieldHealth != null, nameof(shieldHealth) + " != null");
         if (shieldHealth.Value > 0) return;
 
-        Debug.Assert(lives != null, nameof(lives) + " != null");
-        switch (lives.Value)
+        Debug.Assert(m_lives != null, nameof(m_lives) + " != null");
+        switch (m_lives.Value)
         {
             case 2:
                 int selectedEngine = Random.Range(0, 100);

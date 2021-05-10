@@ -148,12 +148,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c77f7705efca9e4facf647b0a0c6284, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToDestroy: {fileID: 0}
-  lives:
+  m_objectToDestroy: {fileID: 0}
+  m_lives:
     useConstant: 1
     constantValue:
       currentValue: 0
-      maxValue: 1
+      maxValue: 0
       valueChanged: {fileID: 0}
       valueIncreased: {fileID: 0}
       valueDecreased: {fileID: 0}
@@ -168,13 +168,14 @@ MonoBehaviour:
       valueDecreased: {fileID: 0}
     variable: {fileID: 0}
   shieldGameObject: {fileID: 0}
-  receivesDamageFromTags:
+  m_receivesDamageFromTags:
   - Player
   - Player Laser
-  damagedSoundEffect: {fileID: 0}
-  gameObjectDestroyed: {fileID: 11400000, guid: a7ae85abac0bb5a40b3ef90034cab0b2, type: 2}
-  explosionVFX: {fileID: 7578308582667034835, guid: a12b6868e604b8f47aeafbf0af8f2007, type: 3}
-  destroyedSoundEffect: {fileID: 8300000, guid: a885c043fab7e46438bba03ba9dab6bc, type: 3}
+  m_gameObjectDestroyed: {fileID: 11400000, guid: a7ae85abac0bb5a40b3ef90034cab0b2, type: 2}
+  m_timeBeforeCausingDamage: 1
+  m_damagedSoundEffect: {fileID: 0}
+  m_explosionVFX: {fileID: 0}
+  m_destroyedSoundEffect: {fileID: 8300000, guid: a885c043fab7e46438bba03ba9dab6bc, type: 3}
 --- !u!114 &7059369596672165550
 MonoBehaviour:
   m_ObjectHideFlags: 0

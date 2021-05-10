@@ -1,5 +1,87 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1503097095187867746
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 59951440733117084}
+  - component: {fileID: 8977102886008450891}
+  m_Layer: 0
+  m_Name: Circle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &59951440733117084
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503097095187867746}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7085100361922982811}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &8977102886008450891
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503097095187867746}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: -2413806693520163455, guid: 4adeaf2d2b1c7417e89f026626d8264f, type: 3}
+  m_Color: {r: 0, g: 0.6947279, b: 1, a: 0.015686275}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &5574263918499686123
 GameObject:
   m_ObjectHideFlags: 0
@@ -31,7 +113,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2.5, y: 2.5, z: 1}
   m_Children:
-  - {fileID: 5574263919962318719}
+  - {fileID: 7085100361922982811}
   - {fileID: 5574263919772481963}
   - {fileID: 5574263918729272967}
   - {fileID: 5574263920351257276}
@@ -256,8 +338,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c77f7705efca9e4facf647b0a0c6284, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToDestroy: {fileID: 0}
-  lives:
+  m_objectToDestroy: {fileID: 0}
+  m_lives:
     useConstant: 1
     constantValue:
       currentValue: 0
@@ -276,13 +358,13 @@ MonoBehaviour:
       valueDecreased: {fileID: 0}
     variable: {fileID: 0}
   shieldGameObject: {fileID: 0}
-  receivesDamageFromTags:
-  - Player
+  m_receivesDamageFromTags:
   - Player Laser
-  damagedSoundEffect: {fileID: 0}
-  gameObjectDestroyed: {fileID: 0}
-  explosionVFX: {fileID: 9147861024262124636, guid: 62c770ca0e9239142a3223671593aa44, type: 3}
-  destroyedSoundEffect: {fileID: 8300000, guid: a885c043fab7e46438bba03ba9dab6bc, type: 3}
+  m_gameObjectDestroyed: {fileID: 0}
+  m_timeBeforeCausingDamage: 1
+  m_damagedSoundEffect: {fileID: 0}
+  m_explosionVFX: {fileID: 9147861024262124636, guid: 62c770ca0e9239142a3223671593aa44, type: 3}
+  m_destroyedSoundEffect: {fileID: 8300000, guid: a885c043fab7e46438bba03ba9dab6bc, type: 3}
 --- !u!1 &5574263918645807293
 GameObject:
   m_ObjectHideFlags: 0
@@ -472,7 +554,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 073ba6f9df046bf479ce71da89454821, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserProjectilePrefab: {fileID: 6060749886461449775, guid: 0d904a29f8c8ec64ca10732ee86695c8, type: 3}
+  laserProjectilePrefab: {fileID: 7488489719971375756, guid: b8e962d181c269e41b71ef74d9130407, type: 3}
   laserOffset: {x: 0, y: 1, z: 0}
   fireDelayTimer:
     minCoolDownTime: 0.5
@@ -514,8 +596,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c77f7705efca9e4facf647b0a0c6284, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToDestroy: {fileID: 0}
-  lives:
+  m_objectToDestroy: {fileID: 0}
+  m_lives:
     useConstant: 1
     constantValue:
       currentValue: 0
@@ -534,13 +616,13 @@ MonoBehaviour:
       valueDecreased: {fileID: 0}
     variable: {fileID: 0}
   shieldGameObject: {fileID: 0}
-  receivesDamageFromTags:
-  - Player
+  m_receivesDamageFromTags:
   - Player Laser
-  damagedSoundEffect: {fileID: 0}
-  gameObjectDestroyed: {fileID: 0}
-  explosionVFX: {fileID: 9147861024262124636, guid: 62c770ca0e9239142a3223671593aa44, type: 3}
-  destroyedSoundEffect: {fileID: 8300000, guid: a885c043fab7e46438bba03ba9dab6bc, type: 3}
+  m_gameObjectDestroyed: {fileID: 0}
+  m_timeBeforeCausingDamage: 1
+  m_damagedSoundEffect: {fileID: 0}
+  m_explosionVFX: {fileID: 9147861024262124636, guid: 62c770ca0e9239142a3223671593aa44, type: 3}
+  m_destroyedSoundEffect: {fileID: 8300000, guid: a885c043fab7e46438bba03ba9dab6bc, type: 3}
 --- !u!1 &5574263918739647374
 GameObject:
   m_ObjectHideFlags: 0
@@ -604,8 +686,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c77f7705efca9e4facf647b0a0c6284, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToDestroy: {fileID: 0}
-  lives:
+  m_objectToDestroy: {fileID: 0}
+  m_lives:
     useConstant: 1
     constantValue:
       currentValue: 0
@@ -624,13 +706,13 @@ MonoBehaviour:
       valueDecreased: {fileID: 0}
     variable: {fileID: 0}
   shieldGameObject: {fileID: 0}
-  receivesDamageFromTags:
-  - Player
+  m_receivesDamageFromTags:
   - Player Laser
-  damagedSoundEffect: {fileID: 0}
-  gameObjectDestroyed: {fileID: 0}
-  explosionVFX: {fileID: 9147861024262124636, guid: 62c770ca0e9239142a3223671593aa44, type: 3}
-  destroyedSoundEffect: {fileID: 8300000, guid: a885c043fab7e46438bba03ba9dab6bc, type: 3}
+  m_gameObjectDestroyed: {fileID: 0}
+  m_timeBeforeCausingDamage: 1
+  m_damagedSoundEffect: {fileID: 0}
+  m_explosionVFX: {fileID: 9147861024262124636, guid: 62c770ca0e9239142a3223671593aa44, type: 3}
+  m_destroyedSoundEffect: {fileID: 8300000, guid: a885c043fab7e46438bba03ba9dab6bc, type: 3}
 --- !u!114 &5574263918739647368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -643,7 +725,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 186613ac9cf378e429a7165eaa84e899, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserProjectilePrefab: {fileID: 6060749886461449775, guid: 0d904a29f8c8ec64ca10732ee86695c8, type: 3}
+  laserProjectilePrefab: {fileID: 7488489719971375756, guid: b8e962d181c269e41b71ef74d9130407, type: 3}
   laserOffset: {x: 0, y: 1, z: 0}
   fireDelayTimer:
     minCoolDownTime: 0.5
@@ -666,8 +748,8 @@ MonoBehaviour:
   secondaryLaserProjectilePrefab: {fileID: 3383844200832018908, guid: a2f1818e63f4c804d9f8b1c5999f350e, type: 3}
   secondaryLaserOffset: {x: 0, y: 0, z: 0}
   secondaryFireDelayTimer:
-    minCoolDownTime: 0.5
-    maxCoolDownTime: 0.5
+    minCoolDownTime: 2
+    maxCoolDownTime: 2
     percentageCompleted:
       useConstant: 1
       constantValue: 0
@@ -900,88 +982,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 5574263918812477513}
   audioClip: {fileID: 8300000, guid: 75676f361bdfeaf41a46623e95df3dbc, type: 3}
---- !u!1 &5574263919229596860
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5574263919229596863}
-  - component: {fileID: 5574263919229596857}
-  m_Layer: 0
-  m_Name: Circle
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5574263919229596863
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5574263919229596860}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 5574263919962318719}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &5574263919229596857
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5574263919229596860}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: -2413806693520163455, guid: 4adeaf2d2b1c7417e89f026626d8264f, type: 3}
-  m_Color: {r: 0, g: 0.6947279, b: 1, a: 0.015686275}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &5574263919253517686
 GameObject:
   m_ObjectHideFlags: 0
@@ -1064,148 +1064,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &5574263919337147070
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5574263919337147065}
-  - component: {fileID: 5574263919337147067}
-  - component: {fileID: 5574263919337147064}
-  m_Layer: 0
-  m_Name: Laser Sound Effect
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5574263919337147065
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5574263919337147070}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 5574263919962318719}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &5574263919337147067
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5574263919337147070}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!114 &5574263919337147064
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5574263919337147070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8a4423b654c5b443b5b8ff5fc663b16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioSource: {fileID: 5574263919337147067}
-  audioClip: {fileID: 8300000, guid: 75676f361bdfeaf41a46623e95df3dbc, type: 3}
 --- !u!1 &5574263919398185271
 GameObject:
   m_ObjectHideFlags: 0
@@ -1684,8 +1542,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c77f7705efca9e4facf647b0a0c6284, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToDestroy: {fileID: 0}
-  lives:
+  m_objectToDestroy: {fileID: 0}
+  m_lives:
     useConstant: 1
     constantValue:
       currentValue: 0
@@ -1704,13 +1562,13 @@ MonoBehaviour:
       valueDecreased: {fileID: 0}
     variable: {fileID: 0}
   shieldGameObject: {fileID: 0}
-  receivesDamageFromTags:
-  - Player
+  m_receivesDamageFromTags:
   - Player Laser
-  damagedSoundEffect: {fileID: 0}
-  gameObjectDestroyed: {fileID: 0}
-  explosionVFX: {fileID: 9147861024262124636, guid: 62c770ca0e9239142a3223671593aa44, type: 3}
-  destroyedSoundEffect: {fileID: 8300000, guid: a885c043fab7e46438bba03ba9dab6bc, type: 3}
+  m_gameObjectDestroyed: {fileID: 0}
+  m_timeBeforeCausingDamage: 1
+  m_damagedSoundEffect: {fileID: 0}
+  m_explosionVFX: {fileID: 9147861024262124636, guid: 62c770ca0e9239142a3223671593aa44, type: 3}
+  m_destroyedSoundEffect: {fileID: 8300000, guid: a885c043fab7e46438bba03ba9dab6bc, type: 3}
 --- !u!1 &5574263919701858619
 GameObject:
   m_ObjectHideFlags: 0
@@ -1840,7 +1698,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 073ba6f9df046bf479ce71da89454821, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserProjectilePrefab: {fileID: 6060749886461449775, guid: 0d904a29f8c8ec64ca10732ee86695c8, type: 3}
+  laserProjectilePrefab: {fileID: 7488489719971375756, guid: b8e962d181c269e41b71ef74d9130407, type: 3}
   laserOffset: {x: 0, y: 1, z: 0}
   fireDelayTimer:
     minCoolDownTime: 0.5
@@ -1882,8 +1740,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c77f7705efca9e4facf647b0a0c6284, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToDestroy: {fileID: 0}
-  lives:
+  m_objectToDestroy: {fileID: 0}
+  m_lives:
     useConstant: 1
     constantValue:
       currentValue: 0
@@ -1902,129 +1760,13 @@ MonoBehaviour:
       valueDecreased: {fileID: 0}
     variable: {fileID: 0}
   shieldGameObject: {fileID: 0}
-  receivesDamageFromTags:
-  - Player
+  m_receivesDamageFromTags:
   - Player Laser
-  damagedSoundEffect: {fileID: 0}
-  gameObjectDestroyed: {fileID: 0}
-  explosionVFX: {fileID: 9147861024262124636, guid: 62c770ca0e9239142a3223671593aa44, type: 3}
-  destroyedSoundEffect: {fileID: 8300000, guid: a885c043fab7e46438bba03ba9dab6bc, type: 3}
---- !u!1 &5574263919962318716
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5574263919962318719}
-  - component: {fileID: 5574263919962318712}
-  - component: {fileID: 5574263919962318718}
-  - component: {fileID: 5574263919962318713}
-  m_Layer: 0
-  m_Name: Weapon
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5574263919962318719
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5574263919962318716}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.6, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 5574263919337147065}
-  - {fileID: 5574263919229596863}
-  m_Father: {fileID: 5574263918499686133}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &5574263919962318712
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5574263919962318716}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
---- !u!114 &5574263919962318718
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5574263919962318716}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 073ba6f9df046bf479ce71da89454821, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  laserProjectilePrefab: {fileID: 4894915655351433600, guid: 72b37adb01c2c324f848ea0e4888b23a, type: 3}
-  laserOffset: {x: 0, y: 1, z: 0}
-  fireDelayTimer:
-    minCoolDownTime: 0.1
-    maxCoolDownTime: 1
-    percentageCompleted:
-      useConstant: 1
-      constantValue: 0
-      variable: {fileID: 0}
-    coolDownTimeLeft:
-      useConstant: 1
-      constantValue: 0
-      variable: {fileID: 0}
-  laserSoundEffect: {fileID: 5574263919337147064}
---- !u!114 &5574263919962318713
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5574263919962318716}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c77f7705efca9e4facf647b0a0c6284, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToDestroy: {fileID: 0}
-  lives:
-    useConstant: 1
-    constantValue:
-      currentValue: 0
-      maxValue: 1
-      valueChanged: {fileID: 0}
-      valueIncreased: {fileID: 0}
-      valueDecreased: {fileID: 0}
-    variable: {fileID: 0}
-  shieldHealth:
-    useConstant: 1
-    constantValue:
-      currentValue: 0
-      maxValue: 1
-      valueChanged: {fileID: 0}
-      valueIncreased: {fileID: 0}
-      valueDecreased: {fileID: 0}
-    variable: {fileID: 0}
-  shieldGameObject: {fileID: 0}
-  receivesDamageFromTags:
-  - Player
-  - Player Laser
-  damagedSoundEffect: {fileID: 0}
-  gameObjectDestroyed: {fileID: 0}
-  explosionVFX: {fileID: 9147861024262124636, guid: 62c770ca0e9239142a3223671593aa44, type: 3}
-  destroyedSoundEffect: {fileID: 8300000, guid: a885c043fab7e46438bba03ba9dab6bc, type: 3}
+  m_gameObjectDestroyed: {fileID: 0}
+  m_timeBeforeCausingDamage: 1
+  m_damagedSoundEffect: {fileID: 0}
+  m_explosionVFX: {fileID: 9147861024262124636, guid: 62c770ca0e9239142a3223671593aa44, type: 3}
+  m_destroyedSoundEffect: {fileID: 8300000, guid: a885c043fab7e46438bba03ba9dab6bc, type: 3}
 --- !u!1 &5574263920351257277
 GameObject:
   m_ObjectHideFlags: 0
@@ -2088,8 +1830,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c77f7705efca9e4facf647b0a0c6284, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToDestroy: {fileID: 0}
-  lives:
+  m_objectToDestroy: {fileID: 0}
+  m_lives:
     useConstant: 1
     constantValue:
       currentValue: 0
@@ -2108,13 +1850,13 @@ MonoBehaviour:
       valueDecreased: {fileID: 0}
     variable: {fileID: 0}
   shieldGameObject: {fileID: 0}
-  receivesDamageFromTags:
-  - Player
+  m_receivesDamageFromTags:
   - Player Laser
-  damagedSoundEffect: {fileID: 0}
-  gameObjectDestroyed: {fileID: 0}
-  explosionVFX: {fileID: 9147861024262124636, guid: 62c770ca0e9239142a3223671593aa44, type: 3}
-  destroyedSoundEffect: {fileID: 8300000, guid: a885c043fab7e46438bba03ba9dab6bc, type: 3}
+  m_gameObjectDestroyed: {fileID: 0}
+  m_timeBeforeCausingDamage: 1
+  m_damagedSoundEffect: {fileID: 0}
+  m_explosionVFX: {fileID: 9147861024262124636, guid: 62c770ca0e9239142a3223671593aa44, type: 3}
+  m_destroyedSoundEffect: {fileID: 8300000, guid: a885c043fab7e46438bba03ba9dab6bc, type: 3}
 --- !u!114 &5574263920351257279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2127,7 +1869,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 186613ac9cf378e429a7165eaa84e899, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserProjectilePrefab: {fileID: 6060749886461449775, guid: 0d904a29f8c8ec64ca10732ee86695c8, type: 3}
+  laserProjectilePrefab: {fileID: 7488489719971375756, guid: b8e962d181c269e41b71ef74d9130407, type: 3}
   laserOffset: {x: 0, y: 1, z: 0}
   fireDelayTimer:
     minCoolDownTime: 0.5
@@ -2150,8 +1892,8 @@ MonoBehaviour:
   secondaryLaserProjectilePrefab: {fileID: 3383844200832018908, guid: a2f1818e63f4c804d9f8b1c5999f350e, type: 3}
   secondaryLaserOffset: {x: 0, y: 0, z: 0}
   secondaryFireDelayTimer:
-    minCoolDownTime: 0.5
-    maxCoolDownTime: 0.5
+    minCoolDownTime: 2
+    maxCoolDownTime: 2
     percentageCompleted:
       useConstant: 1
       constantValue: 0
@@ -2160,3 +1902,261 @@ MonoBehaviour:
       useConstant: 1
       constantValue: 0
       variable: {fileID: 0}
+--- !u!1 &7473770210783436457
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7085100361922982811}
+  - component: {fileID: 5231090418723589514}
+  - component: {fileID: 4296615341516192984}
+  - component: {fileID: 9168224793289071552}
+  m_Layer: 0
+  m_Name: Weapon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7085100361922982811
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7473770210783436457}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.90000004, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_Children:
+  - {fileID: 5376417113635729873}
+  - {fileID: 59951440733117084}
+  m_Father: {fileID: 5574263918499686133}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5231090418723589514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7473770210783436457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073ba6f9df046bf479ce71da89454821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserProjectilePrefab: {fileID: 4894915655351433600, guid: 72b37adb01c2c324f848ea0e4888b23a, type: 3}
+  laserOffset: {x: 0, y: 11.2, z: 0}
+  fireDelayTimer:
+    minCoolDownTime: 6
+    maxCoolDownTime: 8
+    percentageCompleted:
+      useConstant: 1
+      constantValue: 0
+      variable: {fileID: 0}
+    coolDownTimeLeft:
+      useConstant: 1
+      constantValue: 0
+      variable: {fileID: 0}
+  laserSoundEffect: {fileID: 4809098941353063358}
+--- !u!58 &4296615341516192984
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7473770210783436457}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
+--- !u!114 &9168224793289071552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7473770210783436457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c77f7705efca9e4facf647b0a0c6284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_objectToDestroy: {fileID: 0}
+  m_lives:
+    useConstant: 1
+    constantValue:
+      currentValue: 0
+      maxValue: 1
+      valueChanged: {fileID: 0}
+      valueIncreased: {fileID: 0}
+      valueDecreased: {fileID: 0}
+    variable: {fileID: 0}
+  shieldHealth:
+    useConstant: 1
+    constantValue:
+      currentValue: 0
+      maxValue: 1
+      valueChanged: {fileID: 0}
+      valueIncreased: {fileID: 0}
+      valueDecreased: {fileID: 0}
+    variable: {fileID: 0}
+  shieldGameObject: {fileID: 0}
+  m_receivesDamageFromTags:
+  - Player Laser
+  m_gameObjectDestroyed: {fileID: 0}
+  m_timeBeforeCausingDamage: 1
+  m_damagedSoundEffect: {fileID: 0}
+  m_explosionVFX: {fileID: 9147861024262124636, guid: 62c770ca0e9239142a3223671593aa44, type: 3}
+  m_destroyedSoundEffect: {fileID: 8300000, guid: a885c043fab7e46438bba03ba9dab6bc, type: 3}
+--- !u!1 &9003527023007503882
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5376417113635729873}
+  - component: {fileID: 8480256178687503081}
+  - component: {fileID: 4809098941353063358}
+  m_Layer: 0
+  m_Name: Laser Sound Effect
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5376417113635729873
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9003527023007503882}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.4, y: 1.1999999, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7085100361922982811}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &8480256178687503081
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9003527023007503882}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &4809098941353063358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9003527023007503882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8a4423b654c5b443b5b8ff5fc663b16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 8480256178687503081}
+  audioClip: {fileID: 8300000, guid: 75676f361bdfeaf41a46623e95df3dbc, type: 3}

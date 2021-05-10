@@ -98,6 +98,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1781576935456404028}
     - target: {fileID: 6001576803891449032, guid: 313e82be39be92540b5099d61023b551, type: 3}
+      propertyPath: m_lives.constantValue.maxValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6001576803891449032, guid: 313e82be39be92540b5099d61023b551, type: 3}
       propertyPath: shieldHealth.constantValue.maxValue
       value: 1
       objectReference: {fileID: 0}

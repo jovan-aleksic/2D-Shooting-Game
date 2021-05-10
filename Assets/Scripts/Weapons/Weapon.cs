@@ -55,7 +55,11 @@ public class Weapon : MonoBehaviour
         if (fireDelayTimer.IsActive) return;
         StartCoroutine(fireDelayTimer.CoolDown());
 
-        Instantiate(laserProjectilePrefab, transform.position + laserOffset, Quaternion.identity);
+        MoveWithTarget moveWithTarget =
+            Instantiate(laserProjectilePrefab, transform.position + laserOffset, Quaternion.identity)
+                ?.GetComponent<MoveWithTarget>();
+        if (moveWithTarget != null)
+            moveWithTarget.SetTarget(transform);
 
         if (!hasLaserSoundEffect) return;
         Debug.Assert(laserSoundEffect != null, nameof(laserSoundEffect) + " != null");

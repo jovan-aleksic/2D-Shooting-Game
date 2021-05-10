@@ -84,7 +84,15 @@ PrefabInstance:
       value: Enemy Laser
       objectReference: {fileID: 0}
     - target: {fileID: 6974911498107431617, guid: 34090716b58dc8247bc008f88e0cea05, type: 3}
+      propertyPath: m_receivesDamageFromTags.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6974911498107431617, guid: 34090716b58dc8247bc008f88e0cea05, type: 3}
       propertyPath: receivesDamageFromTags.Array.data[0]
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6974911498107431617, guid: 34090716b58dc8247bc008f88e0cea05, type: 3}
+      propertyPath: m_receivesDamageFromTags.Array.data[0]
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8746462477404352253, guid: 34090716b58dc8247bc008f88e0cea05, type: 3}

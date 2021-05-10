@@ -51,9 +51,9 @@ public class HeaderAttribute : PropertyAttribute
         if (string.IsNullOrEmpty(header))
             this.textHeightIncrease = 1f;
 
-        if (ColorUtility.TryParseHtmlString(colorString, out this.color)) return;
+        if (ColorUtility.TryParseHtmlString(colorString, out color)) return;
 
-        this.color = new Color(173, 216, 230);
+        color = new Color(173, 216, 230);
         this.colorString = "lightblue";
     }
 }

@@ -3,16 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="be36d944-fe34-41b0-b054-b6cd290abc4a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GalaxyShooter2D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gloabal Data/Player/Player Lives.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gloabal Data/Player/Player Lives.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gloabal Data/Spawners/Wave Spawners/Level 1 Single.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gloabal Data/Spawners/Wave Spawners/Level 1 Single.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gloabal Data/Spawners/Wave Spawners/Level 1 Wait For Destroyed And Wait Time.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gloabal Data/Spawners/Wave Spawners/Level 1 Wait For Destroyed And Wait Time.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gloabal Data/Spawners/Wave Spawners/Level 1 Wait Time.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gloabal Data/Spawners/Wave Spawners/Level 1 Wait Time.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gloabal Data/Player/Player Ammo.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gloabal Data/Player/Player Ammo.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/Boss Big Laser Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/Boss Big Laser Variant.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Boss.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Boss.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Attributes/HeaderAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Attributes/HeaderAttribute.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Damageable/Damageable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Damageable/Damageable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Damageable/PlayerDamageable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Damageable/PlayerDamageable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DestroyNoChildren.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RotateGameObject.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SeekTarget.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/EnemySmartWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/EnemySmartWeapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/Weapon.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +44,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Events/IGameEventListener.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Events/GameEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Gloabal Data/Spawners/Enemy Astroid Spawner.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement/MoveWithTarget.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Events/Editor/GameEventEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/BoolVariable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Vector2Variable.cs" root0="FORCE_HIGHLIGHTING" />
@@ -64,15 +68,12 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/VariableReference.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/StatReference.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/GameMoveDirectionReference.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SeekTarget.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Vector3Reference.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/FloatReference.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DischargeRechargeTimer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Prefabs/UI/Tripple Shot Slider.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/IntReferenceDrawer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RotateGameObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/Vector3ReferenceDrawer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DestroyNoChildren.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Explosion.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/StringReferenceDrawer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/220F2AAB-ED1D-4738-94A8-8B65AAF6C105/3b/72e9fd40/Void.cs" root0="SKIP_HIGHLIGHTING" />
@@ -87,6 +88,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/BoolReferenceDrawer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/Vector2ReferenceDrawer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Attributes/HeaderAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Destroy/DestroyAfterTime.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Power Ups/Homing Laser Power Up.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement/EnemyMovement.cs" root0="FORCE_HIGHLIGHTING" />
@@ -114,10 +116,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/../../../../../../Assets/manifest.json" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Events/Editor/GameEventEditor.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Attributes/Header.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Attributes/HeaderAttribute.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Attributes/Editor/HeaderDrawer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Attributes/Editor/TagAttributePropertyDrawer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Attributes/TagAttribute.cs" />
@@ -144,11 +142,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/UI/StatSliderDisplay.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/WaveTimerDisplay.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/DisplayPlayerLives.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Damageable/PlayerDamageable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Ships/Player.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Variables/Refrences/Editor/VariableReferencePropertyDrawer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Attributes/InfoBoxAttribute.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Damageable/Damageable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Movement/AggressiveEnemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Movement/EnemyMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Movement/Moveable.cs" />
@@ -157,14 +153,20 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Movement/AvoidLaser.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Movement/AvoidTarget.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/CoolDownTimer.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/Weapon.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/PlayerWeapon.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Movement/PlayerMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/WaveSpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/PhysicsHelper.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/EnemySmartWeapon.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Editor/ToDo.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Damageable/PlayerDamageable.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CauseDamageWhileInContact.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Damageable/Damageable.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/Weapon.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/EnemySmartWeapon.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Movement/MoveWithTarget.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Destroy/DestroyAfterTime.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Attributes/HeaderAttribute.cs" />
     </changedPaths>
   </component>
   <component name="IgnoredFileRootStore">
@@ -245,7 +247,7 @@
       <workItem from="1619481648860" duration="24529000" />
       <workItem from="1619687489946" duration="94556000" />
       <workItem from="1620078830766" duration="58170000" />
-      <workItem from="1620512823948" duration="11708000" />
+      <workItem from="1620512823948" duration="19238000" />
     </task>
     <servers />
   </component>

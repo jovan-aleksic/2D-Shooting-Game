@@ -89,7 +89,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3182791473118347046, guid: 69346cecd4046a74caf5ed5d4f870bed, type: 3}
       propertyPath: m_Name
-      value: Smart Enemy Power Up Destroyer Variant
+      value: Smart Enemy Power Up Destroyer Variant Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6416439633484887544, guid: 69346cecd4046a74caf5ed5d4f870bed, type: 3}
       propertyPath: movementSpeed

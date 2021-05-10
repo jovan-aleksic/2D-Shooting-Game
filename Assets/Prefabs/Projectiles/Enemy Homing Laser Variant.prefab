@@ -71,6 +71,10 @@ PrefabInstance:
       propertyPath: receivesDamageFromTags.Array.data[0]
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5447328934912432731, guid: cb5bce7468ac90e4aa86f464449e1d20, type: 3}
+      propertyPath: m_receivesDamageFromTags.Array.data[0]
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 7362457595983974875, guid: cb5bce7468ac90e4aa86f464449e1d20, type: 3}
       propertyPath: m_RootOrder
       value: 0

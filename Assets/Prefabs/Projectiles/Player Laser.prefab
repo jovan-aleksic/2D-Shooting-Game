@@ -113,8 +113,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c77f7705efca9e4facf647b0a0c6284, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToDestroy: {fileID: 0}
-  lives:
+  m_objectToDestroy: {fileID: 0}
+  m_lives:
     useConstant: 1
     constantValue:
       currentValue: 0
@@ -133,12 +133,13 @@ MonoBehaviour:
       valueDecreased: {fileID: 0}
     variable: {fileID: 0}
   shieldGameObject: {fileID: 0}
-  receivesDamageFromTags:
+  m_receivesDamageFromTags:
   - Enemy
-  damagedSoundEffect: {fileID: 0}
-  gameObjectDestroyed: {fileID: 0}
-  explosionVFX: {fileID: 0}
-  destroyedSoundEffect: {fileID: 0}
+  m_gameObjectDestroyed: {fileID: 0}
+  m_timeBeforeCausingDamage: 1
+  m_damagedSoundEffect: {fileID: 0}
+  m_explosionVFX: {fileID: 0}
+  m_destroyedSoundEffect: {fileID: 0}
 --- !u!114 &8746462477404352253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,4 +158,3 @@ MonoBehaviour:
     constantValue: 0
     variable: {fileID: 11400000, guid: 8f6290431b4c99e4a823ad688e91837c, type: 2}
   m_bounds: {fileID: 11400000, guid: 0ce5d6c5dc2700a4ca5913afe4ee2c11, type: 2}
-  m_position: {x: 0, y: 0, z: 0}
